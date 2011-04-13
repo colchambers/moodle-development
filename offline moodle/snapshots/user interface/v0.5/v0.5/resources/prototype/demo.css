@@ -1,0 +1,234 @@
+* body {
+
+	color: #666666;
+	background-color:#FFFFFF;
+	margin:0;
+	font: 80% Arial, Verdana, Helvetica, sans-serif;
+	padding: 30px 20px 30px 20px;
+	text-align: justify;
+}
+
+#container {
+	margin: 5px auto;
+	background: #fff;
+	background-image: url(home_backg.jpg); 
+	background-repeat: no-repeat;
+	border: 1px #5DA4C3 solid;
+	width: 800px;
+
+}
+
+#header { 
+	width: 100%;
+	height: 64px;
+	margin: 20px;
+}
+
+#logo {
+}
+
+#content {
+	margin-top: 3px;
+}
+
+#main { 
+	width: 500px;
+	padding: 20px;
+	}
+
+#sideBar ul {
+	margin: 5px 5px 5px 20px;
+	padding: 0px;
+}
+
+
+
+#userMenu {
+	margin: 3px 0 0 0;
+	padding: 3px 0 3px 45px;
+	color: #FFF;
+}
+
+#userMenu ul {
+  	margin: 0;
+  	padding: 10px 0 0 0;
+  	list-style: none;
+}
+
+#userMenu ul li {
+	display: inline;
+	margin: 0;
+	padding: 0 45px 0 0;
+
+}
+
+#userMenu ul li a{
+	color: #FFFFFF;
+}
+
+#userMenu ul li a:hover{
+	color: #DDDDDD;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+/*
+#footer {
+	margin-top: 7px;
+	height: 35px;
+	text-align: center;
+	}
+	
+#footer a { border: none; }
+#footer img { border: none; margin-top: 10px; }
+*/
+
+a {
+	color: #666666;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+a:hover {
+	color: #88A0B3;
+}
+
+img {
+	border:0;
+}
+
+.fullWidth{
+	width:100%;
+}
+
+.backgroundWhite {
+	background-color:#FFFFFF;
+
+}
+.backgroundDarkBlue {
+	background-color:#6699FF;
+}
+
+.textWhite{
+	color: #FFFFFF;
+}
+
+.label {
+	font-weight: bold;
+}
+
+/*+-------------------------------------------+
+  |   			UTILITY 					  |
+  +-------------------------------------------+*/
+  
+  h1, h2, h3, h4, h5, h6 {
+	line-height: normal;
+	}
+
+h2 {
+	font-size: 110%;
+}
+
+h3 {
+	font-size: 100%;
+}
+
+h3 a {
+	border-bottom: 0;
+}
+	
+form, div { padding: 0; margin: 0; }
+
+form{
+	 display: block;
+}
+
+  img { border: 0; }
+  p {
+	margin-top: 0; padding-top: 0;
+	margin-bottom: 0.5em; padding-bottom: 0.5em;
+	line-height: 1.25em;margin: 0px 0px 10px;
+    
+	line-height: normal;
+	text-align: justify;
+}
+
+ /*+-------------------------------------------+
+   |   			FOOTER 						                 |
+   +-------------------------------------------+*/
+  
+  #footer ul {
+  	margin: 0;
+  	padding: 10px 0 0 0;
+  	list-style: none;
+  	}
+  	
+  #footer ul li {
+  	display: inline;
+  	margin: 0;
+  	padding: 0 5px 0 0;
+  	font-size: 75%;
+  	}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+ }
+
+ /* Hides from IE-mac \*/
+ * html .clearfix {height: 1%;}
+ /* End hide from IE-mac */
+
+ /* CSS for specfic pages */
+ #itemList, #editDetails {
+	margin: 30px 10px 5px 30px; 
+
+ }
+
+ #itemList p, #itemList h3 {
+	 margin-left: 5px; 
+ }
+
+ #sideBar {
+	margin: 5px 20px 25px 5px; 
+
+ }
+
+ #sideBar {
+	background: #FFF;
+	border: 1px #5DA4C3 solid;
+ }
+
+ #headingBox {
+	width:100%; 
+	font-weight: bold;
+	border-bottom: 1px solid #000; 
+	margin-bottom: 5px;
+ }
+
+ #headingBox h3 {
+	 display: inline;
+ }
+
+.viewChanges {
+/*	text-align: right;*/
+}
+
+.currentFunctionality li.ready {
+	background-image: url(tick.gif);
+	background-repeat: no-repeat;
+	background-position: 140px 4px;
+}
+
+.currentFunctionality .notReady {
+	background-image: url(cross.gif);
+	background-repeat: no-repeat;
+	background-position: 140px 4px;
+}

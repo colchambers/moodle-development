@@ -1,0 +1,101 @@
+table.none {
+	border-width: 5px 5px 5px 5px;
+	border-spacing: 5px;
+	border-style: none none none none;
+	border-color: white;
+	border-collapse: separate;
+}
+
+table.none {
+	border-width: 5px 5px 5px 5px;
+	border-spacing: 5px;
+	border-style: none none none none;
+	border-color: white;
+	border-collapse: separate;
+	/* background-color: white;*/
+}
+table.none th {
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: dotted dotted dotted dotted;
+	border-color: white;
+	/*background-color: white;*/
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.none td {
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: dotted dotted dotted dotted;
+	border-color: white;
+	/*background-color: white;*/
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+
+table.sample {
+	border-width: 5px 5px 5px 5px;
+	border-spacing: 5px;
+	border-style: none none none none;
+	border-color: gray gray gray gray;
+	border-collapse: separate;
+	/* background-color: white;*/
+}
+table.sample th {
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: dotted dotted dotted dotted;
+	border-color: gray gray gray gray;
+	/*background-color: white;*/
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.sample td {
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: dotted dotted dotted dotted;
+	border-color: gray gray gray gray;
+	/*background-color: white;*/
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+.style1 {color: #FFFFFF}
+
+.view {
+	width:600px;
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: solid;
+	border-color: gray gray gray gray;
+}
+
+.oumoodle {
+	margin:3px;
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: solid;
+	border-color: gray gray gray gray;
+	float:left;
+	width:280px;
+	background-color:#facab7;
+}
+
+.mymoodle {
+	margin:3px;
+	border-width: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	border-style: solid;
+	border-color: gray gray gray gray;
+	float:right;
+	width:280px;
+	background-color:#facab7;
+}
+
+.spacer {
+ 	clear:both;
+}
+
+#strong {
+ 	background-color:#FF6600;
+}
+
+.difference {
+ 	background-color:#FF6600;
+	padding:1px;
+}

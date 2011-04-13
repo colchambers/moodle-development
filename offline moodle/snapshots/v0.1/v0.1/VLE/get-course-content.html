@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/styles_002.css"><!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="stylesheets/styles_ie7.css" />
+        <![endif]--><!--[if IE 6]>
+            <link rel="stylesheet" type="text/css" href="stylesheets/styles_ie6.css" />
+        <![endif]-->
+        <title>OU VLE: Get Course Content</title>
+        
+        <link rel="shortcut icon" href="stylesheets/favicon.ico">
+        <!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(scripts/csshover.htc);} /*]]>*/</style>-->
+
+        <script type="text/javascript" src="scripts/javascript-static.js"></script>
+        <script type="text/javascript" src="scripts/javascript-mod.php"></script>
+        <script type="text/javascript" src="scripts/overlib.js"></script>
+        <script type="text/javascript" src="scripts/overlib_cssstyle.js"></script>
+        <script type="text/javascript" src="scripts/cookies.js"></script>
+        <script type="text/javascript" src="scripts/ufo.js"></script>
+
+        <script type="text/javascript" defer="defer">
+        
+        //<![CDATA[
+        
+            setTimeout('fix_column_widths()', 20);
+            
+            function openpopup(url,name,options,fullscreen) {
+               if (url.substr(0,4)!='http') { // add wwwroot if referential link passed
+              fullurl = "http://learn.open.ac.uk" + url;
+               } else {
+                  fullurl = url;
+               }
+              windowobj = window.open(fullurl,name,options);
+              if (fullscreen) {
+                 windowobj.moveTo(0,0);
+                 windowobj.resizeTo(screen.availWidth,screen.availHeight);
+              }
+              windowobj.focus();
+              return false;
+            }
+            
+            function uncheckall() {
+              void(d=document);
+              void(el=d.getElementsByTagName('INPUT'));
+              for(i=0;i<el.length;i++) {
+                void(el[i].checked=0);
+              }
+            }
+            
+            function checkall() {
+              void(d=document);
+              void(el=d.getElementsByTagName('INPUT'));
+              for(i=0;i<el.length;i++) {
+                void(el[i].checked=1);
+              }
+            }
+            
+            function inserttext(text) {
+              text = ' ' + text + ' ';
+              if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+                var caretPos = opener.document.forms['theform'].message.caretPos;
+                caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+              } else {
+                opener.document.forms['theform'].message.value  += text;
+              }
+              opener.document.forms['theform'].message.focus();
+            }
+        
+        //]]>
+        </script>
+        <script type="text/javascript">
+            function showcontent(content)
+            {
+                document.getElementById(content).style.display="block";
+            }
+            var newwindow;
+            function popupinfo(url,windowName, windowFeatures)
+            {
+                popupclose();
+                newwindow= window.open (url, windowName, windowFeatures);
+                newwindow.focus();
+            }
+            function popupclose() {
+                if (newwindow != null) {
+                    if (!newwindow.closed) {
+                        newwindow.close();
+                    } 
+                }    
+            }
+        </script>
+        <style type="text/css" media="all"><!-- @import "stylesheets/header.css"; @import "stylesheets/ioemenu.css"; --></style>
+        <!--[if IE]>
+            <style type="text/css">
+  
+                #page { width: expression(document.body.clientWidth < 753 ? "752px" : "auto"); }
+                #help #page { width: auto; }
+            </style>
+        <![endif]-->
+    </head>
+    <body onunload="popupclose()" class="course course-1731 dir-ltr lang-en_vl_utf8 gecko gecko18" id="course-view">
+        <div id="page">
+            <script type="text/javascript" src="scripts/header.js"></script>
+            <script type="text/javascript" src="scripts/ioemenu.js"></script>
+            <div id="ou-topbars">
+                <div id="ou-lhs2">
+                    <a class="inactive" href="#"><img src="images/oulogo_hor.gif" alt="The Open University" height="38" width="53" /></a>
+                    <a id="ou-skip5" href="#ou-content">Skip to content</a>
+                </div>
+            <div id="ou-rhs">
+                <div id="ou-row1a">
+                    <ul>
+                        <li><a id="ou-ouhome" class="inactive" href="#">OU Home</a></li>
+                        <li><a id="ou-study" class="inactive" href="#">Study at the OU</a></li>
+                        <li><a id="ou-about" class="inactive" href="#">About the OU</a></li>
+                        <li><a id="ou-research" class="inactive" href="#">Research at the OU</a></li>
+                        <li><a id="ou-search" class="inactive" href="#">Search</a></li>
+                        <li><a id="ou-contact" class="inactive" href="#">Contact the OU</a></li>
+                    </ul>
+                </div>
+                <div id="ou-row3a">
+                    <div id="ou-row3b">
+                        <ul>
+                            <li>Joe Bloggs (0123456)</li>
+                            <li><a class="inactive" href="#" id="ou-studenthome">StudentHome</a></li>
+                            <li><a class="inactive" href="#" id="ou-tutorhome">TutorHome</a></li>
+                            <li><a class="inactive" href="#" id="ou-intranethome">IntranetHome</a></li>
+                            <li><a class="inactive" href="#" id="ou-signout">Sign out</a></li>
+                        </ul>
+                    </div>
+                    &nbsp; <a class="inactive" href="#" id="ou-access">Accessibility</a>
+                </div>
+            </div>
+            <div id="ou-row5"></div>
+        </div>
+        <div id="tsxcontent">
+            <div id="header">
+                <h1 class="headermain">OU VLE: Get Course Content</h1>
+                <!--<div class="headermenu"></div>-->
+                <div class="clearer"/>
+            </div>
+            <div class="navbar" id="navbar">
+                <div class="breadcrumb">
+                    <h2 class="accesshide">You are here</h2> 
+                    <ul>
+                        <li class="first"><a href="#" class="inactive">OU VLE</a></li>
+                        <li class="first"> <span class="accesshide">/ </span><span class="arrow sep">&#x25BA;</span> <a href="enrolled-courses.html">Enrolled Courses</a></li>
+                        <li class="first"> <span class="accesshide">/ </span><span class="arrow sep">&#x25BA;</span> Get Course Content</li>
+                    </ul>
+                </div>
+                <div class="clearer"/>
+            </div>
+            <div class="clearer"></div>
+            <!-- END OF HEADER -->
+            
+            <!-- Start div content -->  
+            <div class="belowheader" id="content">
+                <h2 class="main">Get Course Content</h2>
+                Use this form to obtain an asset bundle containing course updates. The asset bundle can be installed into your Offline Moodle to continue with this course while working offline.  
+                <form onsubmit="" class="mform" id="mform1" method="post" action="download-course-content.html">
+                    
+                    <!-- Start Course Details Fieldset -->                
+                    <fieldset id="general" class="clearfix">
+                        You have chosen to download content from the following course.
+                        <legend class="ftoggler">Course Details</legend>
+                        
+                        <div class="advancedbutton"/>
+  
+                            <div class="fitem">
+                                <div class="fitemtitle">
+                                    Course:
+                                </div>
+                                <div class="felement ftext">
+                                    H808-07 Innovations in elearning
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+                    <!-- End Course Details Fieldset -->
+                    
+                    <div style="display: none;">
+                        <input type="hidden" value="110100480" name="MAX_FILE_SIZE"/>
+                        <input type="hidden" value="" name="id"/>
+                        <input type="hidden" value="AL" name="teacher"/>
+                        <input type="hidden" value="ALs" name="teachers"/>
+                        <input type="hidden" value="Student" name="student"/>
+                        <input type="hidden" value="Students" name="students"/>
+                        <input type="hidden" value="" name="sesskey"/>
+                        <input type="hidden" value="1" name="_qf__course_edit_form"/>
+                    </div>
+                    
+                    <fieldset id="allcontent" class="clearfix">
+                        <legend class="ftoggler">All Content</legend>
+                        If you have not downloaded an asset bundle before click the button below to obtain one.
+                        <div>
+                            <div class="fitem">
+                                <div class="fitemtitle">
+                                    <div class="fgrouplabel"> </div>
+                                </div>
+                                <fieldset class="felement fgroup">
+                                    <input type="submit" id="id_submitbutton" value="Get All Content" name="submitbutton"/> 
+                                </fieldset>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Start Latest Content Fieldset -->                
+                    <fieldset id="latestcontent" class="clearfix">
+                        If you have previously downloaded an asset bundle enter the following details to obtain a smaller update bundle with only the recent changes. You can find these details in the course on your Offline Moodle. You only need enter one of the two values.
+                        <legend class="ftoggler">Latest Content</legend>
+                        
+                        <div class="advancedbutton"/>
+  
+                            <div class="fitem required">
+                                <div class="fitemtitle">
+                                    <label for="id_fullname">Last Backup Code
+                                        <img src="images/req.gif" alt="Required field" title="Required field" class="req"/> 
+                                        <span class="helplink">
+                                            <a onclick="" class="inactive" href="#" title="Help with Last Backup Code (new window)">
+                                                <img src="images/help.gif" alt="Help with Last Backup Code (new window)" class="iconhelp"/>
+                                            </a>
+                                        </span> 
+                                    </label>
+                                </div>
+                                <div class="felement ftext">
+                                    <input type="text" id="id_fullname" onchange="" onblur="" value="3jkl4lkj-k3j4hjkhkj" name="fullname" size="50" maxlength="254"/>
+                                </div>
+                            </div>
+                            <div class="fitem">
+                                <div class="fitemtitle">
+                                    <div class="fgrouplabel">Last Backup Date 
+                                        <img src="images/req.gif" alt="Required field" title="Required field" class="req"/> 
+                                        <span class="helplink">
+                                            <a onclick="" href="#" title="Help with Last Backup Date (new window)">
+                                                <img src="images/help.gif" alt="Help with Last Backup Date (new window)" class="iconhelp"/>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <fieldset class="felement fdate_selector">
+                                    <label for="id_e16caf" class="accesshide">Day</label>
+                                    <select id="id_e16caf" name="startdate[day]">
+                                        <option value="0" selected="selected">day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select> 
+                                    <label for="id_eb33b1" class="accesshide">Month</label>
+                                    <select id="id_eb33b1" name="startdate[month]">
+                                        <option value="0" selected="selected">Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select> 
+                                    <label for="id_40c0f0" class="accesshide">Year</label>
+                                    <select id="id_40c0f0" name="startdate[year]">
+                                        <option value="0" selected="selected">year</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- End Latest Content Fieldset -->
+                        
+
+                    <fieldset class="hidden">
+                        <div>
+                            <div class="fitem">
+                                <div class="fitemtitle">
+                                    <div class="fgrouplabel"> </div>
+                                </div>
+                                <fieldset class="felement fgroup">
+                                    <input type="submit" id="id_submitbutton" value="Get Latest Content" name="submitbutton"/> 
+                                    <input type="submit" id="id_cancel" onclick="" value="Cancel" name="cancel"/>
+                                </fieldset>
+                            </div>
+                            <div class="fdescription required">At least one of the fields marked must be entered.
+                                <img src="images/req.gif" alt="Required field"/>.
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- end div content -->
+            
+            
+            <div id="footer"></div>
+        </div>
+        <div id="ou-row6"></div>
+        <div id="ou-footerf">
+            <div class="ou-footrow">
+                <ul>
+                    <li class="ou-footleft"><a class="inactive" href="#">New to OU</a></li>
+                    <li><a class="inactive" href="#">OU on TV</a></li>
+                    <li><a class="inactive" href="#">For Alumni</a></li>
+                    <li><a class="inactive" href="#">For Employers</a></li>
+                    <li><a class="inactive" href="#">Privacy</a></li>
+                    <li><a class="inactive" href="#">Copyright</a></li>
+                    <li><a class="inactive" href="#">Cymraeg</a></li>
+                    <li><a class="inactive" href="#">Jobs</a></li>
+                    <li><a class="inactive" href="#">News</a></li>
+                    <li><a class="inactive" href="#">Donate</a></li>
+                </ul>
+            </div>	
+            <div class="ou-footrow">Â© The Open University &nbsp; +44 (0)845 300 60 90 &nbsp; 
+                <a class="inactive" href="#">Email us</a>
+            </div>	
+        </div>
+            <script type="text/javascript">//<![CDATA[
+                //ou_init();
+            //]]></script>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function __RP_Callback_Helper(str, strCallbackEvent, splitSize, func){ 
+        	var event = null;
+            if (strCallbackEvent){
+                event = document.createEvent('Events');
+                event.initEvent(strCallbackEvent, true, true);
+            }
+            if (str && str.length > 0){
+                var splitList = str.split('|');
+                var strCompare = str;
+                if (splitList.length == splitSize)strCompare = splitList[splitSize-1];
+                var pluginList = document.plugins;
+                for (var count = 0; count < pluginList.length; count++){
+                    var sSrc = '';
+                    if (pluginList[count] && pluginList[count].src)sSrc = pluginList[count].src;
+                    if (strCompare.length >= sSrc.length){
+                        if (strCompare.indexOf(sSrc) != -1){
+                            func(str, count, pluginList, splitList);
+                            break;
+                        }
+                    }
+                }
+            }
+            if (strCallbackEvent)document.body.dispatchEvent(event);
+        }
+        function __RP_Coord_Callback(str){
+            var func = function(str, index, pluginList, splitList){
+                pluginList[index].__RP_Coord_Callback = str;pluginList[index].__RP_Coord_Callback_Left = splitList[0];
+                pluginList[index].__RP_Coord_Callback_Top = splitList[1];pluginList[index].__RP_Coord_Callback_Right = splitList[2];
+                pluginList[index].__RP_Coord_Callback_Bottom = splitList[3];
+            };
+            __RP_Callback_Helper(str, 'rp-js-coord-callback', 5, func);
+        }
+        
+        function __RP_Url_Callback(str){
+            var func = function(str, index, pluginList, splitList){
+                pluginList[index].__RP_Url_Callback = str;
+                pluginList[index].__RP_Url_Callback_Vid = splitList[0];
+                pluginList[index].__RP_Url_Callback_Parent = splitList[1];
+            };
+            __RP_Callback_Helper(str, 'rp-js-url-callback', 3, func);
+        }
+        
+        function __RP_TotalBytes_Callback(str){
+            var func = function(str, index, pluginList, splitList){
+                pluginList[index].__RP_TotalBytes_Callback = str;pluginList[index].__RP_TotalBytes_Callback_Bytes = splitList[0];
+            };
+            __RP_Callback_Helper(str, null, 2, func);
+        }
+        
+        function __RP_Connection_Callback(str){
+            var func = function(str, index, pluginList, splitList){
+                pluginList[index].__RP_Connection_Callback = str;
+                pluginList[index].__RP_Connection_Callback_Url = splitList[0];
+            };
+            __RP_Callback_Helper(str, null, 2, func);
+        }
+    </script>
+</html>

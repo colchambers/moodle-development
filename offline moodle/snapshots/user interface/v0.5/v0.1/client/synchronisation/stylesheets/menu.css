@@ -1,0 +1,101 @@
+
+/*
+
+ * Menu items
+
+ */
+
+
+
+.menu {
+  background-color: #0066CB;
+  height: 22px;
+}
+
+#menu {
+
+/*
+width: 100%;
+float: left;
+*/
+
+	display: inline;
+    height: 22px;
+	background-color: #0066CB;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-bottom-width: 2px;
+	border-bottom-style: ridge;
+	border-bottom-color: #FFFFFF;
+}
+
+#menu ul,
+#menu li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#menu ul li ul > * {
+    width: 12em;
+}
+
+#menu a, 
+#menu h2 {
+	font-weight: bold;
+	font-size: 11px/16px;
+	display: block;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc #888 #555 #bbb;
+	margin: 0;
+	padding: 2px 3px;
+
+    color: #FFFFFF;
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-decoration: none;
+}
+
+#menu ul li *:hover,
+#menu a:hover {
+	background: #3399FE;
+}
+
+#menu ul li * > h2,
+#menu ul li * > h2:hover {
+    background-image: url(/MSC/images/menu_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 85% 6px;
+}
+
+#menu li {position: relative;}
+
+#menu ul ul {
+	position: absolute;
+	z-index: 500;
+}
+
+#menu ul ul ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+div#menu ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul ul li:hover ul ul,
+div#menu ul ul ul li:hover ul ul ul {
+	display: none;
+}
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul,
+div#menu ul ul ul ul li:hover ul ul {
+	display: block;
+}

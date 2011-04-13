@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles_002.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+		<meta name="description" content="">
+			<!--[if IE 7]>
+				<link rel="stylesheet" type="text/css" href="stylesheets/styles_ie7.css" />
+			<![endif]--><!--[if IE 6]>
+				<link rel="stylesheet" type="text/css" href="stylesheets/styles_ie6.css" />
+			<![endif]-->
+		</meta>
+		<meta name="keywords" content="moodle, Offline: Development: Client: Moodle version 1.9 ">
+		<title>Offline: Development: Client: Moodle version 1.9: Synchronise: Select Items</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(scripts/csshover.htc);} /*]]>*/</style>-->
+
+		<link type="text/css" rel="stylesheet" href="yui/logger/assets/logger.css" />
+		
+		<style type="text/css">
+		
+			#debugLogReader{height: 1000px;}
+			.hidden {display:none}
+			.hasConflict {background-color:#DDD;}
+			.containsConflict {background-color:#DEE8EE;}
+			.link {cursor: pointer; color:#0066aa;}
+            
+            table .synch-session{
+                width:100%;
+                margin: auto;
+            }
+
+            table.synch-session thead th ,
+            table.synch-session tbody td {
+              vertical-align: top;
+            }
+            
+            table.synch-session tbody td,
+            table.synch-session thead th
+            {
+                padding: 5px;
+            }
+            
+            .synch-session {
+                background-color:#FFFFFF;
+                border-color:#DDDDDD;
+            }
+
+            .synch-session {
+                font-size:0.8em;
+            }
+             
+            .synch-session {
+                margin-left:auto;
+                margin-right:auto;
+                width:90%;
+            }
+             
+            .synch-session {
+                width:100%;
+            }
+             
+            .synch-session, .forumpost {
+                border-collapse:separate;
+                border-style:solid;
+                border-width:1px;
+            }
+            
+            .synch-session th {
+                background-color:#FFDA9D;
+                border-color:#FFB63B;
+            }
+            
+            .synch-session th  {
+                border-left:1px solid;
+                border-right:1px solid;
+            }
+            
+            th {
+                font-weight:bold;
+            }
+		</style>
+		
+		<script type="text/javascript" src="scripts/javascript-static.js"></script>
+		<script type="text/javascript" src="scripts/javascript-mod.php"></script>
+		<script type="text/javascript" src="scripts/overlib.js"></script>
+		<script type="text/javascript" src="scripts/cookies.js"></script>
+		<script type="text/javascript" src="scripts/ufo.js"></script>
+		<script language="JavaScript" type="text/javascript" src="scripts/tree_menu.js"></script>
+		
+	</head>
+	<body class="backup course-1 nocoursepage ltr lang-en_utf8" id="synchronise" >
+		<div id="page">
+			<div id="header" class="clearfix">
+		<h1 class="headermain">Offline: Development: Client: Moodle version 1.9</h1>
+		<div class="headermenu">
+			<div class="logininfo">You are logged in as <a href="#" class="inactive">Admin User</a>  (<a href="#" class="inactive">Logout</a>)</div>
+		</div>
+	</div>
+	<div class="navbar clearfix">
+		<div class="breadcrumb">
+			<h2 class="accesshide">You are here</h2>
+			<ul>
+				<li class="first">
+					<a onclick="this.target='_top'" href="home.html">offDevClt1.9</a>
+				</li>
+				<li class="first">
+					<span class="accesshide">/&nbsp;</span>
+					<span class="arrow sep">&#x25BA;</span>
+					<a onclick="this.target='_top'" href="synch_home.html">Synchronise</a>
+				</li>
+				<li class="first">
+                    <span class="accesshide">/&nbsp;</span>
+                    <span class="arrow sep">&#x25BA;</span> 
+                    <a onclick="this.target='_top'" href="synch_session_start.html">Session</a></li>
+                 <li class="first">
+                    <span class="accesshide">/&nbsp;</span>
+                    <span class="arrow sep">&#x25BA;</span> Resolve Conflicts: Collaboration.. forum</li>
+			</ul>
+		</div>
+		<div class="navbutton">&nbsp;</div>
+	</div>
+	<div class="clearer">&nbsp;</div>
+			<!-- END OF HEADER -->
+			<!-- BEGINNING OF CONTENT-->
+			<div id="content">
+				<table id="layout-table" summary="layout">
+				  <tbody>
+					  <tr>
+						  <td style="width: 210px;" id="left-column">
+							  <div id="inst2" class="block_admin_tree sideblock">
+								  <div class="header">
+									  <a linkindex="1" href="#sb-1" class="skip-block" title="Skip Site Administration">
+										  <span class="accesshide">Skip Site Administration</span>
+									</a>
+									<div class="title">
+										<div class="hide-show">
+											<a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'images' ); return false;">
+												<img src="images/spacer.gif" id="togglehide_inst2" alt="Show or hide block" class="hide-show-image" />
+											</a>
+										</div>
+										<h2>Navigation</h2>
+									</div>
+								</div>
+								<div class="content">
+									                               <div class="admintree">
+                                        <a set="yes" linkindex="1" class="link" href="synch_home.html"><img src="images/item.gif" alt="" />Synchronisation Home</a><br />                                       
+                                        <a set="yes" linkindex="2" class="link" href="synch_find_content.html"><img src="images/item.gif" alt="" />Find Content</a><br />
+                                        <a set="yes" linkindex="2" class="link" href="synch_shortcuts.html"><img src="images/item.gif" alt="" />Shortcuts</a><br />
+                                        <a set="yes" linkindex="3" class="link inactive" href="#"><img src="images/item.gif" alt="" />Settings</a><br />
+                                    </div>
+								</div>
+							</div>
+							<span id="sb-1" class="skip-block-to"></span>
+						</td>
+						<td id="middle-column">
+							
+							
+							
+							<h2 class="headingblock header">Resolve Conflicts</h2>
+							<h3>Introduction</h3>
+							<p>The majority of content has been synchronised automatically however in this case, some could not.</p>
+                            <p>On this page you will find a list of items that need your attention. Next to each item is a short description of the conflict and a list of the options that are available to you. You must choose a selection from the available options. When you have finished click the 'Continue button at the bottom of the page to continue synchronising. </p>
+
+							
+						
+                        
+                        <h3>Conflicts</h3>
+                        <p>The following items could not be synchronised automatically. For each item choose one of the available options and click 'Continue' when finished.</p>
+                        <form name="synchForm" action="synch_session_finish.html" method="GET">
+                        <table class="synch-session">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Type</th>
+                                    <th>Reason</th>
+                                    <th>Options</th>    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Creating a community </td>
+                                    <td><img src="images/icon_post.gif" alt="Post"/> Post</td> 
+                                    <td>Deleted on Hub, Updated on Local</td> 
+                                    <td><ul id="courseTree-11-synch-options">
+                                          <li> <label for="courseTree-11-download"><input type="radio" name="courseTree-11-conflictResolution" id="courseTree-11-download" value="true"/>Download from Hub (0 kb)</label> </li>
+                                                        <li><label for="courseTree-11-upload"><input type="radio" name="courseTree-11-conflictResolution" id="courseTree-11-upload" value="true"/>Upload to Hub (25 kb)</label> </li>
+                                                        <li><label for="courseTree-11-skip"><input type="radio" name="courseTree-11-conflictResolution" id="courseTree-11-skip" value="true"/>Skip</label></li>
+                                                    </ul></td> 
+                                </tr>
+                                <tr>
+                                    <td>Share workload  </td>
+                                    <td><img src="images/icon_post.gif" alt="Post"/> Post</td> 
+                                    <td>Updated on Hub, Deleted on Local</td> 
+                                    <td><ul id="courseTree-11-synch-options">
+                                                        <li> <label for="courseTree-12-download"><input type="radio" name="courseTree-12-conflictResolution" id="courseTree-12-download" value="true"/>Download from Hub (30 kb)</label> </li>
+                                                        <li><label for="courseTree-12-upload"><input type="radio" name="courseTree-12-conflictResolution" id="courseTree-12-upload" value="true"/>Upload to Hub (0 kb)</label> </li>
+                                                        <li><label for="courseTree-12-skip"><input type="radio" name="courseTree-12-conflictResolution" id="courseTree-12-skip" value="true"/>Skip</label></li>
+                                                    </ul></td> 
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                        
+                        
+						
+						<p>When you have made the necessary selections and are ready to proceed click 'Continue' below to commit.</p>
+						<input type="submit" value="Continue" />
+							</form>
+
+                        <h3>Item being syncronised</h3>
+                        <p>This is a summary of the item you have chosen to synchronise.</p>
+                        <table class="synch-session">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Type</th>
+                                    <th>Summary</th>
+                                    <th>Last Synchronised</th>    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Collaboration.. forum</td>
+                                    <td><img src="images/icon_forum.gif" alt="Forum"/> Forum</td> 
+                                    <td></td> 
+                                    <td>24/07/2007 16:22</td> 
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+								<br /><br /><br /><br />
+						</td>
+						<td style="width: 210px;" id="right-column">
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+		
+			</div>
+			<!-- END OF CONTENT -->
+			<!-- BEGINNING OF FOOTER -->		
+			<div id="footer">
+				<hr/>
+				<p class="helplink"/>
+				<div class="logininfo">
+					You are logged in as 
+					<a linkindex="13" href="#" class="inactive">Admin User</a>  (<a href="#" class="inactive">Logout</a>)
+				</div>
+				<div class="sitelink">
+					<a linkindex="14" title="moodle 1.9 dev (2007071900)" href="#">
+						<br/>
+						<img style="width: 100px; height: 30px;" src="images/moodlelogo.gif" alt="moodlelogo"/>
+					</a>
+				</div>
+			</div>
+			<!-- END OF FOOTER -->
+		</div>
+	</body>
+	
+
+</html>

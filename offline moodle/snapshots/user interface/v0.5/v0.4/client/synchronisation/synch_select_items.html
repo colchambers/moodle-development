@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles_002.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+		<meta name="description" content="">
+			<!--[if IE 7]>
+				<link rel="stylesheet" type="text/css" href="stylesheets/styles_ie7.css" />
+			<![endif]--><!--[if IE 6]>
+				<link rel="stylesheet" type="text/css" href="stylesheets/styles_ie6.css" />
+			<![endif]-->
+		</meta>
+		<meta name="keywords" content="moodle, Offline: Development: Client: Moodle version 1.9 ">
+		<title>Offline: Development: Client: Moodle version 1.9: Synchronise: Select Items</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(scripts/csshover.htc);} /*]]>*/</style>-->
+
+		<link type="text/css" rel="stylesheet" href="yui/logger/assets/logger.css" />
+		
+		<style type="text/css">
+		
+			#debugLogReader{height: 1000px;}
+			.hidden {display:none}
+			.hasConflict {background-color:#DDD;}
+			.containsConflict {background-color:#DEE8EE;}
+			.link {cursor: pointer; color:#0066aa;}
+		</style>
+		
+		<script type="text/javascript" src="scripts/javascript-static.js"></script>
+		<script type="text/javascript" src="scripts/javascript-mod.php"></script>
+		<script type="text/javascript" src="scripts/overlib.js"></script>
+		<script type="text/javascript" src="scripts/cookies.js"></script>
+		<script type="text/javascript" src="scripts/ufo.js"></script>
+		<script language="JavaScript" type="text/javascript" src="scripts/tree_menu.js"></script>
+		
+			<!-- Begin YUI Tree view includes -->	
+
+	 
+		<!-- Dependency source files -->  
+		<script type="text/javascript" src="yui/yahoo/yahoo-min.js"></script>
+		<script type="text/javascript" src="yui/dom/dom-min.js"></script>
+		
+		<script type="text/javascript" src="yui/event/event-min.js"></script>
+		<script type="text/javascript" src="yui/dragdrop/dragdrop-min.js"></script>
+		<script type="text/javascript" src="yui/logger/logger-min.js"></script>
+		
+		
+		<script type="text/javascript" defer="defer" src="scripts/classes/advancedLogger.js"></script>
+
+		<script type="text/javascript" src="scripts/tree/tree.js"></script>
+		<script type="text/javascript" defer="defer" src="scripts/synch_select_items.js"></script>
+		<script type="text/javascript" src="scripts/synch_tree.js"></script>
+		
+		
+	</head>
+	<body class="backup course-1 nocoursepage ltr lang-en_utf8" id="synchronise" onLoad="initialiseSynchTree()">
+		<div id="page">
+			<div id="header" class="clearfix">
+		<h1 class="headermain">Offline: Development: Client: Moodle version 1.9</h1>
+		<div class="headermenu">
+			<div class="logininfo">You are logged in as <a href="#" class="inactive">Admin User</a>  (<a href="#" class="inactive">Logout</a>)</div>
+		</div>
+	</div>
+	<div class="navbar clearfix">
+		<div class="breadcrumb">
+			<h2 class="accesshide">You are here</h2>
+			<ul>
+				<li class="first">
+					<a onclick="this.target='_top'" href="home.html">offDevClt1.9</a>
+				</li>
+				<li class="first">
+					<span class="accesshide">/&nbsp;</span>
+					<span class="arrow sep">&#x25BA;</span>
+					<a onclick="this.target='_top'" href="synch_home.html">Synchronise</a>
+				</li>
+				<li class="first">
+					<span class="accesshide">/&nbsp;</span>
+					<span class="arrow sep">&#x25BA;</span> Select Items</li>
+			</ul>
+		</div>
+		<div class="navbutton">&nbsp;</div>
+	</div>
+	<div class="clearer">&nbsp;</div>
+			<!-- END OF HEADER -->
+			<!-- BEGINNING OF CONTENT-->
+			<div id="content">
+				<table id="layout-table" summary="layout">
+				  <tbody>
+					  <tr>
+						  <td style="width: 210px;" id="left-column">
+							  <div id="inst2" class="block_admin_tree sideblock">
+								  <div class="header">
+									  <a linkindex="1" href="#sb-1" class="skip-block" title="Skip Site Administration">
+										  <span class="accesshide">Skip Site Administration</span>
+									</a>
+									<div class="title">
+										<div class="hide-show">
+											<a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'images' ); return false;">
+												<img src="images/spacer.gif" id="togglehide_inst2" alt="Show or hide block" class="hide-show-image" />
+											</a>
+										</div>
+										<h2>Navigation</h2>
+									</div>
+								</div>
+								<div class="content">
+									<div class="admintree">
+										<a set="yes" linkindex="1" class="link" href="synch_home.html"><img src="images/item.gif" alt="" />Synchronisation Home</a><br />										
+										<a set="yes" linkindex="2" class="link" href="synch_select_items.html"><img src="images/item.gif" alt="" />Start synchronising</a><br />
+										<a set="yes" linkindex="3" class="link inactive" href="#"><img src="images/item.gif" alt="" />Settings</a><br />
+									</div>
+								</div>
+							</div>
+							<span id="sb-1" class="skip-block-to"></span>
+						</td>
+						<td id="middle-column">
+							
+							
+							
+							<h2 class="headingblock header">Select Items</h2>
+							<h3>Introduction</h3>
+							<p>To synchronise your Offline Moodle client with the Open University Community Hub you will go through three steps:</p>
+							<ol>
+								<li><i>Navigate content</i> 
+									<a class="link" onClick="javascript: toggleDisplay('introNavCont')">more...</a>
+									
+									<div id="introNavCont" class="hidden">
+										<p>Determine items to synchronise by navigating the courses and content that are available to you. 
+										Through this process you will see how much information will be transferred as an indicator of how 
+										long the chosen item will take to synchronise. </p>
+									</div>
+								</li>
+								<li><i>Peform synchronisation</i> 
+									<a class="link" onClick="javascript: toggleDisplay('introPerfSynch')">more...</a>
+									<div id="introPerfSynch" class="hidden">
+										<p>Synchronising is simple. Just click the 'Synchronise' link next to any item in the content tree. 
+								The content contained in the chosen item and all the items it contains will then be synchronised with the 
+								Open University Community Hub.</p>
+									</div>
+								</li>
+								<li><i>Resolve conflicts</i> 
+									<a class="link" onClick="javascript: toggleDisplay('introResConf')">more...</a>
+									<div id="introResConf" class="hidden">
+										<p>In some cases it is not possible to synchronise items automatically. In this
+								case the items will be added to the content tree and descriptions will be provided to assist in manually 
+								resolving the conflicts that have occurred. </p>
+										<p>Resolving conflicts is a simple process. Below the item details a set of options will be provided 
+										to help you resolve the conflict. The most common options are:</p>
+										
+										<ul>
+											<li>Download from Hub: Replaces any local changes with the copy on the Hub.</li>
+											<li>Upload to Hub: Replace any changes on the Hub with the local copy.</li>
+											<li>Skip: Don't synchronise this item at this point.</li>
+										</ul>
+									</div>
+								</li>
+							</ol>
+							
+							<strong>Key</strong> <a class="link" onClick="javascript: toggleDisplay('key')">more...</a>
+							<div class="key hidden" id="key" >
+							
+							<h4>General Icons</h4>
+							<p>These icons indicate indicate the type of item displayed.</p>
+							<ul>
+								<li><img src="images/icon_hub.gif"/ alt="Hub">: Synchronisation Hub Server. this hub allows synchronisation</li>
+								<li><img src="images/icon_course.gif" alt="Course"/>: Course. Moodle Course</li>
+								<li><img src="images/icon_week.gif" alt="Week"/>: Week. part of a course</li>
+								<li><img src="images/icon_forum.gif"/ alt="Forum">: Forum (Moodle Activity)</li>
+								<li><img src="images/icon_wiki.gif"/ alt="Wiki">: Wiki (Moodle Activity)</li>
+								<li><img src="images/icon_assignment.gif"/ alt="Assignment">: Assignment (Moodle Activity)</li>
+							</ul>
+							<h4>Expansion Icons</h4>
+							<p>These icons indicate whether server has checked for content within an item and if so whether there is content.</p>
+							<ul>
+								<li><img src="images/icon_checkChildren.gif"/ alt="Check for content">: Check for content</li>
+								<li><img src="images/icon_hasChildren.gif"/ alt="Has content items">: Has content items</li>
+								<li><img src="images/icon_noChildren.gif"/ alt="No content items">: No content items</li>
+							</ul>
+							</div>
+						
+						
+						<h3>Content</h3>
+						<form name="synchForm" action="#" method="POST">
+						
+						<div id="synchNav">
+	<ul id="courseTree-list"/>
+	<ul id="courseTree-0-list">
+		<li id="courseTree-17-listItem" class="hub" title="hub">
+			<img src="images/minus.gif" id="courseTree-17-icon-collapse" onclick="javascript: tree_toggleBranch('17')"/>
+			<img src="images/icon_hub.gif" alt="Hub"/>
+			<img src="images/icon_hasChildren.gif" id="courseTree-17-childStatus"/>Open.ac.uk 
+				<label for="courseTree-17-synchronise"><input type="checkbox" id="courseTree-17-synchronise" />synchronise</label>
+			<ul id="courseTree-17-list" style="display: block;">
+				<li id="courseTree-1-listItem" class="course" title="course">
+					<img src="images/minus.gif" id="courseTree-1-icon-collapse" onclick="javascript: tree_toggleBranch('1')"/>
+					<img src="images/icon_course.gif" alt="Course"/>
+					<img src="images/icon_hasChildren.gif" id="courseTree-1-childStatus"/>B857 Current issues in public management and social enterprise (10 mb, 43 files)  <label for="courseTree-1-synchronise"><input type="checkbox" id="courseTree-1-synchronise" />synchronise</label>
+					<ul id="courseTree-1-list" style="display: block;">
+						<li id="courseTree-2-listItem" class="week" title="week">
+							<img src="images/minus.gif" id="courseTree-2-icon-collapse" onclick="javascript: tree_toggleBranch('2')"/>
+							<img src="images/icon_week.gif" alt="Week"/>
+							<img src="images/icon_hasChildren.gif" id="courseTree-2-childStatus"/>Partnerships Collaboration and Leadership (2.6 mb, 34 files) <label for="courseTree-2-synchronise"><input type="checkbox" id="courseTree-2-synchronise" />synchronise</label>
+							<ul id="courseTree-2-list">
+								<li id="courseTree-3-listItem" class="forum" title="forum">
+									<img src="images/minus.gif" id="courseTree-3-icon-collapse" onclick="javascript: tree_toggleBranch('3')"/>
+									<img src="images/icon_forum.gif" alt="Forum"/>
+									<img src="images/icon_hasChildren.gif" id="courseTree-3-childStatus"/>Collaboration.. forum (760 kb, 2 files)  	
+									<label for="courseTree-3-synchronise"><input type="checkbox" id="courseTree-3-synchronise" />synchronise</label>
+									<ul id="courseTree-3-list" style="display: block;">
+										
+
+														
+														
+										
+										<li id="courseTree-10-listItem" class="discussion containsConflict" title="discussion" conflict="1">
+											<img src="images/minus.gif" id="courseTree-10-icon-collapse" onclick="javascript: tree_toggleBranch('10')"/>
+											<img src="images/icon_discussion.gif" alt="Discussion"/>
+											<img src="images/icon_hasChildren.gif" id="courseTree-10-childStatus"/>Advantages of collaboration (60 kb 3 files)  
+											
+											<ul id="courseTree-10-list">
+												<li id="courseTree-11-listItem" class="post hasConflict" title="post">
+													<img src="images/icon_post.gif" alt="Post"/>
+													Creating a community (35 kb 1 files)  Conflict Reason: Deleted on Hub, Updated on Local<br />
+													<ul id="courseTree-11-synch-options">Options:
+														<li> <label for="courseTree-11-download"><input type="radio" name="courseTree-11-conflictResolution" id="courseTree-11-download" value="true"/>Download from Hub (0 kb)</label> </li>
+														<li><label for="courseTree-11-upload"><input type="radio" name="courseTree-11-conflictResolution" id="courseTree-11-upload" value="true"/>Upload to Hub (25 kb)</label> </li>
+														<li><label for="courseTree-11-skip"><input type="radio" name="courseTree-11-conflictResolution" id="courseTree-11-skip" value="true"/>Skip</label></li>
+													</ul>					
+												</li>
+												<li id="courseTree-12-listItem" class="post hasConflict" title="post">
+													<img src="images/icon_post.gif" alt="Post"/>
+													Share workload (17 kb 1 files)  Conflict Reason: Updated on Hub, Deleted on Local
+													<ul id="courseTree-12-synch-options">Options:
+														<li> <label for="courseTree-12-download"><input type="radio" name="courseTree-12-conflictResolution" id="courseTree-12-download" value="true"/>Download from Hub (30 kb)</label> </li>
+														<li><label for="courseTree-12-upload"><input type="radio" name="courseTree-12-conflictResolution" id="courseTree-12-upload" value="true"/>Upload to Hub (0 kb)</label> </li>
+														<li><label for="courseTree-12-skip"><input type="radio" name="courseTree-12-conflictResolution" id="courseTree-12-skip" value="true"/>Skip</label></li>
+													</ul>
+													
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+							</ul>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+						When you have made the necessary selections and are ready to proceed click 'Update' below to commit.
+						<input type="submit" value="Update" />
+							</form>
+							
+							<h3>Demonstration</h3>
+							<p>This is a demonstration page which is part of a Snapshot and thus not all of the final functionality is available. 
+							The purpose of this page is to demonstrate how to synchronise content.</p> 
+							<p>The demonstration shows a synchronisation session that is already under way. The user has navigated the content through to the discussion 'Advantages of collaboration' in the forum titled 'Collaboration.. forum'. The user checked the synchronise option next to it and clicked the 'update' button below the navigation tree. Moodle then began synchronising the selected items and is displaying the resulting conflicts that cannot be resolved automatically.  
+							</p>
+								<br /><br /><br /><br />
+						</td>
+						<td style="width: 210px;" id="right-column">
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+		
+			</div>
+			<!-- END OF CONTENT -->
+			<!-- BEGINNING OF FOOTER -->		
+			<div id="footer">
+				<hr/>
+				<p class="helplink"/>
+				<div class="logininfo">
+					You are logged in as 
+					<a linkindex="13" href="#" class="inactive">Admin User</a>  (<a href="#" class="inactive">Logout</a>)
+				</div>
+				<div class="sitelink">
+					<a linkindex="14" title="moodle 1.9 dev (2007071900)" href="#">
+						<br/>
+						<img style="width: 100px; height: 30px;" src="images/moodlelogo.gif" alt="moodlelogo"/>
+					</a>
+				</div>
+			</div>
+			<!-- END OF FOOTER -->
+		</div>
+	</body>
+	
+	<script type="text/javascript" defer="defer">
+		<!--
+		//instantiate log reader
+		 
+		 var myConfigs = { 
+	   		width: "1000px", 
+	   		height: "100em",
+	   		top: "500px",
+	  		newestOnTop:false
+		}; 
+		 var myLogger = new YAHOO.widget.LogReader("myLogger", myConfigs);
+		 myLogger.setTitle("Newest on top");
+		// myLogger.width = 1000px;			
+		//myLogger.show();
+		myLogger.hide();
+		//YAHOO.iterate(myLogger, 'myLogger = ');
+		//-->
+		</script>
+</html>

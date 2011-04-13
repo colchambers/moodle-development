@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+
+<script type="text/javascript" src="js/switchcontent.js" ></script>
+<style type="text/css">
+
+/*Style sheet used for demo. Remove if desired*/
+#wrapper {
+	border:solid;
+	border-width:1px;
+	border-bottom-color:#000000;
+}
+
+#conflict {
+	background-color:#f6f6f5;
+	background: url(css/grey_fade.gif) repeat-x bottom; /*add background image to entire div including navbar*/
+	border-bottom:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#000000;
+}
+
+.handcursor{
+	cursor:pointer;
+}
+
+.navlist #bobcontent1-title, #bobcontent2-title, #bobcontent3-title {
+		display:block;
+		padding:1em 1.6em 1em 1em; 
+		background: url(css/sync.gif) no-repeat right ; 
+		/* background-image:url(css/grey_fade.gif); */
+}
+
+
+#bobcontent1, #bobcontent2, #bobcontent3  { /* style of expanded section */
+	background-color:#e4e4e3;
+	padding:0.5em;
+	clear:both;
+	border-top:solid;
+	border-bottom:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-top-color:#000000;
+	border-bottom-color:#000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.navlist {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:1em;
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+}
+
+.navlist li {
+	float:left;
+	     /* why not all li    */
+}
+
+.navlist a {
+	/* background-image:url(css/grey_fade.gif); */
+	display:block;
+	padding:1em 1em 1em 1.9em; 
+	text-decoration:none;
+	border-right:solid;
+	border-right-color:#000000;
+	border-right-width:1px;
+}
+
+.navlist a:hover {
+	text-decoration:underline;
+}
+
+.navlist #disabled{  /* this creates a <li> without an <a> but allows styling */
+	display:block;
+	padding:1em 1em 1em 1em;
+	border-right:solid;
+	border-right-color:#000000;
+	border-right-width:1px;
+}
+
+.navlist #disabled_delete{  /* this creates a <li> without an <a> but allows styling */
+	display:block;
+	padding:1em 1em 1em 1.7em;
+	border-right:solid;
+	border-right-color:#000000;
+	border-right-width:1px;
+	background: url(css/delete.gif) no-repeat left top ; 
+}
+
+.navlist #disabled_update{  /* this creates a <li> without an <a> but allows styling */
+	display:block;
+	padding:1em 1em 1em 1.7em;
+	border-right:solid;
+	border-right-color:#000000;
+	border-right-width:1px;
+	background: url(css/upload.gif) no-repeat left top ;
+}
+
+/* -----------------THESE WILL BE DELETED FROM CSS, HAS TO GO IN CODE------------------------------------------------------- */
+
+.navlist #update{  /* this creates a <li> without an <a> but allows styling */
+	background: url(css/upload.gif) no-repeat left top ;
+}
+
+.navlist #delete{  /* this creates a <li> without an <a> but allows styling */
+	background: url(css/delete.gif) no-repeat left top ; 
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+#clear {
+	clear:both;
+}
+
+#oumoodle, #mymoodle {
+	padding:0.5em;
+	margin:5px;
+	border:solid;
+	border-color:#000000;
+	background-color:#FFFFFF;
+	border-width:1px;
+}
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<!-- <div><a href="javascript:bobexample.sweepToggle('contract')">Contract All</a> | <a href="javascript:bobexample.sweepToggle('expand')">Expand All</a></div> -->
+
+	<div id="wrapper">
+			<div id="conflict">
+				<ul class="navlist">
+					<li id="disabled">Post title</li>
+					<li id="disabled_update">OU Moodle</li>
+					<li id="disabled_delete">My Moodle</li>
+					<li id="bobcontent1-title" class="handcursor">Synchronise</li>
+				</ul>
+				<div id="clear"></div>	
+			</div>
+		
+		<div id="bobcontent1" class="switchgroup1">
+			<div id="mymoodle">
+				<b><img src="css/upload.gif" />OU Moodle: Post title, 5kb</b><br />Content has been updated on OU Moodle</div>
+				
+				<p>To synchronise get data from OU Moodle.<a href="manage_conflicts1.html"><img src="css/get.gif" border="0" /></a></p>
+				
+				<div id="oumoodle">
+				<b><img src="css/delete.gif" />My Moodle: Post title, 0kb</b><br />Content has been deleted on My Moodle.</b></div>
+				
+		</div>
+	
+		<div id="clear"></div>	
+		
+				<div id="conflict">
+				<ul class="navlist">
+					<li id="disabled">Post title</li>
+					<li id="disabled_delete">OU Moodle</li>
+					<li id="disabled_update">My Moodle</li>
+					<li id="bobcontent2-title" class="handcursor">Synchronise</li>
+				</ul>
+				<div id="clear"></div>	
+			</div>
+		
+		<div id="bobcontent2" class="switchgroup1">
+			<div id="mymoodle">
+				<b><img src="css/delete.gif" />OU Moodle: Post title, 0kb</b><br />
+				Content has been deleted on OU Moodle</div>
+				
+				<p>To synchronise put data from My Moodle.<a href=""><img src="css/put.gif" /></a></p>
+				
+				<div id="oumoodle">
+				<b><img src="css/upload.gif" />My Moodle: Post title, 5kb</b><br />
+				Content has been updated on My Moodle.</b></div>
+				
+		</div>
+	
+		<div id="clear"></div>	
+		
+		<div id="conflict">
+				<ul class="navlist">
+					<li id="disabled">Post title</li>
+					<li id="disabled_update">OU Moodle</li>
+					<li id="disabled_update">My Moodle</li>
+					<li id="bobcontent3-title" class="handcursor">Synchronise</li>
+				</ul>
+				<div id="clear"></div>	
+			</div>
+		
+		<div id="bobcontent3" class="switchgroup1">
+			<div id="mymoodle">
+				<b><img src="css/upload.gif" />OU Moodle: Post title, 12kb</b><br />
+				Content has been updated on OU Moodle</div>
+				
+				<p>To synchronise: put data from My Moodle <a href=""><img src="css/put.gif" /></a>
+		  or get data from OU Moodle.<a href=""><img src="css/get.gif" /></a></p>
+				
+				<div id="oumoodle">
+				<b><img src="css/upload.gif" />My Moodle: Post title, 10kb</b><br />
+				Content has been updated on My Moodle.</b></div>
+				
+		</div>
+	
+		<div id="clear"></div>	
+	</div>
+
+
+
+
+
+<script type="text/javascript">
+//   MAIN FUNCTION: new switchcontent("class name", "[optional_element_type_to_scan_for]") REQUIRED
+//1) Instance.setStatus(openHTML, closedHTML)- Sets optional HTML to prefix the headers to indicate open/closed states
+//2) Instance.setColor(openheaderColor, closedheaderColor)- Sets optional color of header when it's open/closed
+//3) Instance.setPersist(true/false)- Enables or disabled session only persistence (recall contents' expand/contract states)
+//4) Instance.collapsePrevious(true/false)- Sets whether previous content should be contracted when current one is expanded
+//5) Instance.defaultExpanded(indices)- Sets contents that should be expanded by default (ie: 0, 1). Persistence feature overrides this setting!
+//6) Instance.init() REQUIRED
+
+var bobexample=new switchcontent("switchgroup1", "div") //Limit scanning of switch contents to just "div" elements
+bobexample.setStatus('<img src="css/closedy2.png" /> ', '<img src="css/opencq8.png" /> ') // open close image icons ------------------------------------TO ENABLE OPEN AND CLOSE ICONS ICONS COPY THESE BETWEEN (' ', ' ') <img src="css/opencq8.png" /> <img src="css/closedy2.png" />
+bobexample.setColor('darkred', 'black')
+bobexample.setPersist(true)
+bobexample.collapsePrevious(true) //Only one content open at any given time
+bobexample.init()
+</script>
+
+
+<script type="text/javascript">
+
+var joeexample=new switchcontent("switchgroup2", "p") //Limit scanning of switch contents to just "p" elements
+joeexample.setStatus('[open] ', '[closed] ')
+joeexample.setColor('green', 'red')
+joeexample.collapsePrevious(false) //Allow more than 1 content to be open simultanously
+joeexample.setPersist(false)
+joeexample.defaultExpanded(0,1)
+joeexample.init()
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+* body {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #88A0B3;
+}
+
+#content {  
+	background-image: url(home_backg.jpg); 
+	background-repeat: no-repeat;
+	border: 1px #5DA4C3 solid;
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+}
+
+h2{
+	margin: 0;
+	padding: 0;
+	font-size: 75%;
+}
+
+ul li{
+	line-height: 22px;
+	font-size: 70%;
+}
+
+p { 
+	line-height: 22px;
+	font-size: 70%; 
+}
+
+
+a {
+	color: #88A0B3; 
+}
+
+a:link {  
+
+}
+
+a:visited { 
+
+}
+
+a:hover { 
+	color: #00CCFF; 
+}
+
+#userMenu, #introductionMenu {
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+
+#userMenu ul, #introductionMenu ul{
+  	margin: 0;
+  	padding: 0 0 10px 0;
+  	list-style: none;
+}
+
+#userMenu ul li, #introductionMenu ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+
+}
+
+introductionMenu
+
+#introductionMenu {
+	margin: 10px 0 0 0;
+}
+
+#introductionMenu ul {
+  	padding: 0;
+}
+
+#introductionMenu ul li {
+	display: block;
+}
+
+

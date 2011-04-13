@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles_002.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+		<meta name="description" content="">
+			<!--[if IE 7]>
+				<link rel="stylesheet" type="text/css" href="stylesheets/styles_ie7.css" />
+			<![endif]--><!--[if IE 6]>
+				<link rel="stylesheet" type="text/css" href="stylesheets/styles_ie6.css" />
+			<![endif]-->
+		</meta>
+		<meta name="keywords" content="moodle, Offline: Development: Client: Moodle version 1.9 ">
+		<title>Offline: Development: Client: Moodle version 1.9</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(scripts/csshover.htc);} /*]]>*/</style>-->
+
+		<script type="text/javascript" src="scripts/javascript-static.js"></script>
+		<script type="text/javascript" src="scripts/javascript-mod.php"></script>
+		<script type="text/javascript" src="scripts/overlib.js"></script>
+		<script type="text/javascript" src="scripts/cookies.js"></script>
+		<script type="text/javascript" src="scripts/ufo.js"></script>
+
+		<script type="text/javascript" defer="defer" >
+			
+			//<![CDATA[
+			
+			setTimeout('fix_column_widths()', 20);
+			
+			function openpopup(url,name,options,fullscreen) {
+			  fullurl = "http://pclt1048.open.ac.uk/offline/development/client-1.9" + url;
+			  windowobj = window.open(fullurl,name,options);
+			  if (fullscreen) {
+				 windowobj.moveTo(0,0);
+				 windowobj.resizeTo(screen.availWidth,screen.availHeight);
+			  }
+			  windowobj.focus();
+			  return false;
+			}
+			
+			function uncheckall() {
+			  void(d=document);
+			  void(el=d.getElementsByTagName('INPUT'));
+			  for(i=0;i<el.length;i++) {
+				void(el[i].checked=0);
+			  }
+			}
+			
+			function checkall() {
+			  void(d=document);
+			  void(el=d.getElementsByTagName('INPUT'));
+			  for(i=0;i<el.length;i++) {
+				void(el[i].checked=1);
+			  }
+			}
+			
+			function inserttext(text) {
+			  text = ' ' + text + ' ';
+			  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+				var caretPos = opener.document.forms['theform'].message.caretPos;
+				caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+			  } else {
+				opener.document.forms['theform'].message.value  += text;
+			  }
+			  opener.document.forms['theform'].message.focus();
+			}
+			
+			//]]>
+		</script>
+	</head>
+	<body class="course course-1 ltr lang-en_utf8" id="site-index">
+		<div id="page">
+			<div id="header-home" class="clearfix">
+				<h1 class="headermain">Offline: Development: Client: Moodle version 1.9</h1>
+				<div class="headermenu">
+					<div class="logininfo">You are logged in as <a linkindex="0" href="#">Admin User</a>  (<a href="#">Logout</a>)</div>
+					<form action="#" method="get" id="chooselang" class="popupform">
+						<div>
+							<label for="chooselang_jump">
+								<span class="accesshide">Language:</span>
+							</label>
+							<select id="chooselang_jump" name="jump" onchange="self.location=document.getElementById('chooselang').jump.options[document.getElementById('chooselang').jump.selectedIndex].value;">
+							   <option value="#" selected="selected">English (en)</option>
+							</select>
+							<input name="sesskey" value="LcFjvfaZaA" type="hidden" />
+							<div id="noscriptchooselang" style="display: none;"><input value="Go" type="submit"></div>
+							<script type="text/javascript">
+								//<![CDATA[
+								document.getElementById("noscriptchooselang").style.display = "none";
+								//]]>
+							</script>
+						</div>
+					</form>
+				</div>
+			</div>
+			<hr />
+			<div class="clearer">&nbsp;</div>
+			<!-- END OF HEADER -->
+			<!-- BEGINNING OF CONTENT-->
+			<div id="content">
+				<table id="layout-table" summary="layout">
+				  <tbody>
+					  <tr>
+						  <td style="width: 210px;" id="left-column">
+							  <div id="inst2" class="block_admin_tree sideblock">
+								  <div class="header">
+									  <a linkindex="1" href="#sb-1" class="skip-block" title="Skip Site Administration">
+										  <span class="accesshide">Skip Site Administration</span>
+									</a>
+									<div class="title">
+										<div class="hide-show">
+											<a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'images' ); return false;">
+												<img src="images/spacer.gif" id="togglehide_inst2" alt="Show or hide block" class="hide-show-image" />
+											</a>
+										</div>
+										<h2>Site Administration</h2>
+									</div>
+								</div>
+								<div class="content">
+									<script type="text/javascript">
+										//<![CDATA[
+										var vh_numspans = 17;
+										var vh_content = new Array();
+										function getspan(spanid) {
+										  if (document.getElementById) {
+											return document.getElementById(spanid);
+										  } else if (window[spanid]) {
+											return window[spanid];
+										  }
+										  return null;
+										}
+										function toggle(spanid) {
+										  if (getspan(spanid).innerHTML == "") {
+											getspan(spanid).innerHTML = vh_content[spanid];
+											getspan(spanid + "indicator").innerHTML = '<img src="images/open.gif" alt="Opened folder" />';
+										  } else {
+											vh_content[spanid] = getspan(spanid).innerHTML;
+											getspan(spanid).innerHTML = "";
+											getspan(spanid + "indicator").innerHTML = '<img src="images/closed.gif" alt="Closed folder" />';
+										  }
+										}
+										function collapse(spanid) {
+										  if (getspan(spanid).innerHTML !== "") {
+											vh_content[spanid] = getspan(spanid).innerHTML;
+											getspan(spanid).innerHTML = "";
+											getspan(spanid + "indicator").innerHTML = '<img src="images/closed.gif" alt="Closed folder" />';
+										  }
+										}
+										function expand(spanid) {
+										  getspan(spanid).innerHTML = vh_content[spanid];
+										  getspan(spanid + "indicator").innerHTML = '<img src="images/open.gif" alt="Opened folder" />';
+										}
+										function expandall() {
+										  for (i = 1; i <= vh_numspans; i++) {
+											expand("vh_span" + String(i));
+										  }
+										}
+										function collapseall() {
+										  for (i = vh_numspans; i > 0; i--) {
+											collapse("vh_span" + String(i));
+										  }
+										}
+										//]]>
+									</script>
+									<div class="admintree">
+										<a set="yes" linkindex="2" class="link" href="#"><img src="images/item.gif" alt="" />Notifications</a><br />
+										<a href="#" onclick="toggle('vh_span1');return false">
+											<span id="vh_span1indicator">
+												<img src="images/open.gif" alt="Opened folder" />
+											</span> Users
+										</a>
+										<br />
+										<span id="vh_span1">
+											&nbsp; &nbsp;
+											<a class="link" href="#"><img src="images/item.gif" alt="" />Authentication</a><br />
+											&nbsp; &nbsp;
+											<a href="#" onclick="toggle('vh_span2');return false">
+												<span id="vh_span2indicator"><img src="images/open.gif" alt="Opened folder" /></span> Accounts
+											</a>
+											<br/>
+											<span id="vh_span2">
+												&nbsp; &nbsp;&nbsp; &nbsp;
+												<a class="link" href="#"><img src="images/item.gif" alt="" />Browse list of users</a><br />
+												&nbsp; &nbsp;&nbsp; &nbsp;
+												<a class="link" href="#"><img src="images/item.gif" alt="" />Add a new user</a><br />
+												&nbsp; &nbsp;&nbsp; &nbsp;
+												<a class="link" href="#"><img src="images/item.gif" alt="" />Upload users</a><br />
+												&nbsp; &nbsp;&nbsp; &nbsp;
+												<a class="link" href="#"><img src="images/item.gif" alt="" />User profile fields</a><br />
+											</span>
+											&nbsp; &nbsp;
+											<a href="#" onclick="toggle('vh_span3');return false">
+												<span id="vh_span3indicator"><img src="images/open.gif" alt="Opened folder" /></span> Permissions
+											</a>
+											<br />
+											<span id="vh_span3">
+												&nbsp; &nbsp;&nbsp; &nbsp;
+												<a class="link" href="#"><img src="images/item.gif" alt="" />Define roles</a><br />
+												&nbsp; &nbsp;&nbsp; &nbsp;
+												<a class="link" href="#"><img src="images/item.gif" alt="" />Assign global roles</a><br />
+												&nbsp; &nbsp;&nbsp; &nbsp;
+												<a class="link" href="#"><img src="images/item.gif" alt="" />User policies</a><br />
+											</span>
+										</span>
+											<a href="#" onclick="toggle('vh_span4');return false">
+												<span id="vh_span4indicator"><img src="images/open.gif" alt="Opened folder" /></span> Courses
+											</a><br />
+											<span id="vh_span4">
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Add/edit courses</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Enrolments</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Course request</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Backups</a><br />
+											</span>
+											<a href="#" onclick="toggle('vh_span5');return false">
+												<span id="vh_span5indicator"><img src="images/open.gif" alt="Opened folder" /></span> Grades
+											</a><br />
+											<span id="vh_span5">
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />[[gradessettings]]</a><br />
+												&nbsp; &nbsp;
+												<a href="#" onclick="toggle('vh_span6');return false">
+													<span id="vh_span6indicator"><img src="images/open.gif" alt="Opened folder" /></span> Reports
+												</a><br />
+												<span id="vh_span6">
+													&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Grader</a><br />
+												</span>
+											</span>
+											<a href="#" onclick="toggle('vh_span7');return false">
+												<span id="vh_span7indicator"><img src="images/open.gif" alt="Opened folder" /></span> Location
+											</a><br />
+											<span id="vh_span7">
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Location settings</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Update timezones</a><br />
+											</span>
+											<a href="#" onclick="toggle('vh_span8');return false">
+												<span id="vh_span8indicator"><img src="images/open.gif" alt="Opened folder" /></span> Language
+											</a><br />
+											<span id="vh_span8">
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Language settings</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Language editing</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Language packs</a><br />
+											</span>
+											<a href="#" onclick="toggle('vh_span9');return false">
+												<span id="vh_span9indicator"><img src="images/open.gif" alt="Opened folder" /></span> Modules
+											</a><br />
+											<span id="vh_span9">
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Activities</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Blocks</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Filters</a><br />
+											</span>
+											<a href="#" onclick="toggle('vh_span10');return false">
+												<span id="vh_span10indicator"><img src="images/open.gif" alt="Opened folder" /></span> Security
+											</a><br />
+											<span id="vh_span10">
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Site policies</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />HTTP security</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Module security</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Notifications</a><br />
+												&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Anti-Virus</a><br />
+											</span>
+											<a href="#" onclick="toggle('vh_span11');return false">
+												<span id="vh_span11indicator"><img src="images/open.gif" alt="Opened folder" /></span> Appearance
+											</a><br />
+											<span id="vh_span11">
+												&nbsp; &nbsp;<a href="#" onclick="toggle('vh_span12');return false"><span id="vh_span12indicator"><img src="images/open.gif" alt="Opened folder" /></span> Themes</a><br /><span id="vh_span12">
+												&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Theme settings</a><br />
+												&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Theme Selector</a><br />
+											</span>
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Calendar</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Filter settings</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />HTML Editor</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Moodle Docs</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />My Moodle</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Gradebook</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Course managers</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Sticky blocks</a><br />
+										</span>
+										<a href="#" onclick="toggle('vh_span13');return false">
+											<span id="vh_span13indicator"><img src="images/open.gif" alt="Opened folder" /></span> Front Page
+										</a><br />
+										<span id="vh_span13">
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Front Page settings</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Front Page roles</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Front Page backup</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Front Page restore</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Site files</a><br />
+										</span>
+										<a href="#" onclick="toggle('vh_span14');return false">
+											<span id="vh_span14indicator"><img src="images/open.gif" alt="Opened folder" /></span> Server
+										</a><br />
+										<span id="vh_span14">
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />System Paths</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Email</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Session Handling</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />RSS</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Debugging</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Statistics</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />HTTP</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Maintenance mode</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Cleanup</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Environment</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />PHP info</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Performance</a><br />
+										</span>
+										<a href="#" onclick="toggle('vh_span15');return false">
+											<span id="vh_span15indicator"><img src="images/open.gif" alt="Opened folder" /></span> Networking
+										</a><br />
+										<span id="vh_span15">
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Settings</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Peers</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />SSO Access Control</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Enrolments</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />XML-RPC hosts</a><br />
+										</span>
+										<a href="#" onclick="toggle('vh_span16');return false">
+											<span id="vh_span16indicator"><img src="images/open.gif" alt="Opened folder" /></span> Reports
+										</a><br />
+										<span id="vh_span16">
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Course overview</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Logs</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Unit tests</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Statistics</a><br />
+										</span>
+										<a href="#" onclick="toggle('vh_span17');return false">
+											<span id="vh_span17indicator"><img src="images/open.gif" alt="Opened folder" /></span> Miscellaneous
+										</a><br />
+										<span id="vh_span17">
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />Experimental</a><br />
+											&nbsp; &nbsp;<a class="link" href="#"><img src="images/item.gif" alt="" />XMLDB editor</a><br />
+										</span>
+									</div>
+									<script type="text/javascript">
+									//<![CDATA[
+									collapseall();
+									//]]>
+									</script>
+									<div class="footer">
+										<div class="adminsearchform">
+											<form action="#" method="get">
+											<div>
+												<label for="query" class="accesshide">Search in settings</label>
+												<input name="query" id="query" size="8" value="" type="text">
+												<input value="Search" type="submit">
+											</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script type="text/javascript">
+							//<![CDATA[
+							elementCookieHide("inst2"); 
+							//]]>
+							</script>
+							<span id="sb-1" class="skip-block-to"></span>
+						</td>
+						<td id="middle-column">
+							<h2 class="headingblock header">Available Courses</h2>
+							<div class="coursebox">
+								<div class="info">
+									<div class="name">
+										<a linkindex="3" title="Click to enter this course" href="#">B857 Current issues in public management and social enterprise </a>
+									</div>
+								</div>
+								<div class="summary">This is the workspace site for B857. General questions and issues across the course team should be addressed to the main forum. Issues of importance to individual block teams should be posted on the block forums.<br /></div>
+
+							</div>
+							<div class="clearer"></div>
+							<div class="coursebox">
+								<div class="info">
+									<div class="name">
+										<a linkindex="4" title="Click to enter this course" href="#">B201 Business organisations & their environments</a>
+									</div>
+								</div>
+								<div class="summary">This is the workspace site for B201. General questions and issues across the course team should be addressed to the main forum. Issues of importance to individual block teams should be posted on the block forums.<br /></div>
+							</div>
+							<div class="clearer"></div>
+
+						<br /><br /><br /><br />
+					</td>
+					<td style="width: 210px;" id="right-column">
+						<div style="text-align: center;">
+							<form method="get" action="#">
+							<div>
+								<input name="id" value="1" type="hidden"><input name="edit" value="1" type="hidden">
+								<input name="sesskey" value="LcFjvfaZaA" type="hidden">
+								<input value="Turn editing on" type="submit">
+							</div>
+							</form>
+						</div>
+
+						<br />
+						<div id="inst4" class="block_calendar_month sideblock">
+							<div class="header">
+								<a linkindex="7" href="#sb-2" class="skip-block" title="Skip Calendar">
+									<span class="accesshide">Skip Calendar</span>
+								</a>
+								<div class="title">
+									<div class="hide-show">
+										<a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'images' ); return false;">
+											<img src="images/spacer.gif" id="togglehide_inst4" alt="Show or hide block" class="hide-show-image" />
+										</a>
+									</div>
+									<h2>Calendar</h2>
+								</div>
+							</div>
+
+							<div class="content">
+								<div id="overDiv" style="position: absolute; visibility: hidden; z-index: 1000;"></div>
+								<script type="text/javascript" src="images/overlib.htm"></script>
+							
+								<div class="calendar-controls">
+									<a linkindex="8" class="previous" href="#" title="Previous month">
+										<span class="arrow">◄</span>
+										<span class="accesshide">&nbsp;Previous month</span>
+									</a>
+									<span class="hide"> | </span>
+									<span class="current">
+										<a linkindex="9" href="#">July 2007</a>
+									</span>
+									<span class="hide"> | </span>
+									<a linkindex="10" class="next" href="#" title="Next month">
+										<span class="accesshide">Next month&nbsp;</span>
+										<span class="arrow">►</span>
+									</a>
+									<span class="clearer">
+										<!-- -->
+									</span>
+								</div>
+		
+								<table class="minicalendar" summary="Data table, July 2007 Calendar">
+									<tbody>
+										<tr class="weekdays">
+											<th scope="col">
+												<abbr title="Sunday">Sun</abbr>
+											</th>
+											<th scope="col">
+												<abbr title="Monday">Mon</abbr>
+											</th>
+											<th scope="col">
+												<abbr title="Tuesday">Tue</abbr>
+											</th>
+											<th scope="col">
+												<abbr title="Wednesday">Wed</abbr>
+											</th>
+											<th scope="col">
+												<abbr title="Thursday">Thu</abbr>
+											</th>
+											<th scope="col">
+												<abbr title="Friday">Fri</abbr>
+											</th>
+											<th scope="col">
+												<abbr title="Saturday">Sat</abbr>
+											</th>
+										</tr>
+										<tr>
+											<td class="weekend day">1</td>
+											<td class="day">2</td>
+											<td class="day">3</td>
+											<td class="day">4</td>
+											<td class="day">5</td>
+											<td class="day">6</td>
+											<td class="weekend day">7</td>
+										</tr>
+										<tr>
+											<td class="weekend day">8</td>
+											<td class="day">9</td>
+											<td class="day">10</td>
+											<td class="day">11</td>
+											<td class="day">12</td>
+											<td class="day">13</td>
+											<td class="weekend day">14</td>
+										</tr>
+										<tr>
+											<td class="weekend day">15</td>
+											<td class="day">16</td>
+											<td class="day">17</td>
+											<td class="day">18</td>
+											<td class="day">19</td>
+											<td class="day">20</td>
+											<td class="weekend day">21</td>
+										</tr>
+										<tr>
+											<td class="weekend day">22</td>
+											<td class="day">23</td>
+											<td class="day">24</td>
+											<td class="day">25</td>
+											<td class="day">26</td>
+											<td class="day today eventnone">
+												<span class="accesshide">Today Friday,  27 July </span>
+												<a href="#" onmouseover="return overlib('No events', CAPTION, 'Today Friday,  27 July');" onmouseout="return nd();">27</a>
+											</td>
+											<td class="weekend day">28</td>
+										</tr>
+										<tr>
+											<td class="weekend day">29</td>
+											<td class="day">30</td>
+											<td class="day">31</td>
+											<td class="dayblank">&nbsp;</td>
+											<td class="dayblank">&nbsp;</td>
+											<td class="dayblank">&nbsp;</td>
+											<td class="dayblank">&nbsp;</td>
+										</tr>
+									</tbody>
+									</table>
+								</div>
+							</div>
+
+							<script type="text/javascript">
+							//<![CDATA[
+							elementCookieHide("inst4"); 
+							//]]>
+							</script>
+			
+							<span id="sb-2" class="skip-block-to"></span>
+							<div id="inst7" class="block_synch sideblock">
+								<div class="header">
+									<a linkindex="11" href="#sb-3" class="skip-block" title="Skip Synchronise">
+										<span class="accesshide">Skip Synchronise</span>
+									</a>
+									<div class="title">
+										<div class="hide-show">
+											<a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'images' ); return false;">
+												<img src="images/spacer.gif" id="togglehide_inst7" alt="Show or hide block" class="hide-show-image" />
+											</a>
+										</div>
+										<h2>Synchronise</h2>
+									</div>
+								</div>
+								<div class="content">
+									<ul class="list">
+										<li class="r0">
+											<div class="icon column c0">
+												<img src="images/backup.gif" class="icon" alt="" />
+											</div>
+											<div class="column c1">
+												<a linkindex="12" href="synch_home.html">Synchronise Moodle</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<script type="text/javascript">
+							//<![CDATA[
+							elementCookieHide("inst7"); 
+							//]]>
+							</script>
+							<span id="sb-3" class="skip-block-to"></span>
+						</td>
+					  </tr>
+					</tbody>
+				</table>
+
+		
+			</div>
+			<!-- END OF CONTENT -->
+			<!-- BEGINNING OF FOOTER -->		
+			<div id="footer">
+				<hr/>
+				<p class="helplink"/>
+				<div class="logininfo">
+					You are logged in as 
+					<a linkindex="13" href="#">Admin User</a>  (<a href="#">Logout</a>)
+				</div>
+				<div class="sitelink">
+					<a linkindex="14" title="moodle 1.9 dev (2007071900)" href="#">
+						<br/>
+						<img style="width: 100px; height: 30px;" src="images/moodlelogo.gif" alt="moodlelogo"/>
+					</a>
+				</div>
+			</div>
+			<!-- END OF FOOTER -->
+		</div>
+	</body>
+</html>

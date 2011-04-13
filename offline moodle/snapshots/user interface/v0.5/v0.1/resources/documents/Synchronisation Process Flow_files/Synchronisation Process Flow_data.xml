@@ -1,0 +1,382 @@
+<VisioDocument xmlns="urn:schemas-microsoft-com:office:visio">
+	<DocumentProperties>
+		<Title>synchronisation process flow</Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Page-1" NameU="Page-1">
+			<Value Unit="STR">3.0000 mm</Value>
+			<Label>Connector Offset</Label>
+			<Shapes>
+				<Shape ID="1" UniqueID="{C07B7B02-E092-4F9F-BBF5-73E4A6ADF2A0}" Name="HTML" NameU="HTML" Master="7">
+					<Text>Moodle Page.html</Text>
+					<XForm>
+						<PinX Unit="MM">1.777887139107612</PinX>
+						<PinY Unit="MM">6.505413385826773</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Moodle Page.html</HLURL:Description>
+										<HLURL:Address>Moodle Page.html</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:AbsoluteURL>file://C:\projects\VLE\Mobile Moodle\admin\development\user interface\diagrams\Moodle Page.html</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="Title" NameU="Title">
+						<Value Unit="STR">Home Page</Value>
+						<Label>Title</Label>
+					</Prop>
+					<Prop ID="3" Name="FileSize" NameU="FileSize">
+						<Value Unit="STR">Unknown</Value>
+						<Label>File size</Label>
+					</Prop>
+					<Prop ID="4" Name="ModDate" NameU="ModDate">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Last modification date</Label>
+					</Prop>
+					<Prop ID="2" Name="Error" NameU="Error">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Error</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="29" UniqueID="{5F055291-6665-4E61-A32E-AB30064E4837}" Name="HTML.29" NameU="HTML.29" Master="7">
+					<Text>Synchronise Home Page.html</Text>
+					<XForm>
+						<PinX Unit="MM">4.245734908136484</PinX>
+						<PinY Unit="MM">4.715059055118111</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Synchronise Home Page.html</HLURL:Description>
+										<HLURL:Address>Synchronise Home Page.html</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:AbsoluteURL>file://C:\projects\VLE\Mobile Moodle\admin\development\user interface\diagrams\Synchronise Home Page.html</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="Title" NameU="Title">
+						<Value Unit="STR">Home Page</Value>
+						<Label>Title</Label>
+					</Prop>
+					<Prop ID="3" Name="FileSize" NameU="FileSize">
+						<Value Unit="STR">Unknown</Value>
+						<Label>File size</Label>
+					</Prop>
+					<Prop ID="4" Name="ModDate" NameU="ModDate">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Last modification date</Label>
+					</Prop>
+					<Prop ID="2" Name="Error" NameU="Error">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Error</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="15" UniqueID="{C358509F-85A5-4B9A-A88A-3D3265325D03}" Name="HTML.15" NameU="HTML.15" Master="7">
+					<Text>Select Items.html</Text>
+					<XForm>
+						<PinX Unit="MM">6.062992125984255</PinX>
+						<PinY Unit="MM">4.725393700787402</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Select Items.html</HLURL:Description>
+										<HLURL:Address>Select Items.html</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:AbsoluteURL>file://C:\projects\VLE\Mobile Moodle\admin\development\user interface\diagrams\Select Items.html</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="Title" NameU="Title">
+						<Value Unit="STR">Home Page</Value>
+						<Label>Title</Label>
+					</Prop>
+					<Prop ID="3" Name="FileSize" NameU="FileSize">
+						<Value Unit="STR">Unknown</Value>
+						<Label>File size</Label>
+					</Prop>
+					<Prop ID="4" Name="ModDate" NameU="ModDate">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Last modification date</Label>
+					</Prop>
+					<Prop ID="2" Name="Error" NameU="Error">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Error</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="43" UniqueID="{8000794C-E90E-4B43-9A10-9A97E31D3E06}" Name="HTML.43" NameU="HTML.43" Master="7">
+					<Text>Manage Conflicts.html</Text>
+					<XForm>
+						<PinX Unit="MM">8.746391076115488</PinX>
+						<PinY Unit="MM">4.725393700787402</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Manage Conflicts.html</HLURL:Description>
+										<HLURL:Address>Manage Conflicts.html</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:AbsoluteURL>file://C:\projects\VLE\Mobile Moodle\admin\development\user interface\diagrams\Manage Conflicts.html</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="Title" NameU="Title">
+						<Value Unit="STR">Home Page</Value>
+						<Label>Title</Label>
+					</Prop>
+					<Prop ID="3" Name="FileSize" NameU="FileSize">
+						<Value Unit="STR">Unknown</Value>
+						<Label>File size</Label>
+					</Prop>
+					<Prop ID="4" Name="ModDate" NameU="ModDate">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Last modification date</Label>
+					</Prop>
+					<Prop ID="2" Name="Error" NameU="Error">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Error</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="57" UniqueID="{EAE93CF6-FA47-4EEB-809E-8B24ADA33552}" Name="HTML.57" NameU="HTML.57" Master="7">
+					<Text>Display Results.html</Text>
+					<XForm>
+						<PinX Unit="MM">8.746391076115488</PinX>
+						<PinY Unit="MM">2.775590551181101</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Display Results.html</HLURL:Description>
+										<HLURL:Address>Display Results.html</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:AbsoluteURL>file://C:\projects\VLE\Mobile Moodle\admin\development\user interface\diagrams\Display Results.html</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="Title" NameU="Title">
+						<Value Unit="STR">Home Page</Value>
+						<Label>Title</Label>
+					</Prop>
+					<Prop ID="3" Name="FileSize" NameU="FileSize">
+						<Value Unit="STR">Unknown</Value>
+						<Label>File size</Label>
+					</Prop>
+					<Prop ID="4" Name="ModDate" NameU="ModDate">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Last modification date</Label>
+					</Prop>
+					<Prop ID="2" Name="Error" NameU="Error">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Error</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="71" UniqueID="{D6B130D9-C1AE-430F-A996-F7E5E7882013}" Name="HTML.71" NameU="HTML.71" Master="7">
+					<Text>Configure Synchronisation.html</Text>
+					<XForm>
+						<PinX Unit="MM">4.245734908136484</PinX>
+						<PinY Unit="MM">6.899114173228346</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Configure Synchronisation.html</HLURL:Description>
+										<HLURL:Address>Configure Synchronisation.html</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:AbsoluteURL>file://C:\projects\VLE\Mobile Moodle\admin\development\user interface\diagrams\Configure Synchronisation.html</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="Title" NameU="Title">
+						<Value Unit="STR">Home Page</Value>
+						<Label>Title</Label>
+					</Prop>
+					<Prop ID="3" Name="FileSize" NameU="FileSize">
+						<Value Unit="STR">Unknown</Value>
+						<Label>File size</Label>
+					</Prop>
+					<Prop ID="4" Name="ModDate" NameU="ModDate">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Last modification date</Label>
+					</Prop>
+					<Prop ID="2" Name="Error" NameU="Error">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Error</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="85" UniqueID="{E8039152-23B7-453C-8D81-3E1934DC91DD}" Name="Dynamic connector" NameU="Dynamic connector" Master="3">
+					<XForm>
+						<PinX Unit="MM">2.818077427821523</PinX>
+						<PinY Unit="MM">5.319635826771655</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="86" UniqueID="{9B13058B-23B6-481F-84C4-00B9323467EC}" Name="Dynamic connector.86" NameU="Dynamic connector.86" Master="3">
+					<XForm>
+						<PinX Unit="MM">5.154363517060370</PinX>
+						<PinY Unit="MM">4.720226377952757</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="87" UniqueID="{ACE8E311-7CC4-4AC5-80E8-F329B5C640E9}" Name="Dynamic connector.87" NameU="Dynamic connector.87" Master="3">
+					<XForm>
+						<PinX Unit="MM">7.404691601049870</PinX>
+						<PinY Unit="MM">4.725393700787402</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="88" UniqueID="{72BA830C-3CAA-4EC2-A4B2-E385E1CB0402}" Name="Dynamic connector.88" NameU="Dynamic connector.88" Master="3">
+					<XForm>
+						<PinX Unit="MM">8.746391076115486</PinX>
+						<PinY Unit="MM">3.750492125984251</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="89" UniqueID="{56FC0ADF-B393-4DBD-A118-F984B99DFBEC}" Name="Dynamic connector.89" NameU="Dynamic connector.89" Master="3">
+					<XForm>
+						<PinX Unit="MM">4.245734908136484</PinX>
+						<PinY Unit="MM">5.807086614173228</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="90" UniqueID="{A2946EEF-6BBA-46CA-AFDF-375EE8BD0668}" Name="Dynamic connector.90" NameU="Dynamic connector.90" Master="3">
+					<XForm>
+						<PinX Unit="MM">6.496062992125986</PinX>
+						<PinY Unit="MM">3.164124015748032</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="91" UniqueID="{6DE49F07-B56B-418A-B48B-6508AE12990D}" Name="HTML.91" NameU="HTML.91" Master="7">
+					<Text>Course Page.html</Text>
+					<XForm>
+						<PinX Unit="MM">1.659776902887140</PinX>
+						<PinY Unit="MM">4.715059055118111</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Course Page.html</HLURL:Description>
+										<HLURL:Address>Course Page.html</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:AbsoluteURL>file://C:\projects\VLE\Mobile Moodle\admin\development\user interface\diagrams\Course Page.html</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="Title" NameU="Title">
+						<Value Unit="STR">Home Page</Value>
+						<Label>Title</Label>
+					</Prop>
+					<Prop ID="3" Name="FileSize" NameU="FileSize">
+						<Value Unit="STR">Unknown</Value>
+						<Label>File size</Label>
+					</Prop>
+					<Prop ID="4" Name="ModDate" NameU="ModDate">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Last modification date</Label>
+					</Prop>
+					<Prop ID="2" Name="Error" NameU="Error">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Error</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="105" UniqueID="{235670D4-82BE-41EB-9FFA-0A9182AB7B97}" Name="HTML.105" NameU="HTML.105" Master="7">
+					<Text>Module Page.html</Text>
+					<XForm>
+						<PinX Unit="MM">1.581036745406824</PinX>
+						<PinY Unit="MM">2.549704724409449</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Module Page.html</HLURL:Description>
+										<HLURL:Address>Module Page.html</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:AbsoluteURL>file://C:\projects\VLE\Mobile Moodle\admin\development\user interface\diagrams\Module Page.html</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="Title" NameU="Title">
+						<Value Unit="STR">Home Page</Value>
+						<Label>Title</Label>
+					</Prop>
+					<Prop ID="3" Name="FileSize" NameU="FileSize">
+						<Value Unit="STR">Unknown</Value>
+						<Label>File size</Label>
+					</Prop>
+					<Prop ID="4" Name="ModDate" NameU="ModDate">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Last modification date</Label>
+					</Prop>
+					<Prop ID="2" Name="Error" NameU="Error">
+						<Value Unit="STR">Unknown</Value>
+						<Label>Error</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="119" UniqueID="{DDAFFC6C-68FF-4B80-A73E-F7FA6E248B5C}" Name="Dynamic connector.119" NameU="Dynamic connector.119" Master="3">
+					<XForm>
+						<PinX Unit="MM">2.952755905511812</PinX>
+						<PinY Unit="MM">4.715059055118111</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="120" UniqueID="{94DF503B-3EB9-401D-9D86-AFE5740EF398}" Name="Dynamic connector.120" NameU="Dynamic connector.120" Master="3">
+					<XForm>
+						<PinX Unit="MM">2.719652230971129</PinX>
+						<PinY Unit="MM">3.922982283464568</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="121" UniqueID="{CDF210ED-2D89-4120-AEA7-266DF6547D74}" Name="Dynamic connector.121" NameU="Dynamic connector.121" Master="3">
+					<XForm>
+						<PinX Unit="MM">4.439468503937009</PinX>
+						<PinY Unit="MM">4.424458661417324</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="VBackground" NameU="VBackground">
+			<Shapes>
+				<Shape ID="1" UniqueID="{DD4CC6D8-6BE7-4899-AF78-14AE121F53FB}" Name="Background web" NameU="Background web" Master="6">
+					<XForm>
+						<PinX Unit="MM">0.000000000000000</PinX>
+						<PinY Unit="MM">0.000000000000000</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

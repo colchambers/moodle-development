@@ -1,0 +1,71 @@
+<html>
+<head>
+<LINK REL="stylesheet" TYPE="text/css" HREF="Synchronisation Process Flow.css">
+<title>
+Synchronisation Process Flow
+</title>
+
+<script src="Synchronisation Process Flow_utils.js"></script>
+<script>
+<!--
+var pageID = 0;
+
+function BodyOnLoad ()
+{
+	var pageIndex = PageIndexFromID (pageID);
+	if (pageIndex >= 0)
+	{
+		PageUpdated(pageIndex);
+	}
+}
+
+//-->
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" onload="BodyOnLoad()" onclick="clickMenu()">
+<base target="_top">
+
+<div id=menu1 
+  onclick="clickMenu()" 
+  onmouseover="toggleMenu()" 
+  onmouseout="toggleMenu()" 
+  style="position:absolute; 
+         display:none; 
+         border: 2px outset black; 
+         width:220; 
+         background-color:menu; 
+		 z-index:10"> 
+</div> 
+
+<DIV id=RasterDiv>
+
+<center>
+  <IMG SRC="Synchronisation Process Flow_gif_1.gif" ALT="" BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" ALT="Module Page.html" TITLE="Module Page.html" HREF="Module Page.html" COORDS=" 116,352 116,366 130,366 130,365 116,365 117,352" onmouseover="UpdateProps(0,105)" >
+  <AREA shape="POLYGON" ALT="Module Page.html" TITLE="Module Page.html" HREF="Module Page.html" COORDS=" 111,435 111,431 135,431 135,377 130,373 130,366 116,352 82,352 82,426 86,426 86,431 106,431 106,435 55,435 55,453 162,453 162,435 111,435" onmouseover="UpdateProps(0,105)" >
+  <AREA shape="POLYGON" ALT="Course Page.html" TITLE="Course Page.html" HREF="Course Page.html" COORDS=" 122,203 122,218 135,218 135,217 122,217 123,203" onmouseover="UpdateProps(0,91)" >
+  <AREA shape="POLYGON" ALT="Course Page.html" TITLE="Course Page.html" HREF="Course Page.html" COORDS=" 116,287 116,283 140,283 140,229 135,224 135,218 122,203 88,203 88,277 91,277 91,283 111,283 111,287 60,287 60,305 167,305 167,287 116,287" onmouseover="UpdateProps(0,91)" >
+  <AREA shape="POLYGON" ALT="Configure Synchronisation.html" TITLE="Configure Synchronisation.html" HREF="Configure Synchronisation.html" COORDS=" 299,54 299,69 312,69 312,68 299,68 300,54" onmouseover="UpdateProps(0,71)" >
+  <AREA shape="POLYGON" ALT="Configure Synchronisation.html" TITLE="Configure Synchronisation.html" HREF="Configure Synchronisation.html" COORDS=" 320,154 320,138 294,138 294,133 317,133 317,80 312,75 312,69 299,54 265,54 265,128 268,128 268,133 288,133 288,138 262,138 262,154 229,154 229,172 353,172 353,154 320,154" onmouseover="UpdateProps(0,71)" >
+  <AREA shape="POLYGON" ALT="Display Results.html" TITLE="Display Results.html" HREF="Display Results.html" COORDS=" 607,336 607,351 621,351 621,350 607,350 608,336" onmouseover="UpdateProps(0,57)" >
+  <AREA shape="POLYGON" ALT="Display Results.html" TITLE="Display Results.html" HREF="Display Results.html" COORDS=" 602,420 602,416 626,416 626,362 621,357 621,351 607,336 573,336 573,410 577,410 577,416 597,416 597,420 539,420 539,438 660,438 660,420 602,420" onmouseover="UpdateProps(0,57)" >
+  <AREA shape="POLYGON" ALT="Manage Conflicts.html" TITLE="Manage Conflicts.html" HREF="Manage Conflicts.html" COORDS=" 607,203 607,218 621,218 621,217 607,217 608,203" onmouseover="UpdateProps(0,43)" >
+  <AREA shape="POLYGON" ALT="Manage Conflicts.html" TITLE="Manage Conflicts.html" HREF="Manage Conflicts.html" COORDS=" 623,302 623,286 602,286 602,282 626,282 626,229 621,224 621,218 607,203 573,203 573,277 577,277 577,282 597,282 597,286 575,286 575,302 559,302 559,320 639,320 639,302 623,302" onmouseover="UpdateProps(0,43)" >
+  <AREA shape="POLYGON" ALT="Select Items.html" TITLE="Select Items.html" HREF="Select Items.html" COORDS=" 423,203 423,218 437,218 437,217 423,217 424,203" onmouseover="UpdateProps(0,15)" >
+  <AREA shape="POLYGON" ALT="Select Items.html" TITLE="Select Items.html" HREF="Select Items.html" COORDS=" 418,286 418,282 442,282 442,229 437,224 437,218 423,203 389,203 389,277 393,277 393,282 413,282 413,286 364,286 364,304 467,304 467,286 418,286" onmouseover="UpdateProps(0,15)" >
+  <AREA shape="POLYGON" ALT="Synchronise Home Page.html" TITLE="Synchronise Home Page.html" HREF="Synchronise Home Page.html" COORDS=" 299,203 299,218 312,218 312,217 299,217 300,203" onmouseover="UpdateProps(0,29)" >
+  <AREA shape="POLYGON" ALT="Synchronise Home Page.html" TITLE="Synchronise Home Page.html" HREF="Synchronise Home Page.html" COORDS=" 321,305 347,305 347,287 294,287 294,283 317,283 317,229 312,224 312,218 299,203 265,203 265,277 268,277 268,283 288,283 288,287 235,287 235,305 261,305 261,321 321,321 321,305" onmouseover="UpdateProps(0,29)" >
+  <AREA shape="POLYGON" ALT="Moodle Page.html" TITLE="Moodle Page.html" HREF="Moodle Page.html" COORDS=" 130,81 130,96 143,96 143,95 130,95 131,81" onmouseover="UpdateProps(0,1)" >
+  <AREA shape="POLYGON" ALT="Moodle Page.html" TITLE="Moodle Page.html" HREF="Moodle Page.html" COORDS=" 124,165 124,160 148,160 148,107 143,102 143,96 130,81 96,81 96,155 99,155 99,160 119,160 119,165 68,165 68,182 176,182 176,165 124,165" onmouseover="UpdateProps(0,1)" >
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>

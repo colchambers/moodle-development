@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/styles_002.css"><!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="stylesheets/styles_ie7.css" />
+        <![endif]--><!--[if IE 6]>
+            <link rel="stylesheet" type="text/css" href="stylesheets/styles_ie6.css" />
+        <![endif]--><title>Course: Innovations in elearning</title>
+        
+        <link rel="shortcut icon" href="stylesheets/favicon.ico">
+        <!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(scripts/csshover.htc);} /*]]>*/</style>-->
+
+        <script type="text/javascript" src="scripts/javascript-static.js"></script>
+        <script type="text/javascript" src="scripts/overlib.js"></script>
+        <script type="text/javascript" src="scripts/overlib_cssstyle.js"></script>
+        <script type="text/javascript" src="scripts/cookies.js"></script>
+        <script type="text/javascript" src="scripts/ufo.js"></script>
+
+        <script type="text/javascript" defer="defer">
+        
+        //<![CDATA[
+        
+            setTimeout('fix_column_widths()', 20);
+            
+            function openpopup(url,name,options,fullscreen) {
+               if (url.substr(0,4)!='http') { // add wwwroot if referential link passed
+              fullurl = "http://learn.open.ac.uk" + url;
+               } else {
+                  fullurl = url;
+               }
+              windowobj = window.open(fullurl,name,options);
+              if (fullscreen) {
+                 windowobj.moveTo(0,0);
+                 windowobj.resizeTo(screen.availWidth,screen.availHeight);
+              }
+              windowobj.focus();
+              return false;
+            }
+            
+            function uncheckall() {
+              void(d=document);
+              void(el=d.getElementsByTagName('INPUT'));
+              for(i=0;i<el.length;i++) {
+                void(el[i].checked=0);
+              }
+            }
+            
+            function checkall() {
+              void(d=document);
+              void(el=d.getElementsByTagName('INPUT'));
+              for(i=0;i<el.length;i++) {
+                void(el[i].checked=1);
+              }
+            }
+            
+            function inserttext(text) {
+              text = ' ' + text + ' ';
+              if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+                var caretPos = opener.document.forms['theform'].message.caretPos;
+                caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+              } else {
+                opener.document.forms['theform'].message.value  += text;
+              }
+              opener.document.forms['theform'].message.focus();
+            }
+        
+        //]]>
+        </script>
+        <script type="text/javascript">
+            function showcontent(content)
+            {
+                document.getElementById(content).style.display="block";
+            }
+            var newwindow;
+            function popupinfo(url,windowName, windowFeatures)
+            {
+                popupclose();
+                newwindow= window.open (url, windowName, windowFeatures);
+                newwindow.focus();
+            }
+            function popupclose() {
+                if (newwindow != null) {
+                    if (!newwindow.closed) {
+                        newwindow.close();
+                    } 
+                }    
+            }
+        </script>
+        <style type="text/css" media="all"><!-- @import "stylesheets/header.css"; @import "stylesheets/ioemenu.css"; --></style>
+        <!--[if IE]>
+            <style type="text/css">
+  
+                #page { width: expression(document.body.clientWidth < 753 ? "752px" : "auto"); }
+                #help #page { width: auto; }
+            </style>
+        <![endif]-->
+    </head>
+    <body onunload="popupclose()" class="course course-1731 dir-ltr lang-en_vl_utf8 gecko gecko18" id="course-view">
+        <div id="page">
+            <script type="text/javascript" src="scripts/header.js"></script>
+            <script type="text/javascript" src="scripts/ioemenu.js"></script>
+            <div id="ou-topbars">
+                <div id="ou-lhs2">
+                    <a class="inactive" href="#"><img src="images/oulogo_hor.gif" alt="The Open University" height="38" width="53" /></a>
+                    <a id="ou-skip5" href="#ou-content">Skip to content</a>
+                </div>
+            <div id="ou-rhs">
+                <div id="ou-row1a">
+                    <ul>
+                        <li><a id="ou-ouhome" class="inactive" href="#">OU Home</a></li>
+                        <li><a id="ou-study" class="inactive" href="#">Study at the OU</a></li>
+                        <li><a id="ou-about" class="inactive" href="#">About the OU</a></li>
+                        <li><a id="ou-research" class="inactive" href="#">Research at the OU</a></li>
+                        <li><a id="ou-search" class="inactive" href="#">Search</a></li>
+                        <li><a id="ou-contact" class="inactive" href="#">Contact the OU</a></li>
+                    </ul>
+                </div>
+                <div id="ou-row3a">
+                    <div id="ou-row3b">
+                        <ul>
+                            <li>Joe Bloggs (0123456)</li>
+                            <li><a href="index.html" id="ou-offlinemoodlehome">Offline Moodle Home</a></li>
+                            <li><a class="inactive" href="#" id="ou-studenthome">StudentHome</a></li>
+                            <li><a class="inactive" href="#" id="ou-tutorhome">TutorHome</a></li>
+                            <li><a class="inactive" href="#" id="ou-intranethome">IntranetHome</a></li>
+                            <li><a class="inactive" href="#" id="ou-signout">Sign out</a></li>
+                        </ul>
+                    </div>
+                    &nbsp; <a class="inactive" href="#" id="ou-access">Accessibility</a>
+                </div>
+            </div>
+            <div id="ou-row5"></div>
+        </div>
+        <div id="tsxcontent">
+            <div id="header">
+                <h1 class="headermain">Offline Moodle: Innovations in elearning</h1>
+                <div class="clearer"></div>
+            </div>
+            <div class="navbar" id="navbar">
+                <div class="breadcrumb">
+                    <h2 class="accesshide">You are here</h2>
+                    <ul>
+                        <li class="first">H807-07</li>
+                    </ul>
+                </div>
+                <div class="clearer"></div>
+            </div>
+            <div class="clearer"></div>
+            <!-- END OF HEADER -->
+              
+            <div id="content" class="belowheader">
+                <div class="course-content">
+                    <div class="study-format">
+                        <div id="left-column">
+                            <a href="#sb-1" class="skip-block">Skip Welcome</a>
+                            <div id="inst1503" class="block_html sideblock">
+                                <div class="header">
+                                    <div class="title">
+                                        <h2>Welcome</h2>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        <img style="width: 165px; height: 100px;" src="images/h807v1.jpg" height="100" width="165"/>
+                                    </p>
+                                    <p>It's a pleasure to welcome you to the second presentation of H807.
+                                                Take a look around the website and familiarise yourself with the
+                                                structure of the course. You will see a variety of links, which take
+                                                you to various parts of the course. We suggest you start with the
+                                                Course Guide, which you will find at the very top of the website
+                                                structure. Spend a little time getting to know where you can find
+                                                things on the website, such as links to the OU blogging system and
+                                                instructions and the course wiki. StudentHome is another area of useful
+                                                information. This is where you find details on how to use the
+                                                FirstClass forums. The forums area will take you to individual tutor
+                                                groups, and to the cafe, which is a great place to meet students from
+                                                across the whole course. The course spans 22 weeks and consists of
+                                                three blocks of learning activities. Initially, you will be able to see
+                                                only the first block of material. As the weeks roll by, more of the
+                                                course will become visible. Each block has an introduction, and the
+                                                course material is structured as learning activities with tasks for you
+                                                to complete, sometimes individually and sometimes with other members of
+                                                your group. </p>
+                                    <p>
+                                        <a class="inactive" href="#">
+                                            <u>More</u>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <span id="sb-1" class="skip-block-to"/>
+                        </div>
+                        <div id="right-column">
+                            <a href="#sb-2" class="skip-block">Skip Latest course news</a>
+                            <div id="inst1502" class="block_news_items sideblock">
+                                <div class="header">
+                                    <div class="title">
+                                        <h2>Latest course news</h2>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="unlist">
+                                        <li class="post">
+                                            <div class="head">
+                                                <div class="date">9 Jul, 15:59</div>
+                                                <div class="name">Jane Doe</div>
+                                            </div>
+                                            <div class="info">Contents of your blog <a class="inactive" href="#">more...</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="footer">
+                                        <a class="inactive" href="#">Older topics</a> ...</div>
+                                </div>
+                            </div>
+                            <span id="sb-2" class="skip-block-to"/>
+                            <a href="#sb-3" class="skip-block">Skip Assessment details</a>
+                            <div id="inst11934" class="block_assessment sideblock">
+                                <div class="header">
+                                    <div class="title">
+                                        <h2>Assessment details</h2>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li class="assessment_past">
+                                            <span class="assessment_date">5 Mar</span>
+                                            <span class="accesshide">-</span>
+                                            <span class="assessment_name">TMA01</span>
+                                        </li>
+                                        <li class="assessment_past">
+                                            <span class="assessment_date">9 Apr</span>
+                                            <span class="accesshide">-</span>
+                                            <span class="assessment_name">TMA02</span>
+                                        </li>
+                                        <li class="assessment_past">
+                                            <span class="assessment_date">14 May</span>
+                                            <span class="accesshide">-</span>
+                                            <span class="assessment_name">TMA03</span>
+                                        </li>
+                                        <li class="assessment_past">
+                                            <span class="assessment_date">9 Jul</span>
+                                            <span class="accesshide">-</span>
+                                            <span class="assessment_name">ECA</span>
+                                        </li>
+                                    </ul>
+                                    <div class="footer"> </div>
+                                </div>
+                            </div>
+                            <span id="sb-3" class="skip-block-to"/>
+                            <a class="skip-block" href="#sb-4">Skip Update Management</a>
+                                <div class="block_course_list sideblock" id="inst17683">
+                                    <div class="header">
+                                        <div class="title"><h2>Update Management</h2></div>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="list">
+                                            <li class="r1">
+                                                <div class="column c1">
+                                                    <a href="installed-courses.html">Update/Install Course</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="footer">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="skip-block-to" id="sb-4"/>
+                        </div>
+                        <div id="middle-column" class="has-left-column has-right-column">
+                            <span id="ou-content"/>
+                            <ul class="weeks">
+                                <li id="section-0" class="section main">
+                                    <div class="content">
+                                        <div class="summary"/>
+                                        <ul class="section img-text">
+                                            <li class="activity resource">
+                                                <a class="inactive" href="#">
+                                                    <img src="images/pdf.gif" class="activityicon" alt=""/>
+                                                    <span>Course Guide<span class="accesshide"> PDF document</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="activity resource">
+                                                <a class="inactive" href="#">
+                                                    <img src="images/web.gif" class="activityicon" alt=""/>
+                                                    <span>Forums<span class="accesshide"> file</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="activity label label_header">
+                                                <h3>Course material</h3>
+                                            </li>
+                                            <li class="activity resourcepage">
+                                                <a class="inactive" href="#">
+                                                    <img src="images/icon.gif" class="activityicon" alt=""/>
+                                                    <span>Block 1<span class="accesshide"> Resource page</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="activity label label_header">
+                                                <h3>Course resources</h3>
+                                            </li>
+                                            <li class="activity resource">
+                                                <a class="inactive" href="#">
+                                                    <img src="images/pdf.gif" class="activityicon" alt=""/>
+                                                    <span>Assignment Guide<span class="accesshide"> PDF document</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="activity resourcepage">
+                                                <a class="inactive" href="#">
+                                                    <img src="images/icon.gif" class="activityicon" alt=""/>
+                                                    <span>Block 1 Readings<span class="accesshide"> Resource page</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="activity label label_header">
+                                                <h3>Other useful information</h3>
+                                            </li>
+                                            <li class="activity resourcepage">
+                                                <a class="inactive" href="#">
+                                                    <img src="images/icon.gif" class="activityicon" alt=""/>
+                                                    <span>Legal and copyright statement<span class="accesshide"> Resource page</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!--class='section'-->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="studycalheader">
+                                        <h3>Study calendar</h3>
+                                        <span>&nbsp;(<a class="inactive" href="#">show all weeks</a>)</span>
+                                    </div>
+                                </li>
+                                <li id="section-19" class="section main oddrow">
+                                    <div class="left side">19&nbsp;</div>
+                                    <div class="content">
+                                        <div class="innercontent">
+                                            <div class="weekdates"> 9 June</div>
+                                            <div class="summary"/>
+                                            <ul class="section img-text">
+                                                <li class="activity resource">
+                                                    <a class="inactive" href="#">
+                                                        <img src="images/web.gif" class="activityicon" alt=""/>
+                                                        <span>E-tivities: participating<span class="accesshide"> file</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="activity resource">
+                                                    <a class="inactive" href="#">
+                                                        <img src="images/web.gif" class="activityicon" alt=""/>
+                                                        <span>Describing patterns for elearning<span class="accesshide"> file</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="activity resource">
+                                                    <a class="inactive" href="#">
+                                                        <img src="images/web.gif" class="activityicon" alt=""/>
+                                                        <span>Supporting your elearners<span class="accesshide"> file</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--class='section'-->
+                                        </div>
+                                    </div>
+                                    <div class="right side"/>
+                                </li>
+                                <li id="section-20" class="section main evenrow">
+                                    <div class="left side">20&nbsp;</div>
+                                    <div class="content">
+                                        <div class="innercontent">
+                                            <div class="weekdates">  16 June</div>
+                                            <div class="summary"/>
+                                            <ul class="section img-text">
+                                                <li class="activity resource">
+                                                    <a class="inactive" href="#">
+                                                        <img src="images/web.gif" class="activityicon" alt=""/>
+                                                        <span>E-tivities: participating<span class="accesshide"> file</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="activity resource">
+                                                    <a class="inactive" href="#">
+                                                        <img src="images/web.gif" class="activityicon" alt=""/>
+                                                        <span>Student-created content<span class="accesshide"> file</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="activity resource">
+                                                    <a class="inactive" href="#">
+                                                        <img src="images/web.gif" class="activityicon" alt=""/>
+                                                        <span>Supporting your elearners<span class="accesshide"> file</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--class='section'-->
+                                        </div>
+                                    </div>
+                                    <div class="right side"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearer"/>
+                    </div>
+                </div>
+            </div>
+            <!-- end div content -->
+            <div id="footer"></div>
+        </div>
+        <div id="ou-row6"></div>
+        <div id="ou-footerf">
+            <div class="ou-footrow">
+                <ul>
+                    <li class="ou-footleft"><a class="inactive" href="#">New to OU</a></li>
+                    <li><a class="inactive" href="#">OU on TV</a></li>
+                    <li><a class="inactive" href="#">For Alumni</a></li>
+                    <li><a class="inactive" href="#">For Employers</a></li>
+                    <li><a class="inactive" href="#">Privacy</a></li>
+                    <li><a class="inactive" href="#">Copyright</a></li>
+                    <li><a class="inactive" href="#">Cymraeg</a></li>
+                    <li><a class="inactive" href="#">Jobs</a></li>
+                    <li><a class="inactive" href="#">News</a></li>
+                    <li><a class="inactive" href="#">Donate</a></li>
+                </ul>
+            </div>	
+            <div class="ou-footrow">© The Open University &nbsp; +44 (0)845 300 60 90 &nbsp; 
+                <a class="inactive" href="#">Email us</a>
+            </div>	
+        </div>
+            <script type="text/javascript">//<![CDATA[
+                //ou_init();
+            //]]></script>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function __RP_Callback_Helper(str, strCallbackEvent, splitSize, func){ 
+        	var event = null;
+            if (strCallbackEvent){
+                event = document.createEvent('Events');
+                event.initEvent(strCallbackEvent, true, true);
+            }
+            if (str && str.length > 0){
+                var splitList = str.split('|');
+                var strCompare = str;
+                if (splitList.length == splitSize)strCompare = splitList[splitSize-1];
+                var pluginList = document.plugins;
+                for (var count = 0; count < pluginList.length; count++){
+                    var sSrc = '';
+                    if (pluginList[count] && pluginList[count].src)sSrc = pluginList[count].src;
+                    if (strCompare.length >= sSrc.length){
+                        if (strCompare.indexOf(sSrc) != -1){
+                            func(str, count, pluginList, splitList);
+                            break;
+                        }
+                    }
+                }
+            }
+            if (strCallbackEvent)document.body.dispatchEvent(event);
+        }
+        function __RP_Coord_Callback(str){
+            var func = function(str, index, pluginList, splitList){
+                pluginList[index].__RP_Coord_Callback = str;pluginList[index].__RP_Coord_Callback_Left = splitList[0];
+                pluginList[index].__RP_Coord_Callback_Top = splitList[1];pluginList[index].__RP_Coord_Callback_Right = splitList[2];
+                pluginList[index].__RP_Coord_Callback_Bottom = splitList[3];
+            };
+            __RP_Callback_Helper(str, 'rp-js-coord-callback', 5, func);
+        }
+        
+        function __RP_Url_Callback(str){
+            var func = function(str, index, pluginList, splitList){
+                pluginList[index].__RP_Url_Callback = str;
+                pluginList[index].__RP_Url_Callback_Vid = splitList[0];
+                pluginList[index].__RP_Url_Callback_Parent = splitList[1];
+            };
+            __RP_Callback_Helper(str, 'rp-js-url-callback', 3, func);
+        }
+        
+        function __RP_TotalBytes_Callback(str){
+            var func = function(str, index, pluginList, splitList){
+                pluginList[index].__RP_TotalBytes_Callback = str;pluginList[index].__RP_TotalBytes_Callback_Bytes = splitList[0];
+            };
+            __RP_Callback_Helper(str, null, 2, func);
+        }
+        
+        function __RP_Connection_Callback(str){
+            var func = function(str, index, pluginList, splitList){
+                pluginList[index].__RP_Connection_Callback = str;
+                pluginList[index].__RP_Connection_Callback_Url = splitList[0];
+            };
+            __RP_Callback_Helper(str, null, 2, func);
+        }
+    </script>
+</html>

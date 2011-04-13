@@ -1,0 +1,126 @@
+/* CSS Document */
+
+#wrapper {
+	border:solid;
+	border-width:1px;
+	border-bottom-color:#000000;
+}
+
+#conflict {
+	background-color:#f6f6f5;
+	background: url(grey_fade.gif) repeat-x bottom; /*add background image to entire div including navbar*/
+	border-bottom:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#000000;
+}
+
+.handcursor{
+	cursor:pointer;
+}
+
+.navlist #bobcontent1-title, #bobcontent2-title, #bobcontent3-title {
+		display:block;
+		padding:1em 1.6em 1em 1em; 
+		background: url(sync.gif) no-repeat right ; 
+		/* background-image:url(css/grey_fade.gif); */
+}
+
+
+#bobcontent1, #bobcontent2, #bobcontent3  { /* style of expanded section */
+	background-color:#e4e4e3;
+	padding:0.5em;
+	clear:both;
+	border-top:solid;
+	border-bottom:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-top-color:#000000;
+	border-bottom-color:#000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.navlist {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:1em;
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+}
+
+.navlist li {
+	float:left;
+	     /* why not all li    */
+}
+
+.navlist a {
+	/* background-image:url(css/grey_fade.gif); */
+	display:block;
+	padding:1em 1em 1em 1.9em; 
+	text-decoration:none;
+	border-right:solid;
+	border-right-color:#000000;
+	border-right-width:1px;
+}
+
+.navlist a:hover {
+	text-decoration:underline;
+}
+
+.navlist #disabled{  /* this creates a <li> without an <a> but allows styling */
+	display:block;
+	padding:1em 1em 1em 1em;
+	border-right:solid;
+	border-right-color:#000000;
+	border-right-width:1px;
+}
+
+.navlist #disabled_delete{  /* this creates a <li> without an <a> but allows styling */
+	display:block;
+	padding:1em 1em 1em 1.7em;
+	border-right:solid;
+	border-right-color:#000000;
+	border-right-width:1px;
+	background: url(delete.gif) no-repeat left top ; 
+}
+
+.navlist #disabled_update{  /* this creates a <li> without an <a> but allows styling */
+	display:block;
+	padding:1em 1em 1em 1.7em;
+	border-right:solid;
+	border-right-color:#000000;
+	border-right-width:1px;
+	background: url(upload.gif) no-repeat left top ;
+}
+
+.navlist #disabled_synch{  /* this creates a <li> without an <a> but allows styling */
+		display:block;
+		padding:1em 1.6em 1em 1em; 
+		background: url(sync.gif) no-repeat right; 
+}
+
+/* -----------------THESE WILL BE DELETED FROM CSS, HAS TO GO IN CODE------------------------------------------------------- */
+
+.navlist #update{  /* this creates a <li> without an <a> but allows styling */
+	background: url(upload.gif) no-repeat left top ;
+}
+
+.navlist #delete{  /* this creates a <li> without an <a> but allows styling */
+	background: url(delete.gif) no-repeat left top ; 
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+#clear {
+	clear:both;
+}
+
+#oumoodle, #mymoodle {
+	padding:0.5em;
+	margin:5px;
+	border:solid;
+	border-color:#000000;
+	background-color:#FFFFFF;
+	border-width:1px;
+}

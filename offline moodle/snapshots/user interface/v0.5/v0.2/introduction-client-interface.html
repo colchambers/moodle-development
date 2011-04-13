@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<title>Offline Moodle System: Version 0.2: Client Interface</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" href="resources/prototype/demo.css" type="text/css">
+  </head>
+  <body class="introduction">
+	<div id="container" class="clearfix">
+	  <div id="content" class="clearfix">
+	    <div id="header">
+				<div id="logo"> 
+
+				</div>
+			  </div>
+		<table>
+		  
+      <tr> 
+        <td> 
+          <div id="main"> 
+            <h1>Client Interface</h1>
+            <p>A demonstration version of the Offline Moodle Administration Centre has been created to provide 
+			a clear indication of the functionality we intend to provide. The currnet version has been agreed with The Open University in principle and will be developed over the next coming versions with further further functionality developed.</p>
+			  For the purposes of this demonstration we have focused on developing the following core functionality which will be available to all pages within the administration centre:
+			  <ul id="coreFunctionality">
+                <li>the intended look and feel.</li>
+                <li>the intended navigational elements.</li>
+				<li>examples of key pages and sections including; login, home, course details.</li>
+			</ul>
+			We believe that that there are two general types of screen the application will require:
+
+			<ol>
+				<li>Screens to enter and manage information such as presentations and documents.</li>
+				<li>Screens to view information in a such as a workflow format, forum etc.</li>
+			</ol>
+			With this release we have provided examples of screens to input and manage document information. These screens will form the basis of all other screens where information is input. We have not provided an example of how the workflow screens will look, this will be provided in a future release.
+
+			  
+			   <h3>Starting point</h3>
+            <p>The demonstration begins in the administration centre viewing the login screen. </p>
+            <h3>Procedure</h3>
+
+          <p>The demonstration screens are static and therefore do not expect any login details. Therefore click the 'Login' button to reach the home page and begin browsing the administration centre.</p>
+            <p class="viewChanges"><a href="client/synchronisation/home.html" title="View the Client Interface Demonstration">View 
+              Demonstration</a></p>
+		<h3>Demonstration Notes</h3>
+            <p>In this demonstration I would like to make some comments about the following areas:</p>
+            <div id="introductionMenu"> 
+              <ul>
+                <li><a href="#presentationDetails">Presentation Details</a></li>
+              </ul>
+            </div>
+            <p><a name="presentationDetails"></a> </p>
+            <h2>Presentation Details</h2>
+			<p>The presentation details section has been developed first, since it will form a template of how to enter and manage information for the rest of the administration centre. We are currently working through each part of the section and defining how we will provide the required functionality. </p>
+			The following list indicates the order in which we are currently developing 
+            the functionality and which areas are complete and ready for demonstration: 
+            <ol id="currentFunctionality" class="currentFunctionality">
+              <li class="ready">Site home page</li>
+			  <li class="notReady">Synchronisation 
+			  	<ol class="childList">
+                  <li class="notReady">Home page </li>
+                  <li class="notReady">Configuration </li>
+				  <li class="notReady">Synchronise
+				  	<ol class="childList">
+                 	  <li class="notReady">Select Items</li>
+                  	  <li class="ready">Resolve Conflicts</li>
+				  	  <li class="notReady">Display Results</li>
+                	</ol>
+				  </li>
+                </ol>
+			  </li>
+              <li class="notReady">Course 
+                <ol class="childList">
+                 <li class="notReady">Home page </li>
+                 <li class="notReady">Synchronisation Filtered</li>
+				 <li class="notReady">Synchronised</li>
+                </ol>
+              </li>
+              <li class="notReady">Forum 
+                <ol class="childList">
+                 <li class="notReady">Home page </li>
+                 <li class="notReady">Synchronisation Filtered</li>
+				 <li class="notReady">Synchronised</li>
+                </ol>
+              </li>
+            </ol>
+			
+			<p>To date we have developed the functionality and look of the resolve conflicts section. We have created a '<a href="client/synchronisation/forum2.html">Resolve Conflicts</a>' page which allows items that cannot be synchronised automitically to be reviewed and decisions made. This method is aimed addressing conflicts that the system cannot resolve itself.</p>
+			
+			<p>The functionality of all pages within all other sections will use 
+              the resolve conflicts section as a template. Therefore the input and feedback 
+              that The Open University provide regarding this is imperative. </p>
+
+           </div>
+        </td>
+			  <td valign="top">
+				<div id="sideBar">
+					<div id="headingBox">
+						&nbsp;<h3>Using This Demonstration</h3>
+					</div>
+					<ul>
+					  <li><a href="index.html" title="Introduction">Introduction</a></li>
+					  <li><a href="index.html#versionUpdates" title="Updates In this Version">Updates In this Version</a></li>
+
+					  <li><a href="introduction-client-interface.html" title="Client Interface">Client Interface</a></li>
+					  <li><a href="index.html#supportingDocumentsOfflineMoodle" title="Supporting Documents for the Offline Moodle project">Supporting Documents: Offline</a></li>
+					</ul>
+				</div>
+				
+				<div id="sideBar">
+					<div id="headingBox">&nbsp;<h3>Synchronisation Quick Links</h3></div>
+					<ul>
+					  <li><a href="client/synchronisation/home.html" title="Home">Home</a></li>
+					  <li><a href="client/synchronisation/moodle_manage_conflicts.html" title="Review Conflicts">Review Conflicts</a></li>
+					</ul>
+				</div>
+
+				<div id="sideBar">
+					<div id="headingBox">
+						&nbsp;<h3>Supporting Documents: Offline</h3>
+					</div>
+					<ul>
+					  <li><a href="resources/documents/Moodle Offline Project.V1.1.doc" title="Project Specification">Project Specification</a></li>
+					  <li><a href="resources/documents/Synchronisation Process Flow.gif" title="Process Flow">Process Flow</a></li>
+					</ul>
+				</div>
+				
+			</td>
+		  </tr>
+		</table>
+	  </div>
+	  <div id="footer">
+	  </div>
+	</div>
+  </body>
+</html>
+

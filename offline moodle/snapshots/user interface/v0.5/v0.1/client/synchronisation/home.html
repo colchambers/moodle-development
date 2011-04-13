@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/styles_fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/styles_layout.css" />
+<link rel="stylesheet" type="text/css" href="css/styles_colour.css" />
+<link rel="stylesheet" type="text/css" href="css/styles_moz.css" />
+<link rel="stylesheet" type="text/css" href="css/gradients.css" />
+<meta name="description" content="Welcome to the homepage for the Offline Moodle project. This project is part fo the mLearn proect which is aimed to developing the OU's support for mobile learning" />
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="theme/standard/styles_ie6.css" />
+<![endif]-->
+
+
+    <meta name="keywords" content="moodle, mLearn: Offline Moodle project " />
+    <title>mLearn: Offline Moodle project</title>
+
+    <link rel="shortcut icon" href="theme/standardwhite/favicon.ico" />
+    <!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(#lib/csshover.htc);} /*]]>*/</style>-->
+
+<script type="text/javascript" src="#lib/javascript-static.js"></script>
+<script type="text/javascript" src="#lib/javascript-mod.php"></script>
+<script type="text/javascript" src="#lib/overlib.js"></script>
+<script type="text/javascript" src="#lib/cookies.js"></script>
+<script type="text/javascript" src="#lib/ufo.js"></script>
+
+<script type="text/javascript" defer="defer">
+<!--
+//<![CDATA[
+
+setTimeout('fix_column_widths()', 20);
+
+function openpopup(url,name,options,fullscreen) {
+  fullurl = "http://cc5983.vledev.open.ac.uk/offline/communication/moodle" + url;
+  windowobj = window.open(fullurl,name,options);
+  if (fullscreen) {
+     windowobj.moveTo(0,0);
+     windowobj.resizeTo(screen.availWidth,screen.availHeight);
+  }
+  windowobj.focus();
+  return false;
+}
+
+function uncheckall() {
+  void(d=document);
+  void(el=d.getElementsByTagName('INPUT'));
+  for(i=0;i<el.length;i++) {
+    void(el[i].checked=0);
+  }
+}
+
+function checkall() {
+  void(d=document);
+  void(el=d.getElementsByTagName('INPUT'));
+  for(i=0;i<el.length;i++) {
+    void(el[i].checked=1);
+  }
+}
+
+function inserttext(text) {
+  text = ' ' + text + ' ';
+  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+    var caretPos = opener.document.forms['theform'].message.caretPos;
+    caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+  } else {
+    opener.document.forms['theform'].message.value  += text;
+  }
+  opener.document.forms['theform'].message.focus();
+}
+
+//]]>
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+</head>
+
+<body  class="course course-1 editing lang-en_utf8" id="site-index">
+    
+<div id="page">
+
+    <div id="header-home" class="clearfix">
+        <h1 class="headermain">mLearn: Offline Moodle project</h1>
+        <div class="headermenu"><div class="logininfo">You are logged in as <a  href="#user/view.php?id=2&amp;course=1">Admin User</a>  (<a  href="#login/logout.php?sesskey=1t81tAus1Y">Logout</a>)</div><form action="#jumpto.php" method="get"  id="chooselang" class="popupform"><div><label for="chooselang_jump"><span class="accesshide">Language:</span></label>
+        <select id="chooselang_jump" name="jump" onchange="self.location=document.getElementById('chooselang').jump.options[document.getElementById('chooselang').jump.selectedIndex].value;">
+
+   <option value="#?lang=en_utf8" selected="selected">English (en)</option>
+</select><input type="hidden" name="sesskey" value="1t81tAus1Y" /><div id="noscriptchooselang" style="display: inline;"><input type="submit" value="Go" /></div><script type="text/javascript">
+//<![CDATA[
+document.getElementById("noscriptchooselang").style.display = "none";
+//]]>
+</script></div></form></div>
+    </div>
+        <hr />
+    <div class="clearer">&nbsp;</div>
+    <!-- END OF HEADER -->
+    <div id="content">
+
+
+<table id="layout-table" summary="layout">
+  <tr>
+  <td style="width: 210px;" id="left-column"><div  id="inst1" class="block_site_main_menu sideblock"><!--<div class="header"><a href="#sb-1" class="skip-block" title="Skip Main Menu">
+<span class="accesshide">Skip Main Menu</span>
+</a>
+        <div class="title"><div class="hide-show"><a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, '#pix' ); return false;"><img src="#pix/spacer.gif" id = "togglehide_inst1" alt="Show or hide block" class="hide-show-image" /></a></div><h2>Main Menu</h2><div class="commands"><a class="icon roles" title="Assign roles" href="#admin/roles/assign.php?contextid=3"><img src="#pix/i/roles.gif" alt="Assign roles" /></a><a class="icon hide" title="Hide" href="#?instanceid=1&amp;sesskey=1t81tAus1Y&amp;blockaction=toggle"><img src="#pix/t/hide.gif" alt="Hide" /></a><a class="icon delete" title="Delete" href="#?instanceid=1&amp;sesskey=1t81tAus1Y&amp;blockaction=delete"><img src="#pix/t/delete.gif" alt="Delete" /></a><a class="icon down" title="Move down" href="#?instanceid=1&amp;sesskey=1t81tAus1Y&amp;blockaction=movedown"><img src="#pix/t/down.gif" alt="Move down" /></a><a class="icon right" title="Move right" href="#?instanceid=1&amp;sesskey=1t81tAus1Y&amp;blockaction=moveright"><img src="#pix/t/right.gif" alt="Move right" /></a></div></div></div><div class="content"><div class="footer"><div class="section_add_menus"><form action="#jumpto.php" method="get"  id="ressection0" class="popupform"><div><span class="helplink"><a title="Help with Add a resource (new window)" href="#help.php?module=moodle&amp;file=resource/types.html&amp;forcelang=" onclick="this.target='popup'; return openpopup('/help.php?module=moodle&amp;file=resource/types.html&amp;forcelang=', 'popup', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><img class="iconhelp" alt="Help with Add a resource" src="#pix/help.gif" /></a></span><select id="ressection0_jump" name="jump" onchange="self.location=document.getElementById('ressection0').jump.options[document.getElementById('ressection0').jump.selectedIndex].value;">
+   <option value="javascript:void(0)">Add a resource...</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=label">Insert a label</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=resource&amp;type=text">Compose a text page</option>
+
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=resource&amp;type=html">Compose a web page</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=resource&amp;type=file">Link to a file or web site</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=resource&amp;type=directory">Display a directory</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=resource&amp;type=ims">Add an IMS Content Package</option>
+</select><input type="hidden" name="sesskey" value="1t81tAus1Y" /><div id="noscriptressection0" style="display: inline;"><input type="submit" value="Go" /></div><script type="text/javascript">
+//<![CDATA[
+document.getElementById("noscriptressection0").style.display = "none";
+//]]>
+</script></div></form> <form action="#jumpto.php" method="get"  id="section0" class="popupform"><div><span class="helplink"><a title="Help with Add an activity (new window)" href="#help.php?module=moodle&amp;file=mods.html&amp;forcelang=" onclick="this.target='popup'; return openpopup('/help.php?module=moodle&amp;file=mods.html&amp;forcelang=', 'popup', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><img class="iconhelp" alt="Help with Add an activity" src="#pix/help.gif" /></a></span><select id="section0_jump" name="jump" onchange="self.location=document.getElementById('section0').jump.options[document.getElementById('section0').jump.selectedIndex].value;">
+   <option value="javascript:void(0)">Add an activity...</option>
+
+   <optgroup label="Assignments">   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=assignment&amp;type=upload">Advanced uploading of files</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=assignment&amp;type=online">Online text</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=assignment&amp;type=uploadsingle">Upload a single file</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=assignment&amp;type=offline">Offline activity</option>
+   </optgroup>   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=chat">Chat</option>
+
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=choice">Choice</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=data">Database</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=forum">Forum</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=glossary">Glossary</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=lesson">Lesson</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=quiz">Quiz</option>
+
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=scorm">SCORM/AICC</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=survey">Survey</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=wiki">Wiki</option>
+   <option value="#mod.php?id=1&amp;section=0&amp;sesskey=1t81tAus1Y&amp;add=workshop">Workshop</option>
+</select><input type="hidden" name="sesskey" value="1t81tAus1Y" /><div id="noscriptsection0" style="display: inline;"><input type="submit" value="Go" /></div><script type="text/javascript">
+//<![CDATA[
+document.getElementById("noscriptsection0").style.display = "none";
+//]]>
+</script></div></form></div></div></div></div>--><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst1"); 
+//]]>
+</script><span id="sb-1" class="skip-block-to"></span><div  id="inst2" class="block_admin_tree sideblock"><div class="header"><a href="#sb-2" class="skip-block" title="Skip Site Administration">
+<span class="accesshide">Skip Site Administration</span>
+
+</a>
+    <div class="title"><div class="hide-show"><a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, '#pix' ); return false;"></a></div>
+    <h2>Site Administration</h2><div class="commands"><a class="icon right" title="Move right" href="#?instanceid=2&amp;sesskey=1t81tAus1Y&amp;blockaction=moveright"></a></div>
+    </div></div><div class="content"><script type="text/javascript">
+//<![CDATA[
+var vh_numspans = 15;
+var vh_content = new Array();
+function getspan(spanid) {
+  if (document.getElementById) {
+    return document.getElementById(spanid);
+  } else if (window[spanid]) {
+    return window[spanid];
+  }
+  return null;
+}
+function toggle(spanid) {
+  if (getspan(spanid).innerHTML == "") {
+    getspan(spanid).innerHTML = vh_content[spanid];
+    getspan(spanid + "indicator").innerHTML = '<img src="#blocks/admin_tree/open.gif" alt="Opened folder" />';
+  } else {
+    vh_content[spanid] = getspan(spanid).innerHTML;
+    getspan(spanid).innerHTML = "";
+    getspan(spanid + "indicator").innerHTML = '<img src="#blocks/admin_tree/closed.gif" alt="Closed folder" />';
+  }
+}
+function collapse(spanid) {
+  if (getspan(spanid).innerHTML !== "") {
+    vh_content[spanid] = getspan(spanid).innerHTML;
+    getspan(spanid).innerHTML = "";
+    getspan(spanid + "indicator").innerHTML = '<img src="#blocks/admin_tree/closed.gif" alt="Closed folder" />';
+  }
+}
+function expand(spanid) {
+  getspan(spanid).innerHTML = vh_content[spanid];
+  getspan(spanid + "indicator").innerHTML = '<img src="#blocks/admin_tree/open.gif" alt="Opened folder" />';
+}
+function expandall() {
+  for (i = 1; i <= vh_numspans; i++) {
+    expand("vh_span" + String(i));
+  }
+}
+function collapseall() {
+  for (i = vh_numspans; i > 0; i--) {
+    collapse("vh_span" + String(i));
+  }
+}
+//]]>
+</script>
+<div class="admintree">
+<a class="link" href="#admin/index.php"><img src="#blocks/admin_tree/item.gif" alt="" />Notifications</a><br />
+<a href="#" onclick="toggle('vh_span1');return false"><span id="vh_span1indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Users</a><br /><span id="vh_span1">
+&nbsp; &nbsp;<a class="link" href="#admin/auth.php"><img src="#blocks/admin_tree/item.gif" alt="" />Authentication</a><br />
+&nbsp; &nbsp;<a href="#" onclick="toggle('vh_span2');return false"><span id="vh_span2indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Accounts</a><br /><span id="vh_span2">
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#admin/user.php"><img src="#blocks/admin_tree/item.gif" alt="" />Browse list of users</a><br />
+
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#user/editadvanced.php?id=-1"><img src="#blocks/admin_tree/item.gif" alt="" />Add a new user</a><br />
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#admin/uploaduser.php"><img src="#blocks/admin_tree/item.gif" alt="" />Upload users</a><br />
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#user/profile/index.php"><img src="#blocks/admin_tree/item.gif" alt="" />User profile fields</a><br />
+</span>
+&nbsp; &nbsp;<a href="#" onclick="toggle('vh_span3');return false"><span id="vh_span3indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Permissions</a><br /><span id="vh_span3">
+
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#admin/roles/manage.php"><img src="#blocks/admin_tree/item.gif" alt="" />Define roles</a><br />
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#admin/roles/assign.php?contextid=1"><img src="#blocks/admin_tree/item.gif" alt="" />Assign global roles</a><br />
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=userpolicies"><img src="#blocks/admin_tree/item.gif" alt="" />User policies</a><br />
+</span>
+</span>
+<a href="#" onclick="toggle('vh_span4');return false"><span id="vh_span4indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Courses</a><br /><span id="vh_span4">
+
+&nbsp; &nbsp;<a class="link" href="#index.php?categoryedit=on"><img src="#blocks/admin_tree/item.gif" alt="" />Add/edit courses</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/enrol.php"><img src="#blocks/admin_tree/item.gif" alt="" />Enrolments</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=courserequest"><img src="#blocks/admin_tree/item.gif" alt="" />Course request</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=backups"><img src="#blocks/admin_tree/item.gif" alt="" />Backups</a><br />
+</span>
+<a href="#" onclick="toggle('vh_span5');return false"><span id="vh_span5indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Location</a><br /><span id="vh_span5">
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=locationsettings"><img src="#blocks/admin_tree/item.gif" alt="" />Location settings</a><br />
+
+&nbsp; &nbsp;<a class="link" href="#admin/timezoneimport.php"><img src="#blocks/admin_tree/item.gif" alt="" />Update timezones</a><br />
+</span>
+<a href="#" onclick="toggle('vh_span6');return false"><span id="vh_span6indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Language</a><br /><span id="vh_span6">
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=langsettings"><img src="#blocks/admin_tree/item.gif" alt="" />Language settings</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/lang.php"><img src="#blocks/admin_tree/item.gif" alt="" />Language editing</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/langimport.php"><img src="#blocks/admin_tree/item.gif" alt="" />Language packs</a><br />
+</span>
+
+<a href="#" onclick="toggle('vh_span7');return false"><span id="vh_span7indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Modules</a><br /><span id="vh_span7">
+&nbsp; &nbsp;<a class="link" href="#admin/modules.php"><img src="#blocks/admin_tree/item.gif" alt="" />Activities</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/blocks.php"><img src="#blocks/admin_tree/item.gif" alt="" />Blocks</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/filters.php"><img src="#blocks/admin_tree/item.gif" alt="" />Filters</a><br />
+</span>
+<a href="#" onclick="toggle('vh_span8');return false"><span id="vh_span8indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Security</a><br /><span id="vh_span8">
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=sitepolicies"><img src="#blocks/admin_tree/item.gif" alt="" />Site policies</a><br />
+
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=httpsecurity"><img src="#blocks/admin_tree/item.gif" alt="" />HTTP security</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=modulesecurity"><img src="#blocks/admin_tree/item.gif" alt="" />Module security</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=notifications"><img src="#blocks/admin_tree/item.gif" alt="" />Notifications</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=antivirus"><img src="#blocks/admin_tree/item.gif" alt="" />Anti-Virus</a><br />
+</span>
+<a href="#" onclick="toggle('vh_span9');return false"><span id="vh_span9indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Appearance</a><br /><span id="vh_span9">
+&nbsp; &nbsp;<a href="#" onclick="toggle('vh_span10');return false"><span id="vh_span10indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Themes</a><br /><span id="vh_span10">
+
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=themesettings"><img src="#blocks/admin_tree/item.gif" alt="" />Theme settings</a><br />
+&nbsp; &nbsp;&nbsp; &nbsp;<a class="link" href="#theme/index.php"><img src="#blocks/admin_tree/item.gif" alt="" />Theme Selector</a><br />
+</span>
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=calendar"><img src="#blocks/admin_tree/item.gif" alt="" />Calendar</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=filtersettings"><img src="#blocks/admin_tree/item.gif" alt="" />Filter settings</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=htmleditor"><img src="#blocks/admin_tree/item.gif" alt="" />HTML Editor</a><br />
+
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=documentation"><img src="#blocks/admin_tree/item.gif" alt="" />Moodle Docs</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=mymoodle"><img src="#blocks/admin_tree/item.gif" alt="" />My Moodle</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=gradebook"><img src="#blocks/admin_tree/item.gif" alt="" />Gradebook</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=coursemanager"><img src="#blocks/admin_tree/item.gif" alt="" />Course managers</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/stickyblocks.php"><img src="#blocks/admin_tree/item.gif" alt="" />Sticky blocks</a><br />
+</span>
+<a href="#" onclick="toggle('vh_span11');return false"><span id="vh_span11indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Front Page</a><br /><span id="vh_span11">
+
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=frontpagesettings"><img src="#blocks/admin_tree/item.gif" alt="" />Front Page settings</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/roles/assign.php?contextid=2"><img src="#blocks/admin_tree/item.gif" alt="" />Front Page roles</a><br />
+&nbsp; &nbsp;<a class="link" href="#backup/backup.php?id=1"><img src="#blocks/admin_tree/item.gif" alt="" />Front Page backup</a><br />
+&nbsp; &nbsp;<a class="link" href="#files/index.php?id=1&amp;wdir=/backupdata"><img src="#blocks/admin_tree/item.gif" alt="" />Front Page restore</a><br />
+&nbsp; &nbsp;<a class="link" href="#files/index.php?id=1"><img src="#blocks/admin_tree/item.gif" alt="" />Site files</a><br />
+</span>
+<a href="#" onclick="toggle('vh_span12');return false"><span id="vh_span12indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Server</a><br /><span id="vh_span12">
+
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=systempaths"><img src="#blocks/admin_tree/item.gif" alt="" />System Paths</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=mail"><img src="#blocks/admin_tree/item.gif" alt="" />Email</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=sessionhandling"><img src="#blocks/admin_tree/item.gif" alt="" />Session Handling</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=rss"><img src="#blocks/admin_tree/item.gif" alt="" />RSS</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=debugging"><img src="#blocks/admin_tree/item.gif" alt="" />Debugging</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=stats"><img src="#blocks/admin_tree/item.gif" alt="" />Statistics</a><br />
+
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=http"><img src="#blocks/admin_tree/item.gif" alt="" />HTTP</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/maintenance.php"><img src="#blocks/admin_tree/item.gif" alt="" />Maintenance mode</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=cleanup"><img src="#blocks/admin_tree/item.gif" alt="" />Cleanup</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/environment.php"><img src="#blocks/admin_tree/item.gif" alt="" />Environment</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/phpinfo.php"><img src="#blocks/admin_tree/item.gif" alt="" />PHP info</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=performance"><img src="#blocks/admin_tree/item.gif" alt="" />Performance</a><br />
+
+</span>
+<a href="#" onclick="toggle('vh_span13');return false"><span id="vh_span13indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Networking</a><br /><span id="vh_span13">
+&nbsp; &nbsp;<a class="link" href="#admin/mnet/index.php"><img src="#blocks/admin_tree/item.gif" alt="" />Settings</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/mnet/peers.php"><img src="#blocks/admin_tree/item.gif" alt="" />Peers</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/mnet/access_control.php"><img src="#blocks/admin_tree/item.gif" alt="" />SSO Access Control</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/mnet/enr_hosts.php"><img src="#blocks/admin_tree/item.gif" alt="" />Enrolments</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/mnet/trustedhosts.php"><img src="#blocks/admin_tree/item.gif" alt="" />XML-RPC hosts</a><br />
+
+</span>
+<a href="#" onclick="toggle('vh_span14');return false"><span id="vh_span14indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Reports</a><br /><span id="vh_span14">
+&nbsp; &nbsp;<a class="link" href="#admin/report/courseoverview/index.php"><img src="#blocks/admin_tree/item.gif" alt="" />Course overview</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/report/log/index.php"><img src="#blocks/admin_tree/item.gif" alt="" />Logs</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/report/simpletest/index.php"><img src="#blocks/admin_tree/item.gif" alt="" />Unit tests</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/report/stats/index.php"><img src="#blocks/admin_tree/item.gif" alt="" />Statistics</a><br />
+</span>
+
+<a href="#" onclick="toggle('vh_span15');return false"><span id="vh_span15indicator"><img src="#blocks/admin_tree/open.gif" alt="Opened folder" /></span> Miscellaneous</a><br /><span id="vh_span15">
+&nbsp; &nbsp;<a class="link" href="#admin/settings.php?section=experimental"><img src="#blocks/admin_tree/item.gif" alt="" />Experimental</a><br />
+&nbsp; &nbsp;<a class="link" href="#admin/xmldb/"><img src="#blocks/admin_tree/item.gif" alt="" />XMLDB editor</a><br />
+</span>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+collapseall();
+//]]>
+</script>
+<div class="footer">
+  <div class="adminsearchform"></div>
+</div></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst2"); 
+//]]>
+</script>
+<span id="sb-2" class="skip-block-to"></span></td>
+<td id="middle-column">
+	<h2 class="headingblock header ">Available Courses</h2>
+	<div class="coursebox">
+		<div class="info">
+			<div class="name">
+				<a title="Click to enter this course" href="#view.php?id=4">Project Overview</a>
+			</div>
+		</div>
+		<div class="summary">This is an overview of the entire Offline Moodle project<br /></div>
+	</div>
+	<br /><br /><br /><br />
+</td>
+<td style="width: 210px;" id="right-column">
+	<!-- <div style="text-align:center">
+		<form  method="get" action="#view.php">
+			<div>
+				<input type="hidden" name="id" value="1" />
+				<input type="hidden" name="edit" value="0" />
+				<input type="hidden" name="sesskey" value="1t81tAus1Y" />
+				<input type="submit" value="Turn editing off" />
+			</div>
+		</form>
+	</div> -->
+	
+	
+		
+	
+	<!--<br />-->
+	
+	
+	<div  id="inst3" class="block_course_summary sideblock">
+		<div class="header">
+			<a href="#sb-3" class="skip-block" title="Skip Course/Site Description">
+				<span class="accesshide">Skip Course/Site Description</span>			</a>
+			<div class="title">
+				<div class="hide-show">
+					<a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, '#pix' ); return false;"></a>				</div>
+				<h2>Course/Site Description</h2>
+				<div class="commands">
+					<a class="icon roles" title="Assign roles" href="#admin/roles/assign.php?contextid=5"></a>
+					<a class="icon hide" title="Hide" href="#?instanceid=3&amp;sesskey=1t81tAus1Y&amp;blockaction=toggle"></a>
+			<a class="icon delete" title="Delete" href="#?instanceid=3&amp;sesskey=1t81tAus1Y&amp;blockaction=delete"></a><a class="icon left" title="Move left" href="#?instanceid=3&amp;sesskey=1t81tAus1Y&amp;blockaction=moveleft"></a><a class="icon down" title="Move down" href="#?instanceid=3&amp;sesskey=1t81tAus1Y&amp;blockaction=movedown"></a></div>
+			</div></div><div class="content">Welcome to the homepage for the Offline Moodle project. This project is part fo the mLearn proect which is aimed to developing the OU's support for mobile learning<div class="editbutton"><a href="#admin/settings.php?section=frontpagesettings"></a></div>
+			</div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst3"); 
+//]]>
+</script><span id="sb-3" class="skip-block-to"></span>
+
+
+	<div style="text-align:center">
+		<button onclick="MM_goToURL('parent','forum2.html');return document.MM_returnValue">Synchronise</button>
+		  </div>
+
+<!-- <div  id="inst4" class="block_calendar_month sideblock"><div class="header"><a href="#sb-4" class="skip-block" title="Skip Calendar">
+<span class="accesshide">Skip Calendar</span>
+</a>
+
+
+
+    <div class="title"><div class="hide-show"><a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, '#pix' ); return false;"><img src="#pix/spacer.gif" id = "togglehide_inst4" alt="Show or hide block" class="hide-show-image" /></a></div><h2>Calendar</h2><div class="commands"><a class="icon roles" title="Assign roles" href="#admin/roles/assign.php?contextid=6"><img src="#pix/i/roles.gif" alt="Assign roles" /></a><a class="icon hide" title="Hide" href="#?instanceid=4&amp;sesskey=1t81tAus1Y&amp;blockaction=toggle"><img src="#pix/t/hide.gif" alt="Hide" /></a><a class="icon delete" title="Delete" href="#?instanceid=4&amp;sesskey=1t81tAus1Y&amp;blockaction=delete"><img src="#pix/t/delete.gif" alt="Delete" /></a><a class="icon left" title="Move left" href="#?instanceid=4&amp;sesskey=1t81tAus1Y&amp;blockaction=moveleft"><img src="#pix/t/left.gif" alt="Move left" /></a><a class="icon up" title="Move up" href="#?instanceid=4&amp;sesskey=1t81tAus1Y&amp;blockaction=moveup"><img src="#pix/t/up.gif" alt="Move up" /></a></div></div></div><div class="content"><div id="overDiv" style="position: absolute; visibility: hidden; z-index:1000;"></div><script type="text/javascript" src="#calendar/overlib.cfg.php"></script>
+<div class="calendar-controls"><a class="previous" href="index.php?cal_m=6&amp;cal_y=2007" title="Previous month"><span class="arrow ">&#x25C4;</span><span class="accesshide">&nbsp;Previous month</span></a><span class="hide"> | </span><span class="current"><a href="#calendar/view.php?view=month&amp;cal_d=1&amp;cal_m=7&amp;cal_y=2007">July 2007</a></span><span class="hide"> | </span><a class="next" href="index.php?cal_m=8&amp;cal_y=2007" title="Next month"><span class="accesshide">Next month&nbsp;</span><span class="arrow ">&#x25BA;</span></a>
+
+<span class="clearer"></span></div>
+<table class="minicalendar" summary="Data table, July 2007 Calendar"><tr class="weekdays"><th scope="col"><abbr title="Sunday">Sun</abbr></th>
+<th scope="col"><abbr title="Monday">Mon</abbr></th>
+<th scope="col"><abbr title="Tuesday">Tue</abbr></th>
+<th scope="col"><abbr title="Wednesday">Wed</abbr></th>
+<th scope="col"><abbr title="Thursday">Thu</abbr></th>
+<th scope="col"><abbr title="Friday">Fri</abbr></th>
+<th scope="col"><abbr title="Saturday">Sat</abbr></th>
+</tr><tr><td class="weekend day">1</td>
+
+<td class="day">2</td>
+<td class="day">3</td>
+<td class="day">4</td>
+<td class="day">5</td>
+<td class="day">6</td>
+<td class="weekend day">7</td>
+</tr><tr><td class="weekend day">8</td>
+<td class="day">9</td>
+<td class="day">10</td>
+
+<td class="day today eventnone"><span class="accesshide">Today Wednesday,  11 July </span><a href="#" onmouseover="return overlib('No events', CAPTION, 'Today Wednesday,  11 July');" onmouseout="return nd();">11</a></td>
+<td class="day">12</td>
+<td class="day">13</td>
+<td class="weekend day">14</td>
+</tr><tr><td class="weekend day">15</td>
+<td class="day">16</td>
+<td class="day">17</td>
+<td class="day">18</td>
+
+<td class="day">19</td>
+<td class="day">20</td>
+<td class="weekend day">21</td>
+</tr><tr><td class="weekend day">22</td>
+<td class="day">23</td>
+<td class="day">24</td>
+<td class="day">25</td>
+<td class="day">26</td>
+<td class="day">27</td>
+
+<td class="weekend day">28</td>
+</tr><tr><td class="weekend day">29</td>
+<td class="day">30</td>
+<td class="day">31</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></table></div></div> --><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst4"); 
+//]]>
+</script><span id="sb-4" class="skip-block-to"></span><!-- <div  class="block_adminblock sideblock"><div class="header"><a href="#sb-5" class="skip-block" title="Skip ">
+<span class="accesshide">Skip </span>
+</a>Blocks</div>
+<div class="content"><form action="#jumpto.php" method="get"  id="add_block" class="popupform"><div><select id="add_block_jump" name="jump" onchange="self.location=document.getElementById('add_block').jump.options[document.getElementById('add_block').jump.selectedIndex].value;">
+   <option value="javascript:void(0)">Add...</option>
+
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=1">Activities</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=3">Admin bookmarks</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=5">Blog Menu</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=6">Blog Tags</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=9">Courses</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=24">Global Search</option>
+
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=12">HTML</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=18">Latest News</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=13">Loan calculator</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=14">Login</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=15">Mentees</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=16">Messages</option>
+
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=17">Network Servers</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=19">Online Users</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=20">People</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=11">Random Glossary Entry</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=22">Recent Activity</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=23">Remote RSS Feeds</option>
+
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=25">Search Forums</option>
+   <option value="#?sesskey=1t81tAus1Y&amp;blockaction=add&amp;blockid=8">Upcoming Events</option>
+</select><input type="hidden" name="sesskey" value="1t81tAus1Y" /><div id="noscriptadd_block" style="display: inline;"><input type="submit" value="Go" /></div><script type="text/javascript">
+//<![CDATA[
+document.getElementById("noscriptadd_block").style.display = "none";
+//]]>
+</script></div></form></div></div>--><span id="sb-5" class="skip-block-to"></span></td>
+  </tr>
+</table>
+
+
+</div>  <!-- end div content --> 
+
+<div id="footer">
+
+<hr />
+
+<p class="helplink"></p>
+<div class="logininfo">You are logged in as <a  href="#user/view.php?id=2&amp;course=1">Admin User</a>  (<a  href="#login/logout.php?sesskey=1t81tAus1Y">Logout</a>)</div><div class="sitelink"><a title="moodle 1.8.1 (2007021510)" href="http://moodle.org/"><br /><img style="width:100px;height:30px" src="pix/moodlelogo.gif" alt="moodlelogo" /></a></div>
+
+
+
+</div>
+</div>
+</body>
+</html>
+

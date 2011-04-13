@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles_002.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+		<meta name="description" content="">
+			<!--[if IE 7]>
+				<link rel="stylesheet" type="text/css" href="stylesheets/styles_ie7.css" />
+			<![endif]--><!--[if IE 6]>
+				<link rel="stylesheet" type="text/css" href="stylesheets/styles_ie6.css" />
+			<![endif]-->
+		</meta>
+		<meta name="keywords" content="moodle, Offline: Development: Client: Moodle version 1.9 ">
+		<title>Offline: Development: Client: Moodle version 1.9: Synchronise: Home</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(scripts/csshover.htc);} /*]]>*/</style>-->
+
+		<style type="text/css">
+			.generaltable {
+					text-align: left;
+					padding: 10 px;
+				}
+				
+			.generaltable td,th {
+
+					padding-right: 10px;
+				}
+				
+			
+		</style>
+		<script type="text/javascript" src="scripts/javascript-static.js"></script>
+		<script type="text/javascript" src="scripts/javascript-mod.php"></script>
+		<script type="text/javascript" src="scripts/overlib.js"></script>
+		<script type="text/javascript" src="scripts/cookies.js"></script>
+		<script type="text/javascript" src="scripts/ufo.js"></script>
+
+		<script type="text/javascript" defer="defer" >
+			
+			//<![CDATA[
+			
+			setTimeout('fix_column_widths()', 20);
+			
+			function openpopup(url,name,options,fullscreen) {
+			  fullurl = "http://pclt1048.open.ac.uk/offline/development/client-1.9" + url;
+			  windowobj = window.open(fullurl,name,options);
+			  if (fullscreen) {
+				 windowobj.moveTo(0,0);
+				 windowobj.resizeTo(screen.availWidth,screen.availHeight);
+			  }
+			  windowobj.focus();
+			  return false;
+			}
+			
+			function uncheckall() {
+			  void(d=document);
+			  void(el=d.getElementsByTagName('INPUT'));
+			  for(i=0;i<el.length;i++) {
+				void(el[i].checked=0);
+			  }
+			}
+			
+			function checkall() {
+			  void(d=document);
+			  void(el=d.getElementsByTagName('INPUT'));
+			  for(i=0;i<el.length;i++) {
+				void(el[i].checked=1);
+			  }
+			}
+			
+			function inserttext(text) {
+			  text = ' ' + text + ' ';
+			  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+				var caretPos = opener.document.forms['theform'].message.caretPos;
+				caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+			  } else {
+				opener.document.forms['theform'].message.value  += text;
+			  }
+			  opener.document.forms['theform'].message.focus();
+			}
+			
+			//]]>
+		</script>
+	</head>
+	<body class="backup course-1 nocoursepage ltr lang-en_utf8" id="synchronise">
+		<div id="page">
+			<div id="header" class="clearfix">
+		<h1 class="headermain">Offline: Development: Client: Moodle version 1.9</h1>
+		<div class="headermenu">
+			<div class="logininfo">You are logged in as <a href="#" class="inactive">Admin User</a>  (<a href="#" class="inactive">Logout</a>)</div>
+		</div>
+	</div>
+	<div class="navbar clearfix">
+		<div class="breadcrumb">
+			<h2 class="accesshide">You are here</h2>
+			<ul>
+				<li class="first">
+					<a onclick="this.target='_top'" href="home.html">offDevClt1.9</a>
+				</li>
+				<li class="first">
+					<span class="accesshide">/&nbsp;</span>
+					<span class="arrow sep">&#x25BA;</span>
+					<a onclick="this.target='_top'" href="synch_home.html">Synchronise</a>
+				</li>
+				<li class="first">
+					<span class="accesshide">/&nbsp;</span>
+					<span class="arrow sep">&#x25BA;</span> Home</li>
+			</ul>
+		</div>
+		<div class="navbutton">&nbsp;</div>
+	</div>
+	<div class="clearer">&nbsp;</div>
+			<!-- END OF HEADER -->
+			<!-- BEGINNING OF CONTENT-->
+			<div id="content">
+				<table id="layout-table" summary="layout">
+				  <tbody>
+					  <tr>
+						  <td style="width: 210px;" id="left-column">
+							  <div id="inst2" class="block_admin_tree sideblock">
+								  <div class="header">
+									  <a linkindex="1" href="#sb-1" class="skip-block" title="Skip Site Administration">
+										  <span class="accesshide">Skip Site Administration</span>
+									</a>
+									<div class="title">
+										<div class="hide-show">
+											<a title="Show or hide block" href="#" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'images' ); return false;">
+												<img src="images/spacer.gif" id="togglehide_inst2" alt="Show or hide block" class="hide-show-image" />
+											</a>
+										</div>
+										<h2>Navigation</h2>
+									</div>
+								</div>
+								<div class="content">
+									<div class="admintree">
+                                        <a set="yes" linkindex="1" class="link" href="synch_home.html"><img src="images/item.gif" alt="" />Synchronisation Home</a><br />                                       
+                                        <a set="yes" linkindex="2" class="link" href="synch_find_content.html"><img src="images/item.gif" alt="" />Find Content</a><br />
+                                        <a set="yes" linkindex="2" class="link" href="synch_shortcuts.html"><img src="images/item.gif" alt="" />Shortcuts</a><br />
+                                        <a set="yes" linkindex="3" class="link inactive" href="#"><img src="images/item.gif" alt="" />Settings</a><br />
+                                    </div>
+								</div>
+							</div>
+							<span id="sb-1" class="skip-block-to"></span>
+						</td>
+						<td id="middle-column">
+							
+							
+							
+							<h2 class="headingblock header">Synchronise</h2>
+							<div><h3>Introduction</h3>
+								<p>Use this feature to synchronise various parts of Moodle with the wider community. The synchronise feature can be 
+									used to synchronise many items including:</p>
+									<ul>
+										<li>Courses: including modules and content</li>
+										<li>Site features: including users, roles and groups.</li>
+									</ul>
+                                    
+                                    
+                              <p>The following options are available in the synchronisation feature:</p>      
+                              <ol>
+                                <li><a href="synch_find_content.html"><i>Find content</i></a> 
+                                    <p>In order to synchronise you must first select and item to synchronise. Use the find content page to navigate through the Moodle content available to you and begin syncronising.</p>
+                                </li>
+                                <li><a href="synch_shortcuts.html"><i>Shortcuts</i></a> 
+                                    <p>Synchronisation shortcuts provide a quick way to perform synchronisations you do regularly.</p>
+                                </li>
+                            </ol>
+							</div>
+							<div class="clearer"></div>
+
+	
+								<h3>Summary</h3>	
+								<p>A quick overview of synchronisation status.</p>
+								<table class="generaltable">
+									<tbody>
+										<tr>
+											<th>Item</th>
+											<th>value</th>
+										</tr>
+										<tr>
+											<td>Last Synchronisation</td>
+											<td>Monday 24th June 2007 14:34</td>
+										</tr>
+										<tr>
+											<td>Available Hubs</td>
+											<td>Open University (UK)</td>
+										</tr>
+									</tbody>
+								</table>
+
+							<p>Maybe you just want to <a href="synch_find_content.html">start synchronising.</a>.	</p>
+							<br /><br /><br /><br />
+						</td>
+						<td style="width: 210px;" id="right-column">
+						</td>
+					</tr>
+					</tbody>
+				</table>
+
+		
+			</div>
+			<!-- END OF CONTENT -->
+			<!-- BEGINNING OF FOOTER -->		
+			<div id="footer">
+				<hr/>
+				<p class="helplink"/>
+				<div class="logininfo">
+					You are logged in as 
+					<a linkindex="13" href="#" class="inactive">Admin User</a>  (<a href="#" class="inactive">Logout</a>)
+				</div>
+				<div class="sitelink">
+					<a linkindex="14" title="moodle 1.9 dev (2007071900)" href="#">
+						<br/>
+						<img style="width: 100px; height: 30px;" src="images/moodlelogo.gif" alt="moodlelogo"/>
+					</a>
+				</div>
+			</div>
+			<!-- END OF FOOTER -->
+		</div>
+	</body>
+</html>
