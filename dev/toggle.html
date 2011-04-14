@@ -20,6 +20,9 @@ body {
  
 <link type="text/css" rel="stylesheet" href="../yui/3.2.0/build/cssfonts/fonts-min.css" /> 
 <script type="text/javascript" src="../yui/3.2.0/build/yui/yui-min.js"></script> 
+
+<!-- debugging library -->
+<script type="text/javascript" src="../js/analyse.js"></script>
  
  
 <!--begin custom header content for this example--> 
@@ -61,25 +64,11 @@ body {
 <div id="demo"><p>lorem ipsum dolor sit</p></div> 
 </div> 
 <script type="text/javascript"> 
+var Out;
+Out.initialiseConsole();
 // Create a YUI instance and request the console module and its dependencies
 YUI({ filter: 'raw' }).use("console", "console-filters", "dd-plugin", function (Y) {
  
-	// Create and render the three Console instances
-	var customStrings;
-	 
-	customStrings = new Y.Console({
-		strings: {
-			title : 'Draggable Console with filters!',
-			pause : 'Wait',
-			clear : 'Flush',
-			collapse : 'Shrink',
-			expand : 'Grow'
-		},
-		visible: false
-	}).plug(Y.Plugin.ConsoleFilters)
-	  .plug(Y.Plugin.Drag, { handles: ['.yui3-console-hd'] })
-	  .render();
-	 
 	// Set up the button listeners
 	function toggle(e,cnsl) {
 		if (cnsl.get('visible')) {
@@ -92,14 +81,6 @@ YUI({ filter: 'raw' }).use("console", "console-filters", "dd-plugin", function (
 		}
 	}
 	 
-	function report(e,type) {
-		Y.log(this.get('value'),type);
-	}
-
-	customStrings.show(); 
-	// Display a message in the Console for reference
-	Y.log("Click the buttons below to log messages");
- 
 });
 
 
@@ -107,6 +88,8 @@ YUI({ filter: 'raw' }).use("node", function(Y) {
   Y.delegate('click', function(e) {
       var buttonID = e.currentTarget.get('id'),
           node = Y.one('#demo');
+          
+          Out.debug('e = '+e);
           
       if (buttonID === 'show') {
           node.show();

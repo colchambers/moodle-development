@@ -37,7 +37,8 @@ document.body.className += ' jsenabled';
 
 
 <script type="text/javascript"> 
-initialiseConsole();
+var Out;
+Out.initialiseConsole();
 // Create a YUI instance and request the console module and its dependencies
 YUI({ filter: 'raw' }).use("node", function (Y) {
  
@@ -50,7 +51,7 @@ YUI({ filter: 'raw' }).use("node", function (Y) {
     }
 
     // Display a message in the Console for reference
-    debug("Click the buttons below to log messages");
+    Out.debug("Click the buttons below to log messages");
      
     // Pass the corresponding Console instance to the handler as a second arg
     //Y.on('click', toggle, '#toggle_cstrings', null, customStrings);
