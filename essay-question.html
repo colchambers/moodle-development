@@ -22,6 +22,10 @@ M.cfg = {"wwwroot":"http:\/\/cc5983.vledev2.open.ac.uk\/vle\/ou-moodle2\/moodle"
 </script>
 <script type="text/javascript" src="assets/javascript_005.js"></script>
 <script type="text/javascript" src="assets/javascript_002.php"></script>
+
+<!-- debugging library -->
+<script type="text/javascript" src="js/analyse.js"></script>
+
 <link href="assets/ui.css" rel="stylesheet"><link href="assets/ui_silver.css" rel="stylesheet"><link href="assets/window.css" rel="stylesheet"></head>
 <body id="page-question-type-essay" class=" path-question path-question-type gecko gecko20 dir-ltr lang-en yui-skin-sam yui3-skin-sam cc5983-vledev2-open-ac-uk--vle-ou-moodle2-moodle pagelayout-course course-59 context-444 category-1 side-pre-only jsenabled">
 <div class="skiplinks"><a class="skip" href="#maincontent">Skip to main content</a></div>
@@ -33,41 +37,10 @@ document.body.className += ' jsenabled';
 
 
 <script type="text/javascript"> 
+initialiseConsole();
 // Create a YUI instance and request the console module and its dependencies
-YUI({ filter: 'raw' }).use("console", "console-filters", "dd-plugin", function (Y) {
+YUI({ filter: 'raw' }).use("node", function (Y) {
  
-    // Create and render the three Console instances
-    var customStrings;
-     
-    customStrings = new Y.Console({
-        strings: {
-            title : 'Draggable Console with filters!',
-            pause : 'Wait',
-            clear : 'Flush',
-            collapse : 'Shrink',
-            expand : 'Grow'
-        },
-        visible: false
-    }).plug(Y.Plugin.ConsoleFilters)
-      .plug(Y.Plugin.Drag, { handles: ['.yui3-console-hd'] })
-      .render();
-     
-    // Set up the button listeners
-    function toggle(e,cnsl) {
-        if (cnsl.get('visible')) {
-            cnsl.hide();
-            this.set('innerHTML','show console');
-        } else {
-            cnsl.show();
-            cnsl.syncUI(); // to handle any UI changes queued while hidden.
-            this.set('innerHTML','hide console');
-        }
-    }
-     
-    function report(e,type) {
-        Y.log(this.get('value'),type);
-    }
-
     function toggleSection(){
       sectionId = '#generalheader';
       classId = '.fcontainer ';
@@ -76,9 +49,8 @@ YUI({ filter: 'raw' }).use("console", "console-filters", "dd-plugin", function (
       Y.one('#page-main').hide();
     }
 
-    customStrings.show(); 
     // Display a message in the Console for reference
-    Y.log("Click the buttons below to log messages");
+    debug("Click the buttons below to log messages");
      
     // Pass the corresponding Console instance to the handler as a second arg
     //Y.on('click', toggle, '#toggle_cstrings', null, customStrings);
