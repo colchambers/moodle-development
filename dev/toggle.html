@@ -54,25 +54,11 @@ body {
  
 <div id="demo"> 
  
-    <h4>Custom strings</h4> 
-    <p><em>Rendered in default location (top right)</em></p> 
-    <p> 
-        <button type="button" id="toggle_cstrings">show console</button> 
-    </p> 
+    <h4>Toggle visibility</h4> 
+<button id="show">show</button> 
+<button id="hide">hide</button> 
  
-    <h4>Log some messages</h4> 
-    <p> 
-        <input type="text" id="info_text" value="I'm an info message!"> 
-        <button type="button" id="info">log info message</button> 
-    </p> 
-    <p> 
-        <input type="text" id="warn_text" value="I'm a warning!"> 
-        <button type="button" id="warn">log warning</button> 
-    </p> 
-    <p> 
-        <input type="text" id="error_text" value="I'm an error!"> 
-        <button type="button" id="error">log error</button> 
-    </p> 
+<div id="demo"><p>lorem ipsum dolor sit</p></div> 
 </div> 
 <script type="text/javascript"> 
 // Create a YUI instance and request the console module and its dependencies
@@ -109,19 +95,26 @@ YUI({ filter: 'raw' }).use("console", "console-filters", "dd-plugin", function (
 	function report(e,type) {
 		Y.log(this.get('value'),type);
 	}
-	 
+
+	customStrings.show(); 
 	// Display a message in the Console for reference
 	Y.log("Click the buttons below to log messages");
-	 
-	// Pass the corresponding Console instance to the handler as a second arg
-	Y.on('click', toggle, '#toggle_cstrings', null, customStrings);
-	 
-	// Set the context of the event handler to the input text node
-	// for convenience and pass the message type as a second arg
-	Y.on('click', report, '#info',  Y.one('#info_text'),  'info');
-	Y.on('click', report, '#warn',  Y.one('#warn_text'),  'warn');
-	Y.on('click', report, '#error', Y.one('#error_text'), 'error');
  
+});
+
+
+YUI({ filter: 'raw' }).use("node", function(Y) {
+  Y.delegate('click', function(e) {
+      var buttonID = e.currentTarget.get('id'),
+          node = Y.one('#demo');
+          
+      if (buttonID === 'show') {
+          node.show();
+      } else if (buttonID == 'hide') {
+          node.hide();
+      }
+
+  }, document, 'button');
 });
 </script> 
 

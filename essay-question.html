@@ -9,6 +9,10 @@
 <link rel="stylesheet" type="text/css" href="assets/yui_combo_002.css"><script type="text/javascript" src="assets/yui_combo_002.php"></script><script type="text/javascript" src="assets/yui_combo.php"></script>
 <link rel="stylesheet" type="text/css" href="assets/yui_combo.css">
 <script src="assets/yui_combo_004.php" charset="utf-8" type="text/javascript" id="yui_3_2_0_1_13025353913952"></script><script src="assets/yui_combo_005.php" charset="utf-8" type="text/javascript" id="yui_3_2_0_1_130253539139513"></script><script src="assets/javascript.js" charset="utf-8" type="text/javascript" id="yui_3_2_0_1_130253539139527"></script><script src="assets/yui_combo_003.php" charset="utf-8" type="text/javascript" id="yui_3_2_0_1_130253539139528"></script><script src="assets/javascript_002.js" charset="utf-8" type="text/javascript" id="yui_3_2_0_1_1302535391395189"></script><script src="assets/javascript_003.js" charset="utf-8" type="text/javascript" id="yui_3_2_0_1_1302535391395222"></script><script src="assets/module.js" charset="utf-8" type="text/javascript" id="yui_3_2_0_1_1302535391395314"></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+<link type="text/css" rel="stylesheet" href="yui/3.2.0/build/cssfonts/fonts-min.css" /> 
+<script type="text/javascript" src="yui/3.2.0/build/yui/yui-min.js"></script> 
+
 <script type="text/javascript">
 //<![CDATA[
 var M = {}; M.yui = {}; var moodleConfigFn = function(me) {var p = me.path, b = me.name.replace(/^moodle-/,'').split('-', 3), n = b.pop();if (/(skin|core)/.test(n)) {n = b.pop();me.type = 'css';};me.path = b.join('-')+'/'+n+'/'+n+'.'+me.type;}; var galleryConfigFn = function(me) {var p = me.path,v=M.yui.galleryversion,f;if(/-(skin|core)/.test(me.name)) {me.type = 'css';p = p.replace(/-(skin|core)/, '').replace(/\.js/, '.css').split('/'), f = p.pop().replace(/(\-(min|debug))/, '');if (/-skin/.test(me.name)) {p.splice(p.length,0,v,'assets','skins','sam', f);} else {p.splice(p.length,0,v,'assets', f);};} else {p = p.split('/'), f = p.pop();p.splice(p.length,0,v, f);};me.path = p.join('/');};
@@ -26,6 +30,68 @@ M.cfg = {"wwwroot":"http:\/\/cc5983.vledev2.open.ac.uk\/vle\/ou-moodle2\/moodle"
 document.body.className += ' jsenabled';
 //]]>
 </script>
+
+
+<script type="text/javascript"> 
+// Create a YUI instance and request the console module and its dependencies
+YUI({ filter: 'raw' }).use("console", "console-filters", "dd-plugin", function (Y) {
+ 
+    // Create and render the three Console instances
+    var customStrings;
+     
+    customStrings = new Y.Console({
+        strings: {
+            title : 'Draggable Console with filters!',
+            pause : 'Wait',
+            clear : 'Flush',
+            collapse : 'Shrink',
+            expand : 'Grow'
+        },
+        visible: false
+    }).plug(Y.Plugin.ConsoleFilters)
+      .plug(Y.Plugin.Drag, { handles: ['.yui3-console-hd'] })
+      .render();
+     
+    // Set up the button listeners
+    function toggle(e,cnsl) {
+        if (cnsl.get('visible')) {
+            cnsl.hide();
+            this.set('innerHTML','show console');
+        } else {
+            cnsl.show();
+            cnsl.syncUI(); // to handle any UI changes queued while hidden.
+            this.set('innerHTML','hide console');
+        }
+    }
+     
+    function report(e,type) {
+        Y.log(this.get('value'),type);
+    }
+
+    function toggleSection(){
+      sectionId = '#generalheader';
+      classId = '.fcontainer ';
+      Y.log('hide general header');
+      //Y.one('#generalheader').show();
+      Y.one('#page-main').hide();
+    }
+
+    customStrings.show(); 
+    // Display a message in the Console for reference
+    Y.log("Click the buttons below to log messages");
+     
+    // Pass the corresponding Console instance to the handler as a second arg
+    //Y.on('click', toggle, '#toggle_cstrings', null, customStrings);
+    Y.on('click', toggleSection, '#generalheader');
+     
+    // Set the context of the event handler to the input text node
+    // for convenience and pass the message type as a second arg
+    //Y.on('click', report, '#info',  Y.one('#info_text'),  'info');
+    //Y.on('click', report, '#warn',  Y.one('#warn_text'),  'warn');
+    //Y.on('click', report, '#error', Y.one('#error_text'), 'error');
+ 
+});
+</script> 
 
 <div id="ou-org-header"> <a class="ou-skip" href="#ou-content">Skip to content</a> <a class="ou-link-ou" href="http://www.open.ac.uk/"><img src="assets/oulogo-56.jpg" alt="The Open University"></a>
   <div class="ou-role-nav">
