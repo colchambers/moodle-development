@@ -22,6 +22,7 @@ M.cfg = {"wwwroot":"http:\/\/cc5983.vledev2.open.ac.uk\/vle\/ou-moodle2\/moodle"
 </script>
 <script type="text/javascript" src="assets/javascript_005.js"></script>
 <script type="text/javascript" src="assets/javascript_002.php"></script>
+<script type="text/javascript" src="js/display.js"></script>
 
 <!-- debugging library -->
 <script type="text/javascript" src="js/analyse.js"></script>
@@ -38,31 +39,25 @@ document.body.className += ' jsenabled';
 
 <script type="text/javascript"> 
 var Out;
-Out.initialiseConsole();
+Y = YUI;
+Y.config.injected = true;
 // Create a YUI instance and request the console module and its dependencies
 YUI({ filter: 'raw' }).use("node", function (Y) {
  
     function toggleSection(){
-      sectionId = '#generalheader';
-      classId = '.fcontainer ';
-      Y.log('hide general header');
-      //Y.one('#generalheader').show();
-      Y.one('#page-main').hide();
+      id = '#'+this.get('id');
+      className = '.fcontainer ';
+      Display.toggle(id+' '+className);
+      //Out.iterate(this, 'this = ');
     }
 
-    // Display a message in the Console for reference
-    Out.debug("Click the buttons below to log messages");
-     
-    // Pass the corresponding Console instance to the handler as a second arg
-    //Y.on('click', toggle, '#toggle_cstrings', null, customStrings);
-    Y.on('click', toggleSection, '#generalheader');
-     
-    // Set the context of the event handler to the input text node
-    // for convenience and pass the message type as a second arg
-    //Y.on('click', report, '#info',  Y.one('#info_text'),  'info');
-    //Y.on('click', report, '#warn',  Y.one('#warn_text'),  'warn');
-    //Y.on('click', report, '#error', Y.one('#error_text'), 'error');
+    var sections = ['general', 'tags'];
+     var section;
+    for(section in sections){
+        Y.on('click', toggleSection, '#'+sections[section]+'header');
+    }
  
+     
 });
 </script> 
 
@@ -228,6 +223,9 @@ function validate_qtype_essay_edit_form(frm) {
 
 	<fieldset class="clearfix" id="generalheader">
 		<legend class="ftoggler">General</legend>
+        
+        <img class="block-hider-hide" style="display:inline" alt="Hide Settings block" title="Hide Settings block" src="http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_minus&amp;rev=286">
+        
 		<div class="advancedbutton"></div><div class="fcontainer clearfix">
 		
 		<div class="fitem"><div class="fitemtitle"><div class="fgrouplabel"><label>Current category </label></div></div><fieldset class="felement fgroup">Default for c101 (9)&nbsp;<span><input name="usecurrentcat" value="1" id="id_e3ef7e" checked="checked" type="checkbox"><label for="id_e3ef7e">Use this category</label></span></fieldset></div>
