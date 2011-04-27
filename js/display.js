@@ -12,6 +12,7 @@ var Display = {
                 node.hide();
                 return;
             }
+            
             // show element
             if(!node.show){// is new show method implemented    
                 node.setStyle('display', style);
@@ -23,7 +24,6 @@ var Display = {
     },
     
     isVisible: function(id){
-        
         YUI().use('node', function(Y) {
             visible = Y.one(id).getStyle('display')=='none'?false:true;
         })

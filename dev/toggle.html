@@ -24,6 +24,7 @@ body {
 <link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssfonts/fonts-min.css" /> 
 <script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script>
 <script type="text/javascript" src="../js/display.js"></script>
+<script type="text/javascript" src="../js/question-authoring.js"></script>
 
 <!-- debugging library -->
 <script type="text/javascript" src="../js/analyse.js"></script>
@@ -100,51 +101,48 @@ body {
 <script type="text/javascript"> 
 var Out;
 
-YUI({ filter: 'raw' }).use("node", function (Y) {
- 
+YUI().use("node", function (Y) {
     function toggleSection(){
-      id = '#'+this.get('id');
-      className = '.fcontainer ';
-      Display.toggle(id+' '+className);
       
-      // toggle image
-      img = Y.one(id+' .block-hider');
-      if(Display.isVisible(id+' '+className)){
-          img.set('src', 'http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_minus&amp;rev=286');
-          img.addClass('block-hider-show');
-          img.removeClass('block-hider-hide');
-          return;
-      }
+          id = '#'+this.get('id');
+          className = '.fcontainer ';
+          Display.toggle(id+' '+className);
+          // toggle image
+          img = Y.one(id+' .block-hider');
+          if(Display.isVisible(id+' '+className)){
+              img.set('src', 'http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_minus&amp;rev=286');
+              return;
+          }
+          
+          img.set('src', 'http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_plus&amp;rev=286');
       
-      img.set('src', 'http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_plus&amp;rev=286');
-      img.addClass('block-hider-hide');
-          img.removeClass('block-hider-show');
     }
+    function initialiseSectionToggles (){
 
-    //Y.on('click', toggleSection, '#generalheader');
-    var sections = ['general', 'tags'];
-    var section;
-    var imgHTML = '<img class="block-hider-hide block-hider" alt="Hide" title="Hide" style="padding: 5px; display: inline"';
-    imgHTML+='src="http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_minus&amp;rev=286">';
-    var sectionNode;
-    var sectionTogglerNode;
-    for(section in sections){
-        Y.on('click', toggleSection, '#'+sections[section]+'header');
+            var sections = ['general', 'tags'];
+            var section;
+            var imgHTML = '<img class="block-hider-hide block-hider" alt="Hide" title="Hide" style="padding: 5px; display: inline"';
+            imgHTML+='src="http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_minus&amp;rev=286">';
+            var sectionNode;
+            var sectionTogglerNode;
+            for(section in sections){
+                Y.on('click', toggleSection, '#'+sections[section]+'header');
+                
+                sectionNode = Y.one('#'+sections[section]+'header');
+                
+                img = Y.Node.create(imgHTML);
+                img.set('alt', 'Hide '+sections[section]+' section');
+                img.set('title', 'Hide '+sections[section]+' section');
+                sectionNode.insert(img, 2);
+            
+                sectionTogglerNode = Y.one('#'+sections[section]+'header .ftoggler').setStyle('float', 'left');
+            }
         
-        sectionNode = Y.one('#'+sections[section]+'header');
-        
-        img = Y.Node.create(imgHTML);
-        img.set('alt', 'Hide '+sections[section]+' section');
-        img.set('title', 'Hide '+sections[section]+' section');
-        sectionNode.insert(img, 2);
-        
-    
-        sectionTogglerNode = Y.one('#'+sections[section]+'header .ftoggler');
-        sectionTogglerNode.setStyle('float', 'left');
     }
     
-     
+    initialiseSectionToggles();
 });
+
 </script> 
 
 </body> 
