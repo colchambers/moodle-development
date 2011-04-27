@@ -46,7 +46,11 @@
 			}
 		}
      },
-     
+     object: function (variable, message, full){
+         message == message?message: 'Variable = ';
+         this.append(message);
+         this.append(variable);
+     },
      getObjectMethod: function ( variable, method ){ return variable[ method ]; }
     
 }

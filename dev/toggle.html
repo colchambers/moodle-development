@@ -102,9 +102,8 @@ body {
 var Out;
 
 YUI().use("node", function (Y) {
-    function toggleSection(){
+    function toggleSection(e, id){
       
-          id = '#'+this.get('id');
           className = '.fcontainer ';
           Display.toggle(id+' '+className);
           // toggle image
@@ -125,17 +124,23 @@ YUI().use("node", function (Y) {
             imgHTML+='src="http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_minus&amp;rev=286">';
             var sectionNode;
             var sectionTogglerNode;
+            //create arbitrary context object:
+            var contextObj = {
+                name: "context"
+            };
             for(section in sections){
-                Y.on('click', toggleSection, '#'+sections[section]+'header');
-                
                 sectionNode = Y.one('#'+sections[section]+'header');
                 
+                // append toggle image
                 img = Y.Node.create(imgHTML);
                 img.set('alt', 'Hide '+sections[section]+' section');
                 img.set('title', 'Hide '+sections[section]+' section');
-                sectionNode.insert(img, 2);
+                Y.one('#'+sections[section]+'header').insert(img, 2);
             
-                sectionTogglerNode = Y.one('#'+sections[section]+'header .ftoggler').setStyle('float', 'left');
+                Y.one('#'+sections[section]+'header .ftoggler').setStyle('float', 'left');
+                
+                // append onClick toggle handlers
+                Y.on('click', toggleSection, ['#'+sections[section]+'header .ftoggler', '#'+sections[section]+'header .block-hider'], contextObj, '#'+sections[section]+'header');
             }
         
     }
