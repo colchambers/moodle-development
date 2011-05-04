@@ -1,0 +1,157 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/ou-header.css">
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+<link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssfonts/fonts-min.css" /> 
+<script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script>
+<script type="text/javascript" src="../js/display.js"></script>
+<script type="text/javascript" src="../js/question-authoring.js"></script>
+
+<!-- debugging library -->
+<script type="text/javascript" src="../js/analyse.js"></script>
+<style>
+.mform fieldset {
+border-color: #DDD;
+}
+styles.css:2229
+.mform fieldset {
+border: 1px solid;
+}
+</style>
+</head>
+<body>
+<div id="demo"> 
+ 
+    <h2>Editing an essay question</h2> 
+ 
+    <div id="demo">
+        <h3>You have permission to:</h3>
+        <ul>
+            <li>Edit this question</li>
+            <li>Move this question</li>
+            <li>Save this as a new question</li>
+        </ul>
+    </div> 
+</div> 
+
+    <form class="mform">
+    <fieldset class="clearfix" id="generalheader">
+    	<legend class="ftoggler">General</legend>
+		<div class="advancedbutton"></div><div class="fcontainer clearfix">
+		
+		<div class="fitem"><div class="fitemtitle"><div class="fgrouplabel"><label>Current category </label></div></div>
+            <fieldset class="felement fgroup">Default for c101 (9)&nbsp;<span><input name="usecurrentcat" value="1" id="id_e3ef7e" checked="checked" type="checkbox"><label for="id_e3ef7e">Use this category</label></span></fieldset></div>
+    		<div class="fitem"><div class="fitemtitle"><label for="id_categorymoveto">Save in category </label></div>
+                <div class="felement fquestioncategory">
+                    <select disabled="disabled" name="categorymoveto" id="id_categorymoveto">
+        	            <optgroup label="Website: c101">
+                            <option value="4,444" selected="selected">Default for c101 (9)</option>
+        	            </optgroup>
+                    </select>
+                </div></div>
+        		<div class="fitem required"><div class="fitemtitle"><label for="id_name">Question name<img class="req" title="Required field" alt="Required field" src="assets/image_011.gif"> </label></div><div class="felement ftext"><input size="50" name="name" value="Essay" onblur="validate_qtype_essay_edit_form_name(this)" onchange="validate_qtype_essay_edit_form_name(this)" id="id_name" type="text"></div></div>
+        		</div>
+                
+                <div class="fitem">
+                    <div class="fitemtitle">
+                        <label for="id_questiontext">Question text </label>
+                    </div>
+                    <div class="felement feditor">
+                        <div>
+                            <div>
+                                <textarea style="display: none;" id="id_questiontext" name="questiontext[text]" rows="15" cols="80">
+                                    &lt;p&gt;Can you write an essay?&lt;/p&gt;</textarea>
+                            </div>
+                        </div>
+                    </div>
+            	<div class="fitem required"><div class="fitemtitle"><label for="id_defaultmark">Default mark<img class="req" title="Required field" alt="Required field" src="assets/image_011.gif"> </label></div><div class="felement ftext"><input size="3" name="defaultmark" value="1.0000000" onblur="validate_qtype_essay_edit_form_defaultmark(this)" onchange="validate_qtype_essay_edit_form_defaultmark(this)" id="id_defaultmark" type="text"></div></div>
+        		<div class="fitem"><div class="fitemtitle"><label for="id_generalfeedback">General feedback <span class="helplink"><a href="http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/help.php?component=question&amp;identifier=generalfeedback&amp;lang=en" title="Help with General feedback" id="helpicon4da31cded8082"><img src="assets/image.png" alt="General feedback" class="iconhelp"></a></span>&nbsp;</label></div><div class="felement feditor"><div><div><textarea style="display: none;" id="id_generalfeedback" name="generalfeedback[text]" rows="10" cols="80">&lt;p&gt;Did you write an essay?&lt;/p&gt;</textarea><span class="mceEditor o2k7Skin o2k7SkinSilver" id="id_generalfeedback_parent"><table style="width: 556px; height: 181px;" class="mceLayout" id="id_generalfeedback_tbl" cellpadding="0" cellspacing="0"><tbody><tr class="mceFirst"><td class="mceToolbar mceLeft mceFirst mceLast"><a href="#" accesskey="q" title="Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X"><!-- IE --></a><table id="id_generalfeedback_toolbar1" class="mceToolbar mceToolbarRow1 Enabled" align="" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceToolbarStart mceToolbarStartListBox mceFirst"><span><!-- IE --></span></td><td><table id="id_generalfeedback_fontselect" class="mceListBox mceListBoxEnabled mce_fontselect" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceFirst"><a id="id_generalfeedback_fontselect_text" href="javascript:;" class="mceText mceTitle" onclick="return false;" onmousedown="return false;">Font family</a></td><td class="mceLast"><a id="id_generalfeedback_fontselect_open" tabindex="-1" href="javascript:;" class="mceOpen" onclick="return false;" onmousedown="return false;"><span></span></a></td></tr></tbody></table></td><td><table id="id_generalfeedback_fontsizeselect" class="mceListBox mceListBoxEnabled mce_fontsizeselect" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceFirst"><a id="id_generalfeedback_fontsizeselect_text" href="javascript:;" class="mceText mceTitle" onclick="return false;" onmousedown="return false;">Font size</a></td><td class="mceLast"><a id="id_generalfeedback_fontsizeselect_open" tabindex="-1" href="javascript:;" class="mceOpen" onclick="return false;" onmousedown="return false;"><span></span></a></td></tr></tbody></table></td><td><table id="id_generalfeedback_formatselect" class="mceListBox mceListBoxEnabled mce_formatselect" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceFirst"><a id="id_generalfeedback_formatselect_text" href="javascript:;" class="mceText" onclick="return false;" onmousedown="return false;">Paragraph</a></td><td class="mceLast"><a id="id_generalfeedback_formatselect_open" tabindex="-1" href="javascript:;" class="mceOpen" onclick="return false;" onmousedown="return false;"><span></span></a></td></tr></tbody></table></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_undo" href="javascript:;" class="mceButton mce_undo mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Undo (Ctrl+Z)"><span class="mceIcon mce_undo"></span></a></td><td><a id="id_generalfeedback_redo" href="javascript:;" class="mceButton mce_redo mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Redo (Ctrl+Y)"><span class="mceIcon mce_redo"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_search" href="javascript:;" class="mceButton mceButtonEnabled mce_search" onmousedown="return false;" onclick="return false;" title="Find"><span class="mceIcon mce_search"></span></a></td><td><a id="id_generalfeedback_replace" href="javascript:;" class="mceButton mceButtonEnabled mce_replace" onmousedown="return false;" onclick="return false;" title="Find/Replace"><span class="mceIcon mce_replace"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_fullscreen" href="javascript:;" class="mceButton mceButtonEnabled mce_fullscreen" onmousedown="return false;" onclick="return false;" title="Toggle fullscreen mode"><span class="mceIcon mce_fullscreen"></span></a></td><td class="mceToolbarEnd mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><table id="id_generalfeedback_toolbar2" class="mceToolbar mceToolbarRow2 Enabled" align="" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceToolbarStart mceToolbarStartButton mceFirst"><span><!-- IE --></span></td><td><a id="id_generalfeedback_bold" href="javascript:;" class="mceButton mceButtonEnabled mce_bold" onmousedown="return false;" onclick="return false;" title="Bold (Ctrl+B)"><span class="mceIcon mce_bold"></span></a></td><td><a id="id_generalfeedback_italic" href="javascript:;" class="mceButton mceButtonEnabled mce_italic" onmousedown="return false;" onclick="return false;" title="Italic (Ctrl+I)"><span class="mceIcon mce_italic"></span></a></td><td><a id="id_generalfeedback_underline" href="javascript:;" class="mceButton mceButtonEnabled mce_underline" onmousedown="return false;" onclick="return false;" title="Underline (Ctrl+U)"><span class="mceIcon mce_underline"></span></a></td><td><a id="id_generalfeedback_strikethrough" href="javascript:;" class="mceButton mceButtonEnabled mce_strikethrough" onmousedown="return false;" onclick="return false;" title="Strikethrough"><span class="mceIcon mce_strikethrough"></span></a></td><td><a id="id_generalfeedback_sub" href="javascript:;" class="mceButton mceButtonEnabled mce_sub" onmousedown="return false;" onclick="return false;" title="Subscript"><span class="mceIcon mce_sub"></span></a></td><td><a id="id_generalfeedback_sup" href="javascript:;" class="mceButton mceButtonEnabled mce_sup" onmousedown="return false;" onclick="return false;" title="Superscript"><span class="mceIcon mce_sup"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_justifyleft" href="javascript:;" class="mceButton mceButtonEnabled mce_justifyleft" onmousedown="return false;" onclick="return false;" title="Align left"><span class="mceIcon mce_justifyleft"></span></a></td><td><a id="id_generalfeedback_justifycenter" href="javascript:;" class="mceButton mceButtonEnabled mce_justifycenter" onmousedown="return false;" onclick="return false;" title="Align center"><span class="mceIcon mce_justifycenter"></span></a></td><td><a id="id_generalfeedback_justifyright" href="javascript:;" class="mceButton mceButtonEnabled mce_justifyright" onmousedown="return false;" onclick="return false;" title="Align right"><span class="mceIcon mce_justifyright"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_cleanup" href="javascript:;" class="mceButton mceButtonEnabled mce_cleanup" onmousedown="return false;" onclick="return false;" title="Cleanup messy code"><span class="mceIcon mce_cleanup"></span></a></td><td><a id="id_generalfeedback_removeformat" href="javascript:;" class="mceButton mceButtonEnabled mce_removeformat" onmousedown="return false;" onclick="return false;" title="Remove formatting"><span class="mceIcon mce_removeformat"></span></a></td><td><a id="id_generalfeedback_pastetext" href="javascript:;" class="mceButton mceButtonEnabled mce_pastetext" onmousedown="return false;" onclick="return false;" title="Paste as Plain Text"><span class="mceIcon mce_pastetext"></span></a></td><td><a id="id_generalfeedback_pasteword" href="javascript:;" class="mceButton mceButtonEnabled mce_pasteword" onmousedown="return false;" onclick="return false;" title="Paste from Word"><span class="mceIcon mce_pasteword"></span></a></td><td><span class="mceSeparator"></span></td><td><table id="id_generalfeedback_forecolor" class="mceSplitButton mceSplitButtonEnabled mce_forecolor" onmousedown="return false;" title="Select text color" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceFirst"><a id="id_generalfeedback_forecolor_action" href="javascript:;" class="mceAction mce_forecolor" onclick="return false;" onmousedown="return false;" title="Select text color"><span class="mceAction mce_forecolor"></span><div style="background-color: rgb(136, 136, 136);" class="mceColorPreview" id="id_generalfeedback_forecolor_preview"></div></a></td><td class="mceLast"><a id="id_generalfeedback_forecolor_open" href="javascript:;" class="mceOpen mce_forecolor" onclick="return false;" onmousedown="return false;" title="Select text color"><span class="mceOpen mce_forecolor"></span></a></td></tr></tbody></table></td><td><table id="id_generalfeedback_backcolor" class="mceSplitButton mceSplitButtonEnabled mce_backcolor" onmousedown="return false;" title="Select background color" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceFirst"><a id="id_generalfeedback_backcolor_action" href="javascript:;" class="mceAction mce_backcolor" onclick="return false;" onmousedown="return false;" title="Select background color"><span class="mceAction mce_backcolor"></span><div style="background-color: rgb(136, 136, 136);" class="mceColorPreview" id="id_generalfeedback_backcolor_preview"></div></a></td><td class="mceLast"><a id="id_generalfeedback_backcolor_open" href="javascript:;" class="mceOpen mce_backcolor" onclick="return false;" onmousedown="return false;" title="Select background color"><span class="mceOpen mce_backcolor"></span></a></td></tr></tbody></table></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_ltr" href="javascript:;" class="mceButton mceButtonEnabled mce_ltr" onmousedown="return false;" onclick="return false;" title="Direction left to right"><span class="mceIcon mce_ltr"></span></a></td><td><a id="id_generalfeedback_rtl" href="javascript:;" class="mceButton mceButtonEnabled mce_rtl" onmousedown="return false;" onclick="return false;" title="Direction right to left"><span class="mceIcon mce_rtl"></span></a></td><td class="mceToolbarEnd mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><table id="id_generalfeedback_toolbar3" class="mceToolbar mceToolbarRow3 Enabled" align="" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceToolbarStart mceToolbarStartButton mceFirst"><span><!-- IE --></span></td><td><a id="id_generalfeedback_bullist" href="javascript:;" class="mceButton mceButtonEnabled mce_bullist" onmousedown="return false;" onclick="return false;" title="Unordered list"><span class="mceIcon mce_bullist"></span></a></td><td><a id="id_generalfeedback_numlist" href="javascript:;" class="mceButton mceButtonEnabled mce_numlist" onmousedown="return false;" onclick="return false;" title="Ordered list"><span class="mceIcon mce_numlist"></span></a></td><td><a id="id_generalfeedback_outdent" href="javascript:;" class="mceButton mce_outdent mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Outdent"><span class="mceIcon mce_outdent"></span></a></td><td><a id="id_generalfeedback_indent" href="javascript:;" class="mceButton mceButtonEnabled mce_indent" onmousedown="return false;" onclick="return false;" title="Indent"><span class="mceIcon mce_indent"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_link" href="javascript:;" class="mceButton mce_link mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert/edit link"><span class="mceIcon mce_link"></span></a></td><td><a id="id_generalfeedback_unlink" href="javascript:;" class="mceButton mce_unlink mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Unlink"><span class="mceIcon mce_unlink"></span></a></td><td><a id="id_generalfeedback_moodlenolink" href="javascript:;" class="mceButton mce_moodlenolink mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Prevent automatic linking"><img class="mceIcon" src="assets/ed_nolink.gif"></a></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_image" href="javascript:;" class="mceButton mceButtonEnabled mce_image" onmousedown="return false;" onclick="return false;" title="Insert/edit image"><span class="mceIcon mce_image"></span></a></td><td><a id="id_generalfeedback_moodlemedia" href="javascript:;" class="mceButton mceButtonEnabled mce_moodlemedia" onmousedown="return false;" onclick="return false;" title="Moodle Media"><img class="mceIcon" src="assets/icon.gif"></a></td><td><a id="id_generalfeedback_nonbreaking" href="javascript:;" class="mceButton mceButtonEnabled mce_nonbreaking" onmousedown="return false;" onclick="return false;" title="Insert non-breaking space character"><span class="mceIcon mce_nonbreaking"></span></a></td><td><a id="id_generalfeedback_charmap" href="javascript:;" class="mceButton mceButtonEnabled mce_charmap" onmousedown="return false;" onclick="return false;" title="Insert custom character"><span class="mceIcon mce_charmap"></span></a></td><td><a id="id_generalfeedback_table" href="javascript:;" class="mceButton mceButtonEnabled mce_table" onmousedown="return false;" onclick="return false;" title="Inserts a new table"><span class="mceIcon mce_table"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="id_generalfeedback_code" href="javascript:;" class="mceButton mceButtonEnabled mce_code" onmousedown="return false;" onclick="return false;" title="Edit HTML Source"><span class="mceIcon mce_code"></span></a></td><td><table id="id_generalfeedback_spellchecker" class="mceSplitButton mceSplitButtonEnabled mce_spellchecker" onmousedown="return false;" title="Toggle spellchecker" cellpadding="0" cellspacing="0"><tbody><tr><td class="mceFirst"><a id="id_generalfeedback_spellchecker_action" href="javascript:;" class="mceAction mce_spellchecker" onclick="return false;" onmousedown="return false;" title="Toggle spellchecker"><span class="mceAction mce_spellchecker"></span></a></td><td class="mceLast"><a id="id_generalfeedback_spellchecker_open" href="javascript:;" class="mceOpen mce_spellchecker" onclick="return false;" onmousedown="return false;" title="Toggle spellchecker"><span class="mceOpen mce_spellchecker"></span></a></td></tr></tbody></table></td><td class="mceToolbarEnd mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><a href="#" accesskey="z" title="Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X" onfocus="tinyMCE.getInstanceById('id_generalfeedback').focus();"><!-- IE --></a></td></tr><tr><td class="mceIframeContainer mceFirst mceLast"><iframe style="width: 100%; height: 100px;" src='javascript:""' id="id_generalfeedback_ifr" frameborder="0"></iframe></td></tr><tr class="mceLast"><td class="mceStatusbar mceFirst mceLast"><div id="id_generalfeedback_path_row">Path: <a accesskey="x" href="#"></a><span id="id_generalfeedback_path"><a class="mcePath_0" onmousedown="return false;" href="javascript:;">p</a></span></div><a class="mceResize" onclick="return false;" href="javascript:;" id="id_generalfeedback_resize"></a></td></tr></tbody></table></span></div><div><select name="generalfeedback[format]"><option value="1" selected="selected">HTML format</option></select></div><input name="generalfeedback[itemid]" value="413798818" type="hidden"><noscript><div><object type='text/html' data='http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/repository/draftfiles_manager.php?action=browse&amp;env=editor&amp;itemid=413798818&amp;subdirs=1&amp;maxbytes=0&amp;maxfiles=-1&amp;ctx_id=444&amp;course=59&amp;sesskey=VcaWJ5twyz' height='160' width='600' style='border:1px solid #000'></object></div></noscript></div></div></div>
+        		<div class="fitem"><div class="fitemtitle"><label for="id_responseformat">Respones format </label></div><div class="felement fselect"><select name="responseformat" id="id_responseformat">
+                	<option value="editor" selected="selected">HTML editor</option>
+                	<option value="editorfilepicker">HTML editor with file picker</option>
+                	<option value="plain">Plain text</option>
+                	<option value="monospaced">Plain text, monospaced font</option>
+                </select></div></div>
+                		<div class="fitem"><div class="fitemtitle"><label for="id_responsefieldlines">Input box size </label></div><div class="felement fselect"><select name="responsefieldlines" id="id_responsefieldlines">
+                	<option value="5">5 lines</option>
+                	<option value="10">10 lines</option>
+                	<option value="15" selected="selected">15 lines</option>
+                	<option value="20">20 lines</option>
+                	<option value="25">25 lines</option>
+                	<option value="30">30 lines</option>
+                	<option value="35">35 lines</option>
+                	<option value="40">40 lines</option>
+                </select></div></div>
+            </fieldset>
+            
+    
+    <fieldset class="clearfix" id="tagsheader">
+            <legend class="ftoggler">Tags</legend>
+    		<div class="advancedbutton"></div><div class="fcontainer clearfix">
+    		
+    		<div class="fitem"><div class="fitemtitle"><div class="fgrouplabel"><label>Current category </label></div></div><fieldset class="felement fgroup">Default for c101 (9)&nbsp;<span><input name="usecurrentcat" value="1" id="id_e3ef7e" checked="checked" type="checkbox"><label for="id_e3ef7e">Use this category</label></span></fieldset></div>
+    		<div class="fitem"><div class="fitemtitle"><label for="id_categorymoveto">Save in category </label></div><div class="felement fquestioncategory"><select disabled="disabled" name="categorymoveto" id="id_categorymoveto">
+    	<optgroup label="Website: c101">		<option value="4,444" selected="selected">Default for c101 (9)</option>
+    	</optgroup>
+    </select></div></div>
+    		<div class="fitem required"><div class="fitemtitle"><label for="id_name">Question name<img class="req" title="Required field" alt="Required field" src="assets/image_011.gif"> </label></div><div class="felement ftext"><input size="50" name="name" value="Essay" onblur="validate_qtype_essay_edit_form_name(this)" onchange="validate_qtype_essay_edit_form_name(this)" id="id_name" type="text"></div></div>
+    		</div>
+        </fieldset>
+    </form>
+
+
+</div>
+
+<script type="text/javascript"> 
+var Out;
+
+YUI().use("node", function (Y) {
+    function toggleSection(e, id){
+      
+          className = '.fcontainer ';
+          Display.toggle(id+' '+className);
+          // toggle image
+          img = Y.one(id+' .block-hider');
+          if(Display.isVisible(id+' '+className)){
+              img.set('src', 'http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_minus&amp;rev=286');
+              return;
+          }
+          
+          img.set('src', 'http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_plus&amp;rev=286');
+      
+    }
+    function initialiseSectionToggles (){
+
+            var sections = ['general', 'tags'];
+            var section;
+            var imgHTML = '<img class="block-hider-hide block-hider" alt="Hide" title="Hide" style="padding: 5px; display: inline"';
+            imgHTML+='src="http://cc5983.vledev2.open.ac.uk/vle/ou-moodle2/moodle/theme/image.php?theme=ou&amp;image=t/switch_minus&amp;rev=286">';
+            var sectionNode;
+            var sectionTogglerNode;
+            //create arbitrary context object:
+            var contextObj = {
+                name: "context"
+            };
+            for(section in sections){
+                sectionNode = Y.one('#'+sections[section]+'header');
+                
+                // append toggle image
+                img = Y.Node.create(imgHTML);
+                img.set('alt', 'Hide '+sections[section]+' section');
+                img.set('title', 'Hide '+sections[section]+' section');
+                Y.one('#'+sections[section]+'header').insert(img, 2);
+            
+                Y.one('#'+sections[section]+'header .ftoggler').setStyle('float', 'left');
+                
+                // append onClick toggle handlers
+                Y.on('click', toggleSection, ['#'+sections[section]+'header .ftoggler', '#'+sections[section]+'header .block-hider'], contextObj, '#'+sections[section]+'header');
+            }
+        
+    }
+    
+    initialiseSectionToggles();
+});
+
+</script>
+</body>
+</html>
