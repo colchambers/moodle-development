@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssfonts/fonts-min.css" /> 
+        <script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script>
+        <script type="text/javascript" src="../../js/display.js"></script>
+        <script type="text/javascript" src="../../js/question-authoring.js"></script>
+        
+        <!-- debugging library -->
+        <script type="text/javascript" src="../../js/analyse.js"></script>
+        <title>Tiny_mce: Height</title>
+        <style>
+        .mceFirst td.mceIframeContainer iframe#id_graderinfo_ifr {
+            height: 50px;
+            }
+        </style>
+    
+    </head>
+<body>
+<script type="text/javascript" src="../../lib/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript">
+tinyMCE.init({
+        mode : "textareas",
+        theme : "advanced",
+        readonly : false,
+        content_css: 'content.css',
+        
+        // size options
+        //height : 610
+        
+});
+</script>
+
+<form method="post" action="somepage">
+        <textarea name="content" style="width:100%" id="id_graderinfo"> some text
+        </textarea>
+</form>
+
+
+
+
+</script>
+</body>
+</html>
