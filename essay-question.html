@@ -186,6 +186,11 @@ YUI().use("node", function (Y) {
                 
                 // append onClick toggle handlers
                 Y.on('click', toggleSection, ['#'+sections[section]+'header .ftoggler', '#'+sections[section]+'header .block-hider'], contextObj, '#'+sections[section]+'header');
+                
+                // hide all but main section. 
+                if(sections[section] != sections[0]){
+                    toggleSection(null, '#'+sections[section]+'header');
+                }
             }
         
     }
