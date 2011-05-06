@@ -1,14 +1,14 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="assets/ou-header.css">
-<link rel="stylesheet" type="text/css" href="assets/styles.css">
+<link rel="stylesheet" type="text/css" href="../assets/ou-header.css">
+<link rel="stylesheet" type="text/css" href="../assets/styles.css">
 <link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssfonts/fonts-min.css" /> 
 <script type="text/javascript" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script>
-<script type="text/javascript" src="js/display.js"></script>
-<script type="text/javascript" src="js/question-authoring.js"></script>
+<script type="text/javascript" src="../js/display.js"></script>
+<script type="text/javascript" src="../js/question-authoring.js"></script>
 
 <!-- debugging library -->
-<script type="text/javascript" src="js/analyse.js"></script>
+<script type="text/javascript" src="../js/analyse.js"></script>
 <style>
 .mform fieldset {
 border-color: #DDD;
@@ -36,7 +36,7 @@ border: 1px solid;
 
     <form class="mform">
     <fieldset class="clearfix" id="generalheader">
-    	<legend class="ftoggler">General</legend>
+        <legend class="ftoggler">General</legend>
 		<div class="advancedbutton"></div>
         <div class="fcontainer clearfix">
 		
@@ -60,7 +60,7 @@ border: 1px solid;
             </div>
     		<div class="fitem required">
                 <div class="fitemtitle">
-                    <label for="id_name">Question name<img class="req" title="Required field" alt="Required field" src="assets/image_011.gif"> </label>
+                    <label for="id_name">Question name<img class="req" title="Required field" alt="Required field" src="../assets/image_011.gif"> </label>
                 </div>
                 <div class="felement ftext">
                     <input size="50" name="name" value="Essay" onblur="validate_qtype_essay_edit_form_name(this)" onchange="validate_qtype_essay_edit_form_name(this)" id="id_name" type="text">
@@ -83,12 +83,12 @@ border: 1px solid;
             </div>
         	<div class="fitem required">
                 <div class="fitemtitle">
-                    <label for="id_defaultmark">Default mark<img class="req" title="Required field" alt="Required field" src="assets/image_011.gif"> </label></div><div class="felement ftext"><input size="3" name="defaultmark" value="1.0000000" onblur="validate_qtype_essay_edit_form_defaultmark(this)" onchange="validate_qtype_essay_edit_form_defaultmark(this)" id="id_defaultmark" type="text"></div></div>
+                    <label for="id_defaultmark">Default mark<img class="req" title="Required field" alt="Required field" src="../assets/image_011.gif"> </label></div><div class="felement ftext"><input size="3" name="defaultmark" value="1.0000000" onblur="validate_qtype_essay_edit_form_defaultmark(this)" onchange="validate_qtype_essay_edit_form_defaultmark(this)" id="id_defaultmark" type="text"></div></div>
     		<div class="fitem">
                 <div class="fitemtitle">
                     <label for="id_generalfeedback">General feedback 
                         <span class="helplink"><a href="#" title="Help with General feedback" id="helpicon4da31cded8082">
-                            <img src="assets/image.png" alt="General feedback" class="iconhelp"></a>
+                            <img src="../assets/image.png" alt="General feedback" class="iconhelp"></a>
                         </span>&nbsp;
                     </label>
                 </div>
@@ -154,11 +154,11 @@ YUI().use("node", function (Y) {
           // toggle image
           img = Y.one(id+' .block-hider');
           if(Display.isVisible(id+' '+className)){
-              img.set('src', 'assets/switch_minus.png');
+              img.set('src', '../assets/switch_minus.png');
               return;
           }
           
-          img.set('src', 'assets/switch_plus.png');
+          img.set('src', '../assets/switch_plus.png');
       
     }
     function initialiseSectionToggles (){
@@ -166,7 +166,7 @@ YUI().use("node", function (Y) {
             var sections = ['general', 'tags'];
             var section;
             var imgHTML = '<img class="block-hider-hide block-hider" alt="Hide" title="Hide" style="padding: 5px; display: inline"';
-            imgHTML+='src="assets/switch_minus.png">';
+            imgHTML+='src="../assets/switch_minus.png">';
             var sectionNode;
             var sectionTogglerNode;
             //create arbitrary context object:
@@ -215,7 +215,7 @@ YUI().use("node", function (Y) {
 
 </script>
 
-<script type="text/javascript" src="lib/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="../lib/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript">
 tinyMCE.init({
         mode : "textareas",
